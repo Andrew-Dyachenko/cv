@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.scss";
+import clsx from "clsx";
 
-const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "CV - Andrey Dyacheko",
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={nunitoSans.className}>{children}</body>
+			<body className={clsx(inter.className)}>
+				<div className="app">{children}</div>
+			</body>
 		</html>
 	);
 }
