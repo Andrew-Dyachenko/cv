@@ -6,8 +6,8 @@ import clsx from "clsx";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "CV - Andrey Dyacheko",
-	description: "resume (CV) of the Frontend developer - Andrey Dyachenko",
+	title: `CV - ${author}`,
+	description: `resume (CV) of the Frontend developer - ${author}`,
 };
 
 export default function RootLayout({
