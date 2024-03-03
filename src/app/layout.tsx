@@ -17,8 +17,10 @@ import {
 } from "next/font/google";
 import "../styles/global.scss";
 import clsx from "clsx";
-
+import packageJSON from "../../package.json";
 import DirectionToggle from "@/components/DirectionToggle";
+
+const { author } = packageJSON;
 const font = Sofia_Sans({
 	weight: [
 		// "100",
@@ -38,7 +40,12 @@ const font = Sofia_Sans({
 export const metadata: Metadata = {
 	title: `CV - ${author}`,
 	description: `resume (CV) of the Frontend developer - ${author}`,
+	authors: {
+		name: `${author}`,
+		url: "https://github.com/Andrew-Dyachenko/cv",
+	},
 };
+// console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
 
 export default function RootLayout({
 	children,
