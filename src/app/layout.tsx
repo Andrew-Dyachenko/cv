@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"] });
+import DirectionToggle from "@/components/DirectionToggle";
 
 export const metadata: Metadata = {
 	title: `CV - ${author}`,
@@ -16,9 +16,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={clsx(inter.className)}>
-				<div className="app">{children}</div>
+		<html lang="en" dir="ltr">
+			<body className={clsx(font.className)}>
+				<div className="app">
+					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
+					{children}
+				</div>
 			</body>
 		</html>
 	);
