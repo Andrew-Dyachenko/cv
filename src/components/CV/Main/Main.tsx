@@ -1,5 +1,5 @@
 import styles from "./main.module.scss";
-import Accordion from "@/components/Accordion";
+import Experience from "@/components/Experience";
 import { AiTwotoneExperiment } from "react-icons/ai";
 import { BsCalculator } from "react-icons/bs";
 
@@ -23,7 +23,7 @@ export default function Main() {
 				</h2>
 				<hr />
 				<div className={styles.section__body}>
-					<Accordion />
+					<Experience />
 				</div>
 			</section>
 		</main>

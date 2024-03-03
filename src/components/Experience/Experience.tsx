@@ -1,9 +1,9 @@
 "use client";
 
 // import { useId } from "react";
-import { Accordion as A } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 // import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import styles from "./accordion.module.scss";
+import styles from "./experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
 // import Link from "next/link";
@@ -25,12 +25,12 @@ import getFormattedDateTime from "@/utils/getFormattedDateTime";
 // 	);
 // }
 
-export default function Accordion() {
+export default function Experience() {
 	return (
-		<A defaultActiveKey={["0"]} alwaysOpen className={styles.accordion}>
-			<A.Item eventKey="0" bsPrefix=" " className={styles.accordion__item}>
+		<Accordion defaultActiveKey={["0"]} alwaysOpen className={styles.accordion}>
+			<Accordion.Item eventKey="0" bsPrefix=" " className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<A.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
 						<span>Frontend developer</span>
 						<span>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
 						<small>
@@ -52,9 +52,9 @@ export default function Accordion() {
 							</time>
 							)
 						</small>
-					</A.Button>
+					</Accordion.Button>
 				</h3>
-				<A.Collapse
+				<Accordion.Collapse
 					eventKey="0"
 					bsPrefix=" "
 					className={styles.accordion__collapse}
@@ -68,17 +68,17 @@ export default function Accordion() {
 						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 						culpa qui officia deserunt mollit anim id est laborum.
 					</div>
-				</A.Collapse>
-			</A.Item>
-			<A.Item eventKey="1" bsPrefix=" " className={styles.accordion__item}>
+				</Accordion.Collapse>
+			</Accordion.Item>
+			<Accordion.Item eventKey="1" bsPrefix=" " className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<A.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
 						<span>Frontend developer</span>
 						<span>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
 						<small>(October 2019 - August 2022)</small>
-					</A.Button>
+					</Accordion.Button>
 				</h3>
-				<A.Collapse
+				<Accordion.Collapse
 					eventKey="1"
 					bsPrefix=" "
 					className={styles.accordion__collapse}
@@ -92,15 +92,15 @@ export default function Accordion() {
 						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 						culpa qui officia deserunt mollit anim id est laborum.
 					</div>
-				</A.Collapse>
-			</A.Item>
-			<A.Item eventKey="2" bsPrefix=" " className={styles.accordion__item}>
+				</Accordion.Collapse>
+			</Accordion.Item>
+			<Accordion.Item eventKey="2" bsPrefix=" " className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<A.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
 						Accordion Item #3
-					</A.Button>
+					</Accordion.Button>
 				</h3>
-				<A.Collapse
+				<Accordion.Collapse
 					eventKey="2"
 					bsPrefix=" "
 					className={styles.accordion__collapse}
@@ -114,9 +114,9 @@ export default function Accordion() {
 						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 						culpa qui officia deserunt mollit anim id est laborum.
 					</div>
-				</A.Collapse>
-			</A.Item>
-		</A>
+				</Accordion.Collapse>
+			</Accordion.Item>
+		</Accordion>
 	);
 }
 

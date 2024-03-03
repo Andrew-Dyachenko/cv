@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./aside.module.scss";
 import profile from "../../../../public/profile.jpg";
 import { FaRegUser } from "react-icons/fa";
-import Accordion from "@/components/Accordion";
+import Accordion from "@/components/Experience";
 
 export default function Aside() {
 	return (
