@@ -16,7 +16,6 @@ import {
 	// Ysabeau,
 } from "next/font/google";
 import "../styles/global.scss";
-import clsx from "clsx";
 import packageJSON from "../../package.json";
 import DirectionToggle from "@/components/DirectionToggle";
 
@@ -54,7 +53,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" dir="ltr">
-			<body className={clsx(font.className)}>
+			<body className={font.className}>
 				<div className="app">
 					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
 					{children}
