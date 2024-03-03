@@ -1,0 +1,19 @@
+@use 'sass:color';
+@use '../conf/fibonacci';
+@use '../func';
+
+$transition-duration: 0.35s;
+$transition-timing-function: ease;
+// Custom sizes block START
+$zero: 0;
+$xxxs: 320px;
+$xxs: 375px;
+$xs: 480px;
+$s: 600px;
+$m: 768px;
+$l: 924px;
+$xl: 1272px;
+$xxl: 1600px;
+$xxxl: 1920px;
+
+// Custom sizes block END
