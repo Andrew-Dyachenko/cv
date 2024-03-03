@@ -15,6 +15,7 @@ import {
 	Sofia_Sans,
 	// Ysabeau,
 } from "next/font/google";
+import "../styles/global.scss";
 import clsx from "clsx";
 
 import DirectionToggle from "@/components/DirectionToggle";
