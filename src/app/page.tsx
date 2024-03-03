@@ -1,13 +1,9 @@
-import { Fragment } from "react";
-import styles from "./page.module.scss";
-import Aside from "@/components/Aside";
-import Main from "@/components/Main";
+import { default as CVComponent } from "@/components/CV";
 
-export default function Home() {
+export default function CV() {
 	return (
-		<div className="container">
-			<Aside />
-			<Main />
+		<div className="container container_w_A4 container--rounded">
+			<CVComponent />
 		</div>
 	);
 }

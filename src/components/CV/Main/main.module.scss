@@ -1,0 +1,57 @@
+@use '../../../styles/conf';
+@use '../../../styles/conf/fibonacci';
+
+.main {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+
+	@media (min-width: conf.$s) {
+		width: calc(fibonacci.$asymp-xxxl-percentage - 1rem);
+		padding: 1rem 0;
+	}
+}
+
+.section {
+	&__title {
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		&-icon {
+			margin-inline-end: 0.25em;
+		}
+	}
+
+	&__body {
+
+	}
+	// $-experience: &;
+
+	// &__details {
+	// 	&[open] {
+	// 		#{$-experience} {
+	// 			&__info {
+	// 				overflow: hidden;
+	// 				max-height: 1000px;
+	// 				transition: max-height 1s ease-in-out;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// &__summary {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
+
+	// &__info {
+	// 	transition: max-height 1s ease-in-out;
+	// 	max-height: 0;
+	// 	overflow: hidden;
+	// }
+
+	// &__diff {
+	// 	font-weight: 400;
+	// }
+}

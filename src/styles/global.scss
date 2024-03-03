@@ -1,0 +1,87 @@
+@use 'sass:math';
+@use '../styles/conf';
+
+:root {
+	font-size: 16px;
+
+	@media (prefers-reduced-motion: no-preference) {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	margin: 0;
+	background-color: aliceblue;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: antialiased;
+	-ms-font-smoothing: antialiased; /* Internet Explorer */
+
+	/* Old Firefox versions */
+	@-moz-document url-prefix() {
+		text-rendering: optimizeLegibility;
+	}
+
+	overflow-x: clip;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+abbr {
+	cursor: help;
+	text-underline-offset: 0.1em;
+	text-decoration-style: dashed;
+	// text-decoration-thickness: 5%;
+	text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
+// @media (prefers-color-scheme: dark) {
+// }
+
+.collapse:not(.show) {
+	display: none;
+}
+.collapsing {
+	height: 0;
+	overflow: hidden;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition: height conf.$transition-duration conf.$transition-timing-function;
+	}
+}
+
+.app {
+	min-height: 100svh;
+	padding: 1rem;
+}
+
+.container {
+	padding: 0 1rem;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1024px;
+
+	&_w_A4 {
+		max-width: 210mm;
+		background-color: #fff;
+		box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+		padding: 1rem;
+	}
+
+	&--rounded {
+		border-radius: 0.5rem;
+	}
+}
