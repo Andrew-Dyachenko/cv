@@ -28,9 +28,12 @@
 
 	&__position {
 		grid-area: experience__position;
+		font-size: 1.125em;
+		font-weight: 500;
 	}
 
 	&__where {
 		grid-area: experience__where;
+		font-weight: 300;
 	}
 }
