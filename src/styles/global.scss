@@ -51,17 +51,21 @@ abbr {
 // @media (prefers-color-scheme: dark) {
 // }
 
-.collapse:not(.show) {
-	display: none;
+// Accordion styles - START
+.collapse {
+	&:not(.show) {
+		display: none;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		transition-property: height;
+		transition-duration: 0;
+	}
 }
 .collapsing {
 	height: 0;
 	overflow: hidden;
-
-	@media (prefers-reduced-motion: no-preference) {
-		transition: height conf.$transition-duration conf.$transition-timing-function;
-	}
 }
+// Accordion styles - END
 
 .app {
 	min-height: 100svh;
