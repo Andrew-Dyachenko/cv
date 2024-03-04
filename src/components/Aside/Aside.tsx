@@ -48,6 +48,7 @@ export default function Aside() {
 						"Redux",
 						"Next.js",
 						"Emails",
+						"jQuery",
 						"SASS",
 						"Bootstrap",
 						"BEM",
@@ -55,7 +56,6 @@ export default function Aside() {
 						"Jest",
 						"Enzyme",
 						"Vue",
-						"jQuery",
 						"REST",
 						"WebSocket",
 						"Parcel",
@@ -63,8 +63,7 @@ export default function Aside() {
 						"Grunt",
 						"Webpack",
 						"ZURB-Emails",
-						"Liquid"
-
+						"Liquid",
 					]}
 					count={7}
 					className={styles}
