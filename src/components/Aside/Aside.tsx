@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./aside.module.scss";
-import profile from "../../../../public/profile.jpg";
+import styles from "./Aside.module.scss";
+import profile from "../../../public/profile.jpg";
 import { FaRegUser } from "react-icons/fa";
 import Accordion from "@/components/Experience";
 
