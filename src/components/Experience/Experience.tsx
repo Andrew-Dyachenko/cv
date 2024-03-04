@@ -3,10 +3,12 @@
 // import { useId } from "react";
 import { Accordion } from "react-bootstrap";
 // import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import styles from "./experience.module.scss";
+import accordionStyles from "@/components/Accordion/Accordion.module.scss";
 import styles from "./Experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
+import { Sofia_Sans } from "next/font/google";
+import clsx from "clsx";
 // import Link from "next/link";
 // import { DateTime } from "luxon";
 
@@ -26,15 +28,40 @@ import getFormattedDateTime from "@/utils/getFormattedDateTime";
 // 	);
 // }
 
+const font = Sofia_Sans({
+	weight: [
+		// "100",
+		// "200",
+		// "300",
+		"400",
+		"500",
+		"600",
+		// "700",
+		// "800",
+		// "900",
+		// "1000",
+	],
+	subsets: ["latin", /*"cyrillic"*/],
+});
+
 export default function Experience() {
 	return (
-		<Accordion defaultActiveKey={["0"]} alwaysOpen className={styles.accordion}>
-			<Accordion.Item eventKey="0" bsPrefix="_" className={styles.accordion__item}>
-				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
-						<span>Frontend developer</span>
-						<span>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
-						<small>
+		<Accordion
+			defaultActiveKey={["0"]}
+			alwaysOpen
+			className={accordionStyles.accordion}
+		>
+			<Accordion.Item
+				eventKey="0"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
+					>
+						<pre className={styles.experience__when}>
 							(
 							<time
 								dateTime={getFormattedDateTime({
@@ -52,15 +79,19 @@ export default function Experience() {
 								Present
 							</time>
 							)
-						</small>
+						</pre>
+						<pre className={styles.experience__duration}>1 year 2 months</pre>
+						<span className={styles.experience__position}>Frontend developer</span>
+						<span className={styles.experience__where}>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
+
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
 					eventKey="0"
 					bsPrefix="_"
-					className={styles.accordion__collapse}
+					className={accordionStyles.accordion__collapse}
 				>
-					<div className={styles.accordion__body}>
+					<div className={accordionStyles.accordion__body}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -71,20 +102,29 @@ export default function Experience() {
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
-			<Accordion.Item eventKey="1" bsPrefix="_" className={styles.accordion__item}>
-				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
-						<span>Frontend developer</span>
-						<span>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
-						<small>(October 2019 - August 2022)</small>
+			<Accordion.Item
+				eventKey="1"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
+					>
+						<pre className={styles.experience__when}>(October 2019 - August 2022)</pre>
+						<pre className={styles.experience__duration}>2 years 11 months</pre>
+						<span className={styles.experience__position}>Frontend developer</span>
+						<span className={styles.experience__where}>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
+
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
 					eventKey="1"
 					bsPrefix="_"
-					className={styles.accordion__collapse}
+					className={accordionStyles.accordion__collapse}
 				>
-					<div className={styles.accordion__body}>
+					<div className={accordionStyles.accordion__body}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -95,18 +135,25 @@ export default function Experience() {
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
-			<Accordion.Item eventKey="2" bsPrefix="_" className={styles.accordion__item}>
-				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
+			<Accordion.Item
+				eventKey="2"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(accordionStyles.accordion__button, font.className)}
+					>
 						Accordion Item #3
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
 					eventKey="2"
 					bsPrefix="_"
-					className={styles.accordion__collapse}
+					className={accordionStyles.accordion__collapse}
 				>
-					<div className={styles.accordion__body}>
+					<div className={accordionStyles.accordion__body}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -122,13 +169,13 @@ export default function Experience() {
 }
 
 {
-	/* <details className={styles.experience__details}>
-	<summary className={styles.experience__summary}>
-		<h2 className={styles.experience__position}>Frontend developer</h2>
-		<h3 className={styles.experience__where}>
+	/* <details className={accordionStyles.experience__details}>
+	<summary className={accordionStyles.experience__summary}>
+		<h2 className={accordionStyles.experience__position}>Frontend developer</h2>
+		<h3 className={accordionStyles.experience__where}>
 			Individual Entrepreneur - Atumi, Georgia 🇬🇪
 		</h3>
-		<span className={styles.experience__range}>
+		<span className={accordionStyles.experience__range}>
 			(
 			<time
 				dateTime={getFormattedDateTime({
@@ -147,9 +194,9 @@ export default function Experience() {
 			</time>
 			)
 		</span>
-		<small className={styles.experience__diff}>1 year 2 months</small>
+		<small className={accordionStyles.experience__diff}>1 year 2 months</small>
 	</summary>
-	<div className={styles.experience__info}>
+	<div className={accordionStyles.experience__info}>
 		The provision of online services for the development of front-end
 		web applications by the developer:{" "}
 		<abbr title="MPA (Multi-Page Application): is a type of web application in which each page is loaded separately">
@@ -170,18 +217,18 @@ export default function Experience() {
 		as an individual entrepreneur
 	</div>
 </details>
-<details className={styles.experience__details}>
-	<summary className={styles.experience__summary}>
-		<h2 className={styles.experience__position}>Frontend developer</h2>
-		<h3 className={styles.experience__where}>
+<details className={accordionStyles.experience__details}>
+	<summary className={accordionStyles.experience__summary}>
+		<h2 className={accordionStyles.experience__position}>Frontend developer</h2>
+		<h3 className={accordionStyles.experience__where}>
 			LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺
 		</h3>
-		<span className={styles.experience__range}>
+		<span className={accordionStyles.experience__range}>
 			(October 2019 - August 2022)
 		</span>
-		<small className={styles.experience__diff}>2 years 11 months</small>
+		<small className={accordionStyles.experience__diff}>2 years 11 months</small>
 	</summary>
-	<div className={styles.experience__info}>
+	<div className={accordionStyles.experience__info}>
 		Maintained projects:
 		<ol>
 			<li>
