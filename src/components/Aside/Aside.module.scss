@@ -95,6 +95,10 @@
 		font-weight: 800;
 		color: #fff;
 
+		@media print {
+			padding: 0;
+		}
+
 		&--html {
 			$-bgc: color.mix(#e44d27, #f1672b);
 			background-color: desaturate($-bgc, 0%);
@@ -276,5 +280,9 @@
 	&__toggle {
 		font-size: fibonacci.$asymp-xxxl + 0rem;
 		align-self: center;
+
+		@media print {
+			display: none;
+		}
 	}
 }
