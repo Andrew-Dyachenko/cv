@@ -34,7 +34,7 @@ export default function Aside() {
 			</h3>
 			<div className={styles.stack}>
 				<h3 className={styles.stack__title}>
-					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Stack
+					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Skills
 				</h3>
 				<Tags
 					list={[
