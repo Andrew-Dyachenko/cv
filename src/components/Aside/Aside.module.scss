@@ -96,104 +96,128 @@
 		color: #fff;
 
 		&--html {
-			background-color: color.mix(#e44d27, #f1672b);
+			$-bgc: color.mix(#e44d27, #f1672b);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--css {
-			background-color: color.mix(#1073ba, #24abdd);
+			$-bgc: color.mix(#1073ba, #24abdd);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--javascript_es5-11_ {
-			background-color: #f0be24;
+			$-bgc: #f0be24;
+			background-color: desaturate($-bgc, 0%);
 			// background-color: color.mix(#e4a125, #f0be24);
 			// background-color: #f5dc3d;
 			// color: #2c2e2c;
 		}
 
 		&--typescript {
-			background-color: #2e79c8;
+			$-bgc: #2e79c8;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--react {
-			background-color: #61dafb;
+			$-bgc: #61dafb;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--redux {
-			background-color: #764abc;
+			$-bgc: #764abc;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--next_js {
-			background-color: #171717;
+			$-bgc: #171717;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--emails {
-			background-color: #eb4132;
+			$-bgc: #eb4132;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--sass {
-			background-color: #d0659a;
+			$-bgc: #d0659a;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--bootstrap {
-			background-color: #7531fb;
+			$-bgc: #7531fb;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--bem {
-			background-color: color.mix(#052433, #2ec6f1);
+			$-bgc: color.mix(#052433, #2ec6f1);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--pug {
-			background-color: #a86454;
+			$-bgc: #a86454;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--jest {
-			background-color: color.mix(#3b3738, #c53d16);
+			$-bgc: color.mix(#3b3738, #c53d16);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--enzyme {
-			background-color: #ff5a60;
+			$-bgc: #ff5a60;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--vue {
-			// background-color: color.mix(#31475e, #3fba84);
-			background-color: #3fba84;
+			// $-bgc: color.mix(#31475e, #3fba84);
+			$-bgc: #3fba84;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--jquery {
-			background-color: color.mix(#1d2e3b, #23ace2);
-			// background-color: #1d2e3b;
+			$-bgc: color.mix(#1d2e3b, #23ace2);
+			// $-bgc: #1d2e3b;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--rest {
-			background-color: #002c52;
+			$-bgc: #002c52;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--websocket {
-			background-color: color.mix(#e44b24, #f16427);
+			$-bgc: color.mix(#e44b24, #f16427);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--parcel {
-			background-color: #e6b37c;
+			$-bgc: #e6b37c;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--gulp {
-			background-color: #dc4546;
+			$-bgc: #dc4546;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--grunt {
-			background-color: #fba91a;
+			$-bgc: #fba91a;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--webpack {
-			background-color: color.mix(#1c78c1, #8ed6fa);
+			$-bgc: color.mix(#1c78c1, #8ed6fa);
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--zurb-emails {
-			background-color: #cd7791;
+			$-bgc: #cd7791;
+			background-color: desaturate($-bgc, 0%);
 		}
 
 		&--liquid {
-			background: color.mix(#0f83cd, #fff);
+			$-bgc: color.mix(#0f83cd, #fff);
+			background-color: desaturate($-bgc, 0%);
 		}
 	}
 
