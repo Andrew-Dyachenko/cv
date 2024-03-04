@@ -30,7 +30,9 @@ export default function Aside() {
 				>
 					Frontend developer
 				</abbr>{" "}
-				<small className={styles["aside__occupation-level"]}>(senior)</small>
+				<small className={styles["aside__occupation-level"]}>
+					(middle/middle+)
+				</small>
 			</h3>
 			<div className={styles.stack}>
 				<h3 className={styles.stack__title}>
