@@ -19,9 +19,9 @@ export default function Tags<T extends ClassNames>({
 	const [showAll, setShowAll] = useState(false);
 
 	return (
-		<ul className={className.stack__list}>
+		<div className={className.stack__list}>
 			{list.slice(0, showAll ? list.length : count).map((tag) => (
-				<li
+				<div
 					key={tag}
 					className={clsx(
 						className.stack__item,
@@ -34,7 +34,7 @@ export default function Tags<T extends ClassNames>({
 					)}
 				>
 					{tag}
-				</li>
+				</div>
 			))}
 			<button
 				className={className.stack__toggle}
@@ -43,6 +43,6 @@ export default function Tags<T extends ClassNames>({
 			>
 				{showAll ? "Hide" : "Show all"}
 			</button>
-		</ul>
+		</div>
 	);
 }
