@@ -2,7 +2,9 @@ import Image from "next/image";
 import styles from "./Aside.module.scss";
 import profile from "../../../public/profile.jpg";
 import { FaRegUser } from "react-icons/fa";
-import Accordion from "@/components/Experience";
+// import Accordion from "@/components/Experience";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
+import Tags from "@/components/Tags";
 
 export default function Aside() {
 	return (
@@ -17,7 +19,8 @@ export default function Aside() {
 					alt="Picture of the author"
 				/>
 				<figcaption className={styles.aside__figcaption}>
-					<FaRegUser className={styles["aside__figcaption-icon"]} /> Andrey Dyachenko
+					<FaRegUser className={styles["aside__figcaption-icon"]} /> Andrey
+					Dyachenko
 				</figcaption>
 			</figure>
 			<h3 className={styles.aside__occupation}>
@@ -29,18 +32,41 @@ export default function Aside() {
 				</abbr>{" "}
 				<small className={styles["aside__occupation-level"]}>(senior)</small>
 			</h3>
-			<div className={styles.aside__stack}>
-				<h3 className={styles["aside__stack-title"]}>
-					Stack
+			<div className={styles.stack}>
+				<h3 className={styles.stack__title}>
+					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Stack
 				</h3>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript (ES5+)</li>
-					<li>React</li>
-					<li>Next.js</li>
+				<Tags
+					list={[
+						"HTML",
+						"CSS",
+						"JavaScript (ES5-11)",
+						"TypeScript",
+						"React",
+						"Redux",
+						"Next.js",
+						"Emails",
+						"SASS",
+						"Bootstrap",
+						"BEM",
+						"PUG",
+						"Jest",
+						"Enzyme",
+						"Vue",
+						"jQuery",
+						"REST",
+						"WebSocket",
+						"Parcel",
+						"Gulp",
+						"Grunt",
+						"Webpack",
+						"ZURB-Emails",
+						"Liquid"
 
-				</ul>
+					]}
+					count={7}
+					className={styles}
+				/>
 			</div>
 		</aside>
 	);
