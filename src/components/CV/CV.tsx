@@ -1,4 +1,4 @@
-import styles from "./cv.module.scss";
+import styles from "./CV.module.scss";
 import Aside from "../Aside";
 import Main from "../Main";
 
