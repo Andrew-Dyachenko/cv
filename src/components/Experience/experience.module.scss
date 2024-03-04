@@ -15,12 +15,14 @@
 	}
 
 	&__when {
+		font-family: monospace;
 		grid-area: experience__when;
 		margin: 0;
 		font-size: 0.75em;
 	}
 
 	&__duration {
+		font-family: monospace;
 		grid-area: experience__duration;
 		margin: 0;
 		font-size: 0.75em;

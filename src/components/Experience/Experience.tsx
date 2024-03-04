@@ -61,7 +61,7 @@ export default function Experience() {
 						bsPrefix="_"
 						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
 					>
-						<pre className={styles.experience__when}>
+						<span className={styles.experience__when}>
 							(
 							<time
 								dateTime={getFormattedDateTime({
@@ -79,8 +79,8 @@ export default function Experience() {
 								Present
 							</time>
 							)
-						</pre>
-						<pre className={styles.experience__duration}>1 year 2 months</pre>
+						</span>
+						<span className={styles.experience__duration}>1 year 2 months</span>
 						<span className={styles.experience__position}>Frontend developer</span>
 						<span className={styles.experience__where}>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
 
@@ -112,8 +112,8 @@ export default function Experience() {
 						bsPrefix="_"
 						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
 					>
-						<pre className={styles.experience__when}>(October 2019 - August 2022)</pre>
-						<pre className={styles.experience__duration}>2 years 11 months</pre>
+						<span className={styles.experience__when}>(October 2019 - August 2022)</span>
+						<span className={styles.experience__duration}>2 years 11 months</span>
 						<span className={styles.experience__position}>Frontend developer</span>
 						<span className={styles.experience__where}>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
 
