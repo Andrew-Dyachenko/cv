@@ -1,6 +1,6 @@
 import styles from "./cv.module.scss";
 import Aside from "./Aside";
-import Main from "./Main";
+import Main from "../Main";
 
 export default function CV() {
 	return (
