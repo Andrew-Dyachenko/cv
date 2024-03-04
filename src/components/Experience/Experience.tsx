@@ -28,9 +28,9 @@ import getFormattedDateTime from "@/utils/getFormattedDateTime";
 export default function Experience() {
 	return (
 		<Accordion defaultActiveKey={["0"]} alwaysOpen className={styles.accordion}>
-			<Accordion.Item eventKey="0" bsPrefix=" " className={styles.accordion__item}>
+			<Accordion.Item eventKey="0" bsPrefix="_" className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
 						<span>Frontend developer</span>
 						<span>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
 						<small>
@@ -56,7 +56,7 @@ export default function Experience() {
 				</h3>
 				<Accordion.Collapse
 					eventKey="0"
-					bsPrefix=" "
+					bsPrefix="_"
 					className={styles.accordion__collapse}
 				>
 					<div className={styles.accordion__body}>
@@ -70,9 +70,9 @@ export default function Experience() {
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
-			<Accordion.Item eventKey="1" bsPrefix=" " className={styles.accordion__item}>
+			<Accordion.Item eventKey="1" bsPrefix="_" className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
 						<span>Frontend developer</span>
 						<span>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
 						<small>(October 2019 - August 2022)</small>
@@ -80,7 +80,7 @@ export default function Experience() {
 				</h3>
 				<Accordion.Collapse
 					eventKey="1"
-					bsPrefix=" "
+					bsPrefix="_"
 					className={styles.accordion__collapse}
 				>
 					<div className={styles.accordion__body}>
@@ -94,15 +94,15 @@ export default function Experience() {
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
-			<Accordion.Item eventKey="2" bsPrefix=" " className={styles.accordion__item}>
+			<Accordion.Item eventKey="2" bsPrefix="_" className={styles.accordion__item}>
 				<h3 className={styles.accordion__header}>
-					<Accordion.Button bsPrefix=" " className={styles.accordion__button}>
+					<Accordion.Button bsPrefix="_" className={styles.accordion__button}>
 						Accordion Item #3
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
 					eventKey="2"
-					bsPrefix=" "
+					bsPrefix="_"
 					className={styles.accordion__collapse}
 				>
 					<div className={styles.accordion__body}>
