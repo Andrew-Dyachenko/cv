@@ -46,6 +46,10 @@ abbr {
 	text-decoration-style: dashed;
 	// text-decoration-thickness: 5%;
 	text-decoration-color: rgba(0, 0, 0, 0.5);
+
+	@media print {
+		text-decoration: none;
+	}
 }
 
 // @media (prefers-color-scheme: dark) {
