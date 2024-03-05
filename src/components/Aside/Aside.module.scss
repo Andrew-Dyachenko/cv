@@ -489,13 +489,44 @@
 }
 
 .address {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	font-style: normal;
+
 	&__title {
 		display: flex;
 		align-items: center;
 		font-size: math.div(20, 16) + 0rem;
+		margin: 0;
 
 		&-icon {
 			margin-inline-end: 0.25em;
 		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.25rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&-icon {
+			margin-inline-end: 0.25em;
+		}
+	}
+
+	&__link {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
 	}
 }

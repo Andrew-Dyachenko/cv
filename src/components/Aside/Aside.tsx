@@ -34,9 +34,7 @@ export default function Aside() {
 				</figcaption>
 			</figure>
 			<h3 className={styles.occupation}>
-				<span className={styles.occupation__head}>
-					Frontend developer
-				</span>{" "}
+				<span className={styles.occupation__head}>Frontend developer</span>{" "}
 				<span className={styles.occupation__level}>
 					<abbr
 						className={styles.occupation__abbr}
@@ -116,42 +114,57 @@ export default function Aside() {
 					/>{" "}
 					Contacts
 				</h3>
-				<div
-					className={clsx(styles.address__item, styles["address__item--phone"])}
-				>
-					<a href="tel:+995597746863">
-						<IoPhonePortraitOutline /> +995 597 746 863
-					</a>
-				</div>
-				<div
-					className={clsx(styles.address__item, styles["address__item--email"])}
-				>
-					<a href="mailto:north.inhale@gmail.com">
-						<MdAlternateEmail /> north.inhale@gmail.com
-					</a>
-				</div>
-				<div
-					className={clsx(
-						styles.address__item,
-						styles["address__item--telegram"],
-					)}
-				>
-					<a
-						href="https://t.me/pandamaximus"
-						target="_blank"
-						rel="noopener noreferrer"
+				<ul className={styles.address__list}>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--phone"],
+						)}
 					>
-						<FaTelegramPlane /> Telegram
-					</a>
-				</div>
-				<div
-					className={clsx(
-						styles.address__item,
-						styles["address__item--location"],
-					)}
-				>
-					<IoLocationOutline /> Batumi, Georgia 🇬🇪
-				</div>
+						<a href="tel:+995597746863" className={styles.address__link}>
+							<IoPhonePortraitOutline
+								className={styles["address__item-icon"]}
+							/>{" "}
+							+995 597 746 863
+						</a>
+					</li>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--email"],
+						)}
+					>
+						<a href="mailto:north.inhale@gmail.com" className={styles.address__link}>
+							<MdAlternateEmail className={styles["address__item-icon"]} />{" "}
+							north.inhale@gmail.com
+						</a>
+					</li>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--telegram"],
+						)}
+					>
+						<a
+							href="https://t.me/pandamaximus"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.address__link}
+						>
+							<FaTelegramPlane className={styles["address__item-icon"]} />{" "}
+							Telegram
+						</a>
+					</li>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--location"],
+						)}
+					>
+						<IoLocationOutline className={styles["address__item-icon"]} />{" "}
+						Batumi, Georgia 🇬🇪
+					</li>
+				</ul>
 			</address>
 		</aside>
 	);
