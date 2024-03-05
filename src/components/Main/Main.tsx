@@ -12,8 +12,29 @@ export default function Main() {
 				</h2>
 				<hr />
 				<div className={styles.section__body}>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-					fugiat.
+					Specializes in the development of web applications, including:{" "}
+					<ul>
+						<li>
+							<span>
+								Single-Page Applications <dfn>(SPA)</dfn>
+							</span>
+						</li>
+						<li>
+							<span>
+								Multi-Page Applications <dfn>(MPA)</dfn>
+							</span>
+						</li>
+						<li>
+							<span>
+								Progressive Web Applications <dfn>(PWA)</dfn>
+							</span>
+						</li>
+						<li>Landing Pages</li>
+						<li>NPM Packages</li>
+						<li>Emails</li>
+					</ul>
+					Has the ability to create adaptive, responsive, accessible, valid,
+					stable, cross-browser user interfaces.
 				</div>
 			</section>
 			<section className={styles.section}>
