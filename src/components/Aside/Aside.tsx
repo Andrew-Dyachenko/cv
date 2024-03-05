@@ -24,17 +24,16 @@ export default function Aside() {
 				</figcaption>
 			</figure>
 			<h3 className={styles.aside__occupation}>
-				<abbr
-					className={styles["aside__occupation-abbr"]}
-					title="A specialist who develops the user interface (UI) of web applications. A frontend developer is responsible for how users interact with a website or web application by organizing and displaying content, managing visual presentation, and ensuring usability."
-				>
+				<span className={styles["aside__occupation-head"]}>
 					Frontend developer
-				</abbr>{" "}
-				<small className={styles["aside__occupation-level"]}>
-					(middle/middle+)
-				</small>
+				</span>{" "}
+				<span className={styles["aside__occupation-level"]}>
+					<abbr title="A Middle Frontend developer typically has experience and skills covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7.Performance optimization; 8.Versioning and assembly; 9.Communication and cooperation; 10. Continuous training;">
+						(middle/middle+)
+					</abbr>
+				</span>
 			</h3>
-			<div className={styles.stack}>
+			<section className={styles.stack}>
 				<h3 className={styles.stack__title}>
 					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Skills
 				</h3>
@@ -78,7 +77,7 @@ export default function Aside() {
 					count={7}
 					className={styles}
 				/>
-			</div>
+			</section>
 		</aside>
 	);
 }
