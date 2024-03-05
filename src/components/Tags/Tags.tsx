@@ -19,14 +19,14 @@ export default function Tags<T extends ClassNames>({
 	const [showAll, setShowAll] = useState(false);
 
 	return (
-		<div className={className.stack__list}>
+		<div className={className.skills__list}>
 			{list.slice(0, showAll ? list.length : count).map((tag) => (
 				<div
 					key={tag}
 					className={clsx(
-						className.stack__item,
+						className.skills__item,
 						className[
-							`stack__item--${tag
+							`skills__item--${tag
 								.toLowerCase()
 								.replace(/\s/gim, "")
 								.replace(/[\(\)\.]/gim, "_")}`
@@ -37,7 +37,7 @@ export default function Tags<T extends ClassNames>({
 				</div>
 			))}
 			<button
-				className={className.stack__toggle}
+				className={className.skills__toggle}
 				type="button"
 				onClick={() => setShowAll((prev) => !prev)}
 			>

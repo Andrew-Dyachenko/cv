@@ -33,19 +33,22 @@ export default function Aside() {
 					Dyachenko
 				</figcaption>
 			</figure>
-			<h3 className={styles.aside__occupation}>
-				<span className={styles["aside__occupation-head"]}>
+			<h3 className={styles.occupation}>
+				<span className={styles.occupation__head}>
 					Frontend developer
 				</span>{" "}
-				<span className={styles["aside__occupation-level"]}>
-					<abbr className={styles["aside__occupation-abbr"]} title="A Middle Frontend developer typically has experience and skills covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7.Performance optimization; 8.Versioning and assembly; 9.Communication and cooperation; 10. Continuous training;">
-						(middle/middle+)
+				<span className={styles.occupation__level}>
+					<abbr
+						className={styles.occupation__abbr}
+						title="A Middle Frontend developer typically has experience and skills covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7.Performance optimization; 8.Versioning and assembly; 9.Communication and cooperation; 10. Continuous training;"
+					>
+						(middle / middle+)
 					</abbr>
 				</span>
 			</h3>
-			<section className={styles.stack}>
-				<h3 className={styles.stack__title}>
-					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Skills
+			<section className={clsx(styles.skills, styles.aside__skills)}>
+				<h3 className={styles.skills__title}>
+					<IoExtensionPuzzleOutline className={styles.skills__icon} /> Skills
 				</h3>
 				<Tags
 					list={[
@@ -94,16 +97,15 @@ export default function Aside() {
 				</h3>
 				<ul className={styles.languages__list}>
 					<li className={styles.languages__item}>
-						English -{" "}
-						<span>
-							B2 <dfn>(upper-intermediate)</dfn>
-						</span>
+						English - <dfn>B2</dfn>{" "}
+						<small className={styles.languages__decoding}>
+							{" "}
+							(upper-intermediate)
+						</small>
 					</li>
 					<li className={styles.languages__item}>
-						Russian -{" "}
-						<span>
-							С2 <dfn>(native)</dfn>
-						</span>
+						Russian - <dfn>С2</dfn>{" "}
+						<small className={styles.languages__decoding}> (native)</small>
 					</li>
 				</ul>
 			</section>
