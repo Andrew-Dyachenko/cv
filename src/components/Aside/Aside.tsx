@@ -38,15 +38,15 @@ export default function Aside() {
 				<span className={styles.occupation__level}>
 					<abbr
 						className={styles.occupation__abbr}
-						title="A Middle Frontend developer typically has experience and skills covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7. Performance optimization; 8. Versioning and assembly; 9. Communication and cooperation; 10. Continuous training;"
+						title="A Middle Frontend developer typically has experience and stack covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7. Performance optimization; 8. Versioning and assembly; 9. Communication and cooperation; 10. Continuous training;"
 					>
 						(middle / middle+)
 					</abbr>
 				</span>
 			</h3>
-			<section className={clsx(styles.skills, styles.aside__skills)}>
-				<h3 className={styles.skills__title}>
-					<IoExtensionPuzzleOutline className={styles.skills__icon} /> Skills
+			<section className={clsx(styles.stack, styles.aside__stack)}>
+				<h3 className={styles.stack__title}>
+					<IoExtensionPuzzleOutline className={styles.stack__icon} /> Stack
 				</h3>
 				<Tags
 					list={[
@@ -86,7 +86,8 @@ export default function Aside() {
 						"Photoshop",
 					]}
 					count={7}
-					className={styles}
+					stylesheet={styles}
+					className="stack"
 				/>
 			</section>
 			<section className={styles.languages}>

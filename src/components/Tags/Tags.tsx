@@ -3,30 +3,32 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 
-type ClassNames = {
+type TagsProps = {
 	[key: string]: string;
 };
 
-export default function Tags<T extends ClassNames>({
+export default function Tags<T extends TagsProps>({
 	list = [],
-	className,
+	stylesheet,
+	className = "tags",
 	count = 6,
 }: {
 	list: Array<string>;
-	className: T;
+	stylesheet: T;
+	className: string;
 	count?: number;
 }) {
 	const [showAll, setShowAll] = useState(false);
 
 	return (
-		<div className={className.skills__list}>
+		<div className={stylesheet[`${className}__list`]}>
 			{list.slice(0, showAll ? list.length : count).map((tag) => (
 				<div
 					key={tag}
 					className={clsx(
-						className.skills__item,
-						className[
-							`skills__item--${tag
+						stylesheet[`${className}__item`],
+						stylesheet[
+							`${className}__item--${tag
 								.toLowerCase()
 								.replace(/\s/gim, "")
 								.replace(/[\(\)\.]/gim, "_")}`
@@ -37,7 +39,7 @@ export default function Tags<T extends ClassNames>({
 				</div>
 			))}
 			<button
-				className={className.skills__toggle}
+				className={stylesheet.stack__toggle}
 				type="button"
 				onClick={() => setShowAll((prev) => !prev)}
 			>
