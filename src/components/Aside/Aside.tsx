@@ -3,7 +3,7 @@ import styles from "./Aside.module.scss";
 import profile from "../../../public/profile.jpg";
 import { FaRegUser } from "react-icons/fa";
 // import Accordion from "@/components/Experience";
-import { IoExtensionPuzzleOutline } from "react-icons/io5";
+import { IoExtensionPuzzleOutline, IoLanguage } from "react-icons/io5";
 import Tags from "@/components/Tags";
 
 export default function Aside() {
@@ -77,6 +77,25 @@ export default function Aside() {
 					count={7}
 					className={styles}
 				/>
+			</section>
+			<section className={styles.languages}>
+				<h3 className={styles.languages__title}>
+					<IoLanguage className={styles.languages__icon} /> Languages
+				</h3>
+				<ul className={styles.languages__list}>
+					<li className={styles.languages__item}>
+						English -{" "}
+						<span>
+							B2 <dfn>(upper-intermediate)</dfn>
+						</span>
+					</li>
+					<li className={styles.languages__item}>
+						Russian -{" "}
+						<span>
+							С2 <dfn>(native)</dfn>
+						</span>
+					</li>
+				</ul>
 			</section>
 		</aside>
 	);
