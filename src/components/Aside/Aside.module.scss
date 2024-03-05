@@ -472,4 +472,14 @@
 		margin: 0;
 		row-gap: 0.25rem;
 	}
+.address {
+	&__title {
+		display: flex;
+		align-items: center;
+		font-size: math.div(20, 16) + 0rem;
+
+		&-icon {
+			margin-inline-end: 0.25em;
+		}
+	}
 }

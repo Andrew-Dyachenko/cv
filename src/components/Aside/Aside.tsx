@@ -1,10 +1,20 @@
 import Image from "next/image";
 import styles from "./Aside.module.scss";
 import profile from "../../../public/profile.jpg";
-import { FaRegUser } from "react-icons/fa";
+import { FaRegUser, FaTelegramPlane } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import {
+	MdAlternateEmail,
+	MdOutlineConnectWithoutContact,
+} from "react-icons/md";
 // import Accordion from "@/components/Experience";
-import { IoExtensionPuzzleOutline, IoLanguage } from "react-icons/io5";
+import {
+	IoExtensionPuzzleOutline,
+	IoLanguage,
+	IoPhonePortraitOutline,
+} from "react-icons/io5";
 import Tags from "@/components/Tags";
+import clsx from "clsx";
 
 export default function Aside() {
 	return (
@@ -97,6 +107,50 @@ export default function Aside() {
 					</li>
 				</ul>
 			</section>
+			<address className={styles.address}>
+				<h3 className={styles.address__title}>
+					<MdOutlineConnectWithoutContact
+						className={styles["address__title-icon"]}
+					/>{" "}
+					Contacts
+				</h3>
+				<div
+					className={clsx(styles.address__item, styles["address__item--phone"])}
+				>
+					<a href="tel:+995597746863">
+						<IoPhonePortraitOutline /> +995 597 746 863
+					</a>
+				</div>
+				<div
+					className={clsx(styles.address__item, styles["address__item--email"])}
+				>
+					<a href="mailto:north.inhale@gmail.com">
+						<MdAlternateEmail /> north.inhale@gmail.com
+					</a>
+				</div>
+				<div
+					className={clsx(
+						styles.address__item,
+						styles["address__item--telegram"],
+					)}
+				>
+					<a
+						href="https://t.me/pandamaximus"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaTelegramPlane /> Telegram
+					</a>
+				</div>
+				<div
+					className={clsx(
+						styles.address__item,
+						styles["address__item--location"],
+					)}
+				>
+					<IoLocationOutline /> Batumi, Georgia 🇬🇪
+				</div>
+			</address>
 		</aside>
 	);
 }
