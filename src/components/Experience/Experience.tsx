@@ -9,24 +9,9 @@ import styles from "./Experience.module.scss";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
 import { Sofia_Sans } from "next/font/google";
 import clsx from "clsx";
+
 // import Link from "next/link";
 // import { DateTime } from "luxon";
-
-// function CustomToggle({ children, eventKey }) {
-// 	const decoratedOnClick = useAccordionButton(eventKey, () =>
-// 		console.log("totally custom!"),
-// 	);
-
-// 	return (
-// 		<button
-// 			type="button"
-// 			style={{ backgroundColor: "pink" }}
-// 			onClick={decoratedOnClick}
-// 		>
-// 			{children}
-// 		</button>
-// 	);
-// }
 
 const font = Sofia_Sans({
 	weight: [
@@ -41,7 +26,7 @@ const font = Sofia_Sans({
 		// "900",
 		// "1000",
 	],
-	subsets: ["latin", /*"cyrillic"*/],
+	subsets: ["latin" /*"cyrillic"*/],
 });
 
 export default function Experience() {
@@ -59,7 +44,11 @@ export default function Experience() {
 				<h3 className={accordionStyles.accordion__header}>
 					<Accordion.Button
 						bsPrefix="_"
-						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
 					>
 						<span className={styles.experience__when}>
 							(
@@ -81,9 +70,12 @@ export default function Experience() {
 							)
 						</span>
 						<span className={styles.experience__duration}>1 year 2 months</span>
-						<span className={styles.experience__position}>Frontend developer</span>
-						<span className={styles.experience__where}>Individual Entrepreneur - Batumi, Georgia 🇬🇪</span>
-
+						<span className={styles.experience__position}>
+							Frontend developer
+						</span>
+						<span className={styles.experience__where}>
+							Individual Entrepreneur - Batumi, Georgia 🇬🇪
+						</span>
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
@@ -97,8 +89,6 @@ export default function Experience() {
 						(freelance/contracts).{" "}
 						<abbr title="Non-Disclosure Agreement">NDA</abbr>.
 						<hr className={styles.experience__hr} />
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
@@ -110,13 +100,24 @@ export default function Experience() {
 				<h3 className={accordionStyles.accordion__header}>
 					<Accordion.Button
 						bsPrefix="_"
-						className={clsx(accordionStyles.accordion__button, styles.experience__button, font.className)}
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
 					>
-						<span className={styles.experience__when}>(October 2019 - August 2022)</span>
-						<span className={styles.experience__duration}>2 years 11 months</span>
-						<span className={styles.experience__position}>Frontend developer</span>
-						<span className={styles.experience__where}>LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺</span>
-
+						<span className={styles.experience__when}>
+							(October 2019 - August 2022)
+						</span>
+						<span className={styles.experience__duration}>
+							2 years 11 months
+						</span>
+						<span className={styles.experience__position}>
+							Frontend developer
+						</span>
+						<span className={styles.experience__where}>
+							LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺
+						</span>
 					</Accordion.Button>
 				</h3>
 				<Accordion.Collapse
