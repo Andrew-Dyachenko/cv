@@ -95,6 +95,7 @@
 		background: silver;
 		font-weight: 800;
 		color: #fff;
+		text-shadow: 0 math.div(1, 16) + 0em math.div(1, 16) + 0em rgba(0, 0, 0, fibonacci.$asymp-xl);
 
 		@media print {
 			padding: 0;
@@ -103,178 +104,313 @@
 		&--html {
 			$-bgc: color.mix(#e44d27, #f1672b);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--css {
 			$-bgc: color.mix(#1073ba, #24abdd);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--javascript_es5-11_ {
-			$-bgc: #f0be24;
+			$-bgc: #f5dc3d;
 			background-color: desaturate($-bgc, 0%);
 			// background-color: color.mix(#e4a125, #f0be24);
 			// background-color: #f5dc3d;
 			// color: #2c2e2c;
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--typescript {
 			$-bgc: #2e79c8;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--react {
 			$-bgc: #61dafb;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--redux {
 			$-bgc: #764abc;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--next_js {
 			$-bgc: #171717;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--emails {
 			$-bgc: #eb4132;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--sass {
 			$-bgc: #d0659a;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--bootstrap {
 			$-bgc: #7531fb;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--bem {
 			$-bgc: color.mix(#052433, #2ec6f1);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--pug {
 			$-bgc: #a86454;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--jest {
 			$-bgc: color.mix(#3b3738, #c53d16);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--enzyme {
 			$-bgc: #ff5a60;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--svg {
 			$-bgc: #ff9900;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--canvas {
 			$-bgc: color.mix(#9bdd11, #c2f850);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--vue {
 			// $-bgc: color.mix(#31475e, #3fba84);
 			$-bgc: #3fba84;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--jquery {
 			$-bgc: color.mix(#1d2e3b, #23ace2);
 			// $-bgc: #1d2e3b;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--rest {
 			// $-bgc: #002c52;
 			$-bgc: #008080;
-
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--websocket {
 			$-bgc: color.mix(#e44b24, #f16427);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--parcel {
 			$-bgc: #e6b37c;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--gulp {
 			$-bgc: #dc4546;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--grunt {
 			$-bgc: #fba91a;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--webpack {
 			$-bgc: color.mix(#1c78c1, #8ed6fa);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--zurb-emails {
 			$-bgc: #cd7791;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--liquid {
 			$-bgc: color.mix(#0f83cd, #fff);
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--git {
 			$-bgc: #f05032;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--w3c {
 			$-bgc: #005a9c;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--a11y {
 			$-bgc: #007bff;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--figma {
 			$-bgc: #2ec4b6;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--zeplin {
 			$-bgc: #fd7c00;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--photoshop {
 			$-bgc: #001e3d;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--npm {
 			$-bgc: #cb3837;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 
 		&--node_js {
 			$-bgc: #8cc84b;
 			background-color: desaturate($-bgc, 0%);
+
+			@media print {
+				color: $-bgc;
+			}
 		}
 	}
 
