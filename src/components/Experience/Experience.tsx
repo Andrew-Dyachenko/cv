@@ -92,11 +92,11 @@ export default function Experience() {
 					className={accordionStyles.accordion__collapse}
 				>
 					<div className={accordionStyles.accordion__body}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						Providing services for the development of web applications, sites,
+						packages and email as an individual entrepreneur
+						(freelance/contracts).{" "}
+						<abbr title="Non-Disclosure Agreement">NDA</abbr>.
+						<hr className={styles.experience__hr} />
 						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 						culpa qui officia deserunt mollit anim id est laborum.
 					</div>
