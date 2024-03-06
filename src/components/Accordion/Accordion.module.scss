@@ -147,6 +147,18 @@
 
 	&__body {
 		padding: 1rem 0 0;
+
+		> * {
+			&:not(script, style) {
+				&:first-child {
+					margin-block-start: 0;
+				}
+
+				&:last-child {
+					margin-block-end: 0;
+				}
+			}
+		}
 	}
 
 	&__collapse {

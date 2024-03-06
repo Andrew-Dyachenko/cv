@@ -34,7 +34,7 @@ export default function Main() {
 						<li>Emails</li>
 					</ul>
 					Has the ability to create adaptive, responsive, accessible, valid,
-					stable, cross-browser user interfaces.
+					stable, cross-browser, pixel-perfect, themed user interfaces.
 				</div>
 			</section>
 			<section className={styles.section}>

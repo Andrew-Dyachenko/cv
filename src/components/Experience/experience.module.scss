@@ -40,9 +40,56 @@
 		font-weight: 300;
 	}
 
-	&__hr {
-		width: fibonacci.$asymp-xxxl-percentage;
-		margin-block: 1rem 0;
-		margin-inline: 0;
-	}
+	// &__hr {
+	// 	width: fibonacci.$asymp-xxxl-percentage;
+	// 	margin-block: 1rem 0;
+	// 	margin-inline: 0;
+	// }
+
+	// &__link {
+	// 	$-link: &;
+	// 	display: inline-flex;
+	// 	align-items: center;
+
+	// 	&--responsebilities {
+	// 		color: inherit;
+	// 	}
+
+	// 	&--external {
+	// 		#{$-link} {
+	// 			&-icon {
+	// 				font-size: math.div(12, 16) + 0em;
+
+	// 				&:not(:first-child) {
+	// 					margin-inline-start: math.div(4, 12) + 0em;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	&-icon {
+	// 		&--responsebilities {
+	// 			font-size: math.div(12, 16) + 0em;
+	// 			margin-inline-start: math.div(4, 12) + 0em;
+	// 		}
+	// 	}
+	// }
+
+	// &__dd {
+	// 	margin-inline-start: 1rem;
+	// }
+
+	// &__strong {
+	// 	font-weight: 600;
+	// }
+
+	// &__ul {
+	// 	&:first-child {
+	// 		margin-block-start: 0;
+	// 	}
+
+	// 	&:last-child {
+	// 		margin-block-end: 0;
+	// 	}
+	// }
 }

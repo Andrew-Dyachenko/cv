@@ -7,6 +7,7 @@ import accordionStyles from "@/components/Accordion/Accordion.module.scss";
 import styles from "./Experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Sofia_Sans } from "next/font/google";
 import clsx from "clsx";
 
@@ -32,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["0"]}
+			defaultActiveKey={["1"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -88,7 +89,7 @@ export default function Experience() {
 						packages and email as an individual entrepreneur
 						(freelance/contracts).{" "}
 						<abbr title="Non-Disclosure Agreement">NDA</abbr>.
-						<hr className={styles.experience__hr} />
+						<hr style={{ width: "61.803398875%", margin: 0 }} />
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
@@ -126,13 +127,300 @@ export default function Experience() {
 					className={accordionStyles.accordion__collapse}
 				>
 					<div className={accordionStyles.accordion__body}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
+						<p>Worked on the following projects:</p>
+						<ol>
+							<li>
+								<a
+									href="https://www.zfx.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									style={{ display: "inline-flex", alignItems: "center" }}
+								>
+									<span>zfx.com</span>{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>{" "}
+								- Broker aggregator website.
+							</li>
+							<li>
+								<a
+									href="https://my.zfx.com/login"
+									target="_blank"
+									rel="noopener noreferrer"
+									style={{ display: "inline-flex", alignItems: "center" }}
+								>
+									<span>my.zfx.com</span>{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>{" "}
+								- CRM portal for servicing the broker leads.
+							</li>
+							<li>
+								<a
+									href="https://its-nu.vercel.app/"
+									// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
+									target="_blank"
+									style={{ display: "inline-flex", alignItems: "center" }}
+								>
+									<span>its-nu.vercel.app</span>{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>{" "}
+								- Representative website of the contracting company{" "}
+								<dfn>LLC ITSOLUTIONS</dfn>.
+							</li>
+						</ol>
+						<h4>Responsebilities:</h4>
+						<dl style={{ paddingInlineStart: 0 }}>
+							{/* ZFX.COM */}
+							<dt>
+								<a
+									href="https://www.zfx.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									style={{
+										display: "inline-flex",
+										alignItems: "center",
+										color: "inherit",
+									}}
+								>
+									zfx.com{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</dt>
+							{/* MY.ZFX.COM */}
+							<dd
+								style={{
+									margin: 0,
+									paddingInlineStart: "1rem",
+									paddingBlock: "1rem",
+								}}
+							>
+								<ul style={{ margin: 0 }}>
+									<li>
+										Start the project from a scratch for (
+										<strong>WordPress</strong>).
+									</li>
+									<li>
+										Create adaptive, pixel-perfect layout of the pages using (
+										<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+										<strong>PUG</strong>, <strong>SASS</strong>).
+									</li>
+									<li>
+										Deep integration and customization of (
+										<strong>Bootstrap</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v4</code>).
+									</li>
+									<li>
+										Writing business logic using (<strong>JavaScript</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>^ES6</code>,{" "}
+										<strong>jQuery</strong>).
+									</li>
+									<li>
+										Create (<strong>React</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v16-17</code>) page
+										applications.
+									</li>
+									<li>
+										Support and implementation of (<strong>Vue</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v2</code>) applications
+										on pages.
+									</li>
+									<li>
+										Setting up data reception using (<strong>REST API</strong>,
+										WebSocket).
+									</li>
+									<li>
+										Cross-browser support down to{" "}
+										<strong>Internet Explorer</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v10</code>
+									</li>
+									<li>Multilingual feature support.</li>
+									<li>
+										Support for bidirectional content (<strong>RTL</strong>,{" "}
+										<strong>LTR</strong>).
+									</li>
+									<li>
+										Configuring the assembly using (<strong>Parcel</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v1-2</code>,{" "}
+										<strong>Node.js</strong>).
+									</li>
+									<li>
+										Writing documentation (<strong>Markdown</strong>,{" "}
+										<strong>JSDoc</strong>).
+									</li>
+									<li>
+										Searching for solutions to establish the interaction of
+										imperative and declarative technologies on one page, such as
+										(<strong>WYSIWYG</strong>, <strong>React</strong>,{" "}
+										<strong>jQuery</strong>, <strong>Vue</strong>).
+									</li>
+									<li>
+										Optimizing site application using (
+										<strong>
+											Google Lighthouse{" "}
+											<small>
+												<i>(Core Web Vitals)</i>
+											</small>
+										</strong>
+										, <strong>W3C HTML Validator</strong>) and other linters.
+									</li>
+									<li>
+										Communication with team members and business customers
+										through instant messengers and online audio-video meetings
+										in two languages (<strong>English</strong>,{" "}
+										<strong>Russian</strong>).
+									</li>
+									{/* <li>
+										Continuous self-training using (<strong>Paper books</strong>
+										)
+									</li> */}
+								</ul>
+							</dd>
+							<dt>
+								<a
+									href="https://my.zfx.com/login"
+									target="_blank"
+									rel="noopener noreferrer"
+									style={{
+										display: "inline-flex",
+										alignItems: "center",
+										color: "inherit",
+									}}
+								>
+									my.zfx.com{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</dt>
+							<dd
+								style={{
+									margin: 0,
+									paddingInlineStart: "1rem",
+									paddingBlock: "1rem",
+								}}
+							>
+								<ul style={{ margin: 0 }}>
+									<li>
+										Support and improve the legacy app (<strong>Vue</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v2-3</code>).
+									</li>
+									<li>
+										Adding languages to the multi-language switcher using (
+										<strong>Vue</strong>) i18n library (<strong>Inter</strong>).
+									</li>
+									<li>
+										Refactoring pages to support bi-directional content (
+										<strong>LTR</strong>, <strong>RTL</strong>) to include
+										Arabic language.
+									</li>
+									<li>
+										Setting up data reception using (<strong>REST API</strong>,{" "}
+										<strong>WebSocket</strong>).
+									</li>
+									<li>
+										Communication with team members and business customers
+										through instant messengers and online audio-video meetings
+										in two languages (<strong>English</strong>,{" "}
+										<strong>Russian</strong>).
+									</li>
+								</ul>
+							</dd>
+							{/* ITSOLUTIONS APP */}
+							<dt>
+								<a
+									href="https://its-nu.vercel.app/"
+									// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
+									target="_blank"
+									style={{
+										display: "inline-flex",
+										alignItems: "center",
+										color: "inherit",
+									}}
+								>
+									its-nu.vercel.app{" "}
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</dt>
+							<dd
+								style={{
+									margin: 0,
+									paddingInlineStart: "1rem",
+									paddingBlock: "1rem",
+								}}
+							>
+								<ul style={{ margin: 0 }}>
+									<li>
+										Start the project from a scratch using (
+										<strong>Next.js</strong>{" "}
+										<code style={{ fontSize: "0.75em" }}>v12</code>).
+									</li>
+									<li>
+										Create adaptive, pixel-perfect layout of the app using (
+										<strong>JSX</strong>, <strong>SASS</strong>).
+									</li>
+									<li>
+										Cross-browser support down to <strong>2019</strong>.
+									</li>
+									<li>
+										Multilingual feature support using (
+										<strong>next-i18</strong>).
+									</li>
+									<li>
+										Support for bidirectional content (<strong>RTL</strong>,{" "}
+										<strong>LTR</strong>).
+									</li>
+									<li>
+										Backend setup of a feedback form using (
+										<strong>Next.js API</strong>)
+									</li>
+									<li>
+										Create layout of an adaptive, themed (
+										<span style={{ fontWeight: 800 }}>dark</span> <small style={{fontSize: "0.75em", verticalAlign: "middle"}}>|</small>{" "}
+										<span style={{ fontWeight: 300 }}>light</span>), fillable
+										Email for the feedback form using the framework (
+										<strong>ZURB</strong>)
+									</li>
+									<li>
+										Optimizing site application using (
+										<strong>
+											Google Lighthouse{" "}
+											<small>
+												<i>(Core Web Vitals)</i>
+											</small>
+										</strong>
+										, <strong>W3C HTML Validator</strong>) and other linters.
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<hr style={{ width: "61.803398875%", margin: 0 }} />
 					</div>
 				</Accordion.Collapse>
 			</Accordion.Item>
