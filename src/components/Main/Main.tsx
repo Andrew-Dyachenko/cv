@@ -10,7 +10,7 @@ export default function Main() {
 				<h2 className={styles.section__title}>
 					<BsCalculator className={styles["section__title-icon"]} /> Summary
 				</h2>
-				<hr />
+				<hr className={styles.section__hr} />
 				<div className={styles.section__body}>
 					Specializes in the development of web applications, including:{" "}
 					<ul>
@@ -42,7 +42,7 @@ export default function Main() {
 					<AiTwotoneExperiment className={styles["section__title-icon"]} /> Work
 					experience
 				</h2>
-				<hr />
+				<hr className={styles.section__hr} />
 				<div className={styles.section__body}>
 					<Experience />
 				</div>
