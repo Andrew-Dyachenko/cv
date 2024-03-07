@@ -14,7 +14,7 @@
 		top: 0;
 		bottom: 0;
 		background-color: black;
-		width: 0.125rem;
+		border: 0.0625rem solid #000;
 		border-radius: 9999rem;
 	}
 
@@ -63,17 +63,18 @@
 					&::before {
 						content: "";
 						position: absolute;
-						width: math.div(2, 16) + 0rem;
+						border-width: 0 0.25rem 0;
+						border-color: #fff #fff;
+						border-style: solid;
 						height: 50%;
 						top: 0;
-						background-color: #fff;
 
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 1rem);
+							right: calc(100% + 0.875rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 1rem);
+							left: calc(100% + 0.875rem);
 						}
 					}
 				}
@@ -86,17 +87,18 @@
 					&::before {
 						content: "";
 						position: absolute;
-						width: math.div(2, 16) + 0rem;
+						border-width: 0 0.25rem 0;
+						border-color: #fff #fff;
+						border-style: solid;
 						height: 50%;
 						bottom: 0;
-						background-color: #fff;
 
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 1rem);
+							right: calc(100% + 0.875rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 1rem);
+							left: calc(100% + 0.875rem);
 						}
 					}
 				}
@@ -105,17 +107,18 @@
 					&::before {
 						content: "";
 						position: absolute;
-						width: math.div(2, 16) + 0rem;
+						border-width: 0 0.25rem 0;
+						border-color: #fff #fff;
+						border-style: solid;
 						height: 100%;
 						bottom: 0;
-						background-color: #fff;
 
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 1rem);
+							right: calc(100% + 0.875rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 1rem);
+							left: calc(100% + 0.875rem);
 						}
 					}
 				}
