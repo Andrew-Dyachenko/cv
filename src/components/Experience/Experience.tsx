@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["2"]}
+			defaultActiveKey={["1"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -527,11 +527,393 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							Providing services for the development of web applications, sites,
-							packages and email as an individual entrepreneur
-							(freelance/contracts).{" "}
-							<abbr title="Non-Disclosure Agreement">NDA</abbr>.
-							{/* <hr style={{ width: "61.803398875%", marginInline: 0, marginBlock: "1rem 0" }} /> */}
+							Ensuring WEB interests of the company in the field of TV and
+							Internet broadcasting. - development of a free NPM package React
+							Range Gallery for the needs of internal projects.
+							https://andrew-dyachenko.github.io/react-range-gallery/ using CSS
+							GRID, Flexbox, React, Redux. assembly with CRA - creating a
+							landing page for the project Money or Shame (Final)
+							https://dip.tnt4.ru/ using CSS GRID, Flexbox, JS (ES5,6), building
+							with custom gulp - layout of adaptive, thematic E-mail
+							newsletters, on the ZURB Emails (SASS) assembler platform -
+							development in JS (ES5,6) of a minimalistic tracker module for
+							collecting and sending analytical data from user pages from
+							scratch on the Parcel JS platform Widgets, forms based on React: -
+							registration of participants in the children contest of the TV
+							presenter https://superkanal.ru/casting-test - superchannel
+							settings: https://superkanal.ru/nastroi_super - search for
+							cameramen by city: https://tnt4.ru/nastroi_tnt4 - support and
+							modification of existing company projects, such as
+							https://tnt4.ru/, https://superkanal.ru/ using CSS, JS, HTML
+							Stack: JS (ES5,6), React, Redux, HTML5, CSS3, CRA, Gulp, Jira,
+							Slack, Gitlab, Git, BEM.
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* URRAA & FRESHBROCCOLI */}
+			<Accordion.Item
+				eventKey="3"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2016,
+									month: 10,
+									day: 24,
+									timezoneOffset: 60 * 3,
+								})}
+							>
+								October 2016
+							</time>{" "}
+							-{" "}
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2017,
+									month: 10,
+									day: 27,
+									timezoneOffset: 60 * 3,
+								})}
+							>
+								October 2017
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work at UURRAA & Freshbroccoli company is
+							</span>{" "}
+							1 year
+						</span>
+						<span className={styles.experience__position}>
+							Frontend developer
+						</span>
+						<span className={styles.experience__where}>
+							UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="3"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							Wholesale distributor of consumer goods. Led 2 projects. 1)
+							Development and support of the main web service of the company
+							https://urraa.ru/, an online store for wholesale clothing. -
+							development of new pages based on Bitrix using JS (ES5) - layout
+							using CSS3, HTML5, jQuery, Bootstrap 4 2) Development and support
+							of a subsidiary project of the company https://freshbroccoli.ru/,
+							online store for retail sales of quality food products. -
+							development of new pages based on Bitrix using JS (ES5) - layout
+							using CSS3, HTML5, jQuery, Bootstrap 4 - regular layout of
+							adaptive, thematic E-mail newsletters on the ZURB Emails (SASS)
+							collector platform - development and implementation of interesting
+							widgets based on Canvas
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* MAGORA SYSTEMS*/}
+			<Accordion.Item
+				eventKey="4"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2015,
+									month: 1,
+									day: 10,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								January 2015
+							</time>{" "}
+							-{" "}
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2015,
+									month: 7,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								July 2015
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work at Magora Systems company is
+							</span>{" "}
+							7 months
+						</span>
+						<span className={styles.experience__position}>
+							Frontend developer
+						</span>
+						<span className={styles.experience__where}>
+							Magora Systems - Novosibirsk, Russia 🇷🇺
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="4"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							Work on large foreign outsourcing projects. Led 3 projects. 1)
+							Development of a web-platform for an elite taxi in London, focused
+							on Arab clients. - writing frontend in JS (ES5) and Bootstrap 3 -
+							layout on jQuery, HTML5, CSS3 - active work with the Hightcharts
+							library to build sections of financial and other reporting, for
+							example, line and share charts 2) Development of an Indian dating
+							social network like Badoo, a web platform. - writing frontend in
+							JS (ES5) and FlatUI - layout on jQuery, HTML5, CSS3 3) A web-based
+							music platform like SoundCloud. - writing frontend in JS (ES5) and
+							Bootstrap 3 - layout on jQuery, HTML5, CSS3 - layout of E-mail
+							newsletters All projects supported IE10+, pixel perfect layout.
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* BTI Pro */}
+			<Accordion.Item
+				eventKey="5"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2014,
+									month: 7,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								July 2014
+							</time>{" "}
+							-{" "}
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2014,
+									month: 12,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								December 2014
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work at BTI Pro company is
+							</span>{" "}
+							6 months
+						</span>
+						<span className={styles.experience__position}>
+							Frontend developer
+						</span>
+						<span className={styles.experience__where}>
+							BTI Pro - Novosibirsk, Russia 🇷🇺
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="5"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							The company is focused on the real estate market. I participated
+							in the development of two start-up projects. My responsibilities
+							included site layout and front-end programming. I got invaluable
+							experience in start-up projects start and honest my first
+							experience in working with language Javascript.
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* Omega Design*/}
+			<Accordion.Item
+				eventKey="6"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2013,
+									month: 8,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								August 2013
+							</time>{" "}
+							-{" "}
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2014,
+									month: 5,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								May 2014
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work at Omega Design company is
+							</span>{" "}
+							10 months
+						</span>
+						<span className={styles.experience__position}>HTML developer</span>
+						<span className={styles.experience__where}>
+							Omega Design - Krasnoyarsk, Russia 🇷🇺
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="6"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							A small outsourcing company, participated in the development and
+							development of project projects for regional and federal
+							customers. From online stores of children things to analogues
+							Avito. Some projects were taken from scratch, but most were
+							Legacy, so the main task was mainly to edit and maintain the code.
+							- work with WordPress, Joomla, Droopal platforms - interaction
+							with the backend part of sites written in PHP (Yii) - MPA layout
+							on CSS3, jQuery, HTML5 Stack: CSS3, jQuery, HTML5, WordPress,
+							Joomla, Droopal, PHP, Yii, Redmine
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* Alfateam */}
+			<Accordion.Item
+				eventKey="7"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2012,
+									month: 12,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								December 2012
+							</time>{" "}
+							-{" "}
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2013,
+									month: 8,
+									day: 1,
+									timezoneOffset: 60 * 7,
+								})}
+							>
+								August 2013
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work at Alfateam company is
+							</span>{" "}
+							9 months
+						</span>
+						<span className={styles.experience__position}>HTML developer</span>
+						<span className={styles.experience__where}>
+							Alfateam - Krasnoyarsk, Russia 🇷🇺
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="7"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							<p>
+								Created online clothing stores on the Bitrix system.
+								Collectively led and completed at least 5 projects.
+							</p>
+							<p>
+								- layout of sites on the Bitrix system - support for older
+								browsers (IE7, IE8, IE9, IE10, IE11) - work with markup and
+								style sheets in HTML and CSS
+							</p>
 						</div>
 					</Accordion.Collapse>
 				</div>
