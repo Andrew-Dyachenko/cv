@@ -4,7 +4,7 @@
 import { Accordion } from "react-bootstrap";
 // import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import accordionStyles from "@/components/Accordion/Accordion.module.scss";
-import styles from "./Experience.module.scss";
+import styles from "./experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
 import { FaExternalLinkAlt } from "react-icons/fa";

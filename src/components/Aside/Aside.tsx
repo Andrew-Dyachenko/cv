@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Aside.module.scss";
+import styles from "./aside.module.scss";
 import profile from "../../../public/profile.jpg";
 import { FaRegUser, FaTelegramPlane } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";

@@ -5,7 +5,7 @@ import React, {
 	ReactNode,
 	ReactElement,
 } from "react";
-import "./Accordion.module.scss";
+import "./accordion.module.scss";
 
 interface AccordionProps {
 	className?: string;
