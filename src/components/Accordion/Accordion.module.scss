@@ -1,13 +1,14 @@
 @use "sass:math";
 @use "../../styles/conf";
+@use "../../styles/conf/fibonacci";
 
 .accordion {
+	$-accordion: &;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	row-gap: 1rem;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	// row-gap: 1rem;
+	// padding-block: 0.5rem;
 
 	&::before {
 		content: "";
@@ -37,27 +38,59 @@
 	}
 
 	&__item {
+		// $-item: &;
 		display: flex;
 		flex-direction: column;
+		// padding-block: 1rem;
 		// row-gap: 1rem;
 
 		// color: var(--accordion-color);
 		// border: var(--accordion-border-width) solid var(--accordion-border-color);
 
-		&:first-of-type {
-			border-top-left-radius: 0.25rem;
-			border-top-right-radius: 0.25rem;
+		&:not(:first-of-type) {
+			padding-block-start: 1rem;
+		}
 
-			> .accordion-header .accordion-button {
-				border-top-left-radius: 0.25rem;
-				border-top-right-radius: 0.25rem;
+		&:not(:last-of-type) {
+			position: relative;
+			padding-block-end: 1rem;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				border: 1px solid #000;
+				border-width: 0 0 math.div(1, 16) + 0rem;
+				width: fibonacci.$asymp-xxxl-percentage;
 			}
 		}
 
-		&:last-of-type {
-			border-bottom-right-radius: 0.25rem;
-			border-bottom-left-radius: 0.25rem;
+		&:first-of-type {
+			#{$-accordion} {
+				&__button {
+					&::before {
+						content: "";
+						position: absolute;
+						right: 100%;
+						width: math.div(2, 16) + 0rem;
+					}
+				}
+			}
+			// border-top-left-radius: 0.25rem;
+			// border-top-right-radius: 0.25rem;
+			// padding-block-start: 0;
+
+			// > .accordion-header .accordion-button {
+			// 	border-top-left-radius: 0.25rem;
+			// 	border-top-right-radius: 0.25rem;
+			// }
 		}
+
+		// &:last-of-type {
+		// 	border-bottom-right-radius: 0.25rem;
+		// 	border-bottom-left-radius: 0.25rem;
+		// 	padding-block-end: 0;
+		// }
 	}
 
 	&__header {
@@ -97,7 +130,7 @@
 		// 	transition: var(--accordion-btn-icon-transition);
 		// }
 
-		&::before {
+		&::after {
 			content: "";
 			position: absolute;
 			top: 50%;
@@ -105,12 +138,12 @@
 			height: 0.5rem;
 			background-color: white;
 			border-radius: 50%;
-			box-shadow: 0 0 0 math.div(2, 16) + 0rem #fff;
-			border: 1px solid #000;
+			box-shadow: 0 0 0 math.div(2, 16) + 0rem #fff, inset 0 0 0 0 + 0rem #000;
+			border: math.div(1, 16) + 0rem solid #000;
 			transform: translate(50%, -50%);
 
 			@media (prefers-reduced-motion: no-preference) {
-				transition-property: background-color;
+				transition-property: box-shadow;
 				transition-duration: conf.$transition-duration;
 				transition-timing-function: conf.$transition-timing-function;
 			}
@@ -130,9 +163,9 @@
 			// background-color: var(--accordion-active-bg);
 			// box-shadow: inset 0 calc(-1 * var(--accordion-border-width)) 0 var(--accordion-border-color);
 
-			&::before {
-				background-color: black;
-				box-shadow: 0 0 0 math.div(2, 16) + 0rem #fff;
+			&::after {
+				// background-color: black;
+				box-shadow: 0 0 0 math.div(2, 16) + 0rem #fff, inset 0 0 0 math.div(4, 16) + 0rem #000;
 				// background-image: var(--accordion-btn-active-icon);
 				// transform: var(--accordion-btn-icon-transform);
 			}
