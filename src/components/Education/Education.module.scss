@@ -1,0 +1,11 @@
+.education {
+	&__title {
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		&-icon {
+			margin-inline-end: 0.25em;
+		}
+	}
+}

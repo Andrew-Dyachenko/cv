@@ -15,6 +15,7 @@ import {
 } from "react-icons/io5";
 import Tags from "@/components/Tags";
 import clsx from "clsx";
+import Education from "@/components/Education";
 
 export default function Aside() {
 	return (
@@ -108,6 +109,7 @@ export default function Aside() {
 					</li>
 				</ul>
 			</section>
+			<Education />
 			<address className={styles.address}>
 				<h3 className={styles.address__title}>
 					<MdOutlineConnectWithoutContact
