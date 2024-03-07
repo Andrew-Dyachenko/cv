@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "./directionToggle.module.scss";
+import styles from "@/components/DirectionToggle/directionToggle.module.scss";
 
 const DirectionToggle = () => {
 	const [direction, setDirection] = useState("ltr");
