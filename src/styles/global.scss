@@ -45,7 +45,6 @@ abbr {
 	cursor: help;
 	text-underline-offset: 0.1em;
 	text-decoration-style: dashed;
-	// text-decoration-thickness: 5%;
 	text-decoration-color: rgba(0, 0, 0, 0.5);
 
 	@media print {
@@ -57,7 +56,9 @@ dfn {
 	font-style: normal;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
 	padding-inline: 1rem 0;
 }
 
@@ -73,9 +74,6 @@ ul, ol, dl {
 	white-space: nowrap;
 	border: 0;
 }
-
-// @media (prefers-color-scheme: dark) {
-// }
 
 // Accordion styles - START
 .collapse {
