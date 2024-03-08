@@ -66,12 +66,6 @@
 		font-size: 0.75em;
 		font-weight: 400;
 	}
-
-	// &__abbr {
-	// 	@media print {
-	// 		text-decoration: none;
-	// 	}
-	// }
 }
 
 .stack {
@@ -457,23 +451,12 @@
 		flex-wrap: wrap;
 		align-items: center;
 		white-space: pre;
-
-		// &::before {
-		// 	content: "";
-		// 	display: inline-flex;
-		// 	width: math.div(6, 16) + 0em;
-		// 	height: math.div(6, 16) + 0em;
-		// 	border-radius: 50%;
-		// 	background-color: #000;
-		// 	margin-inline-end: .5em;
-		// }
 	}
 
 	&__list {
 		display: flex;
 		flex-direction: column;
 		list-style: none;
-		// list-style-position: inside;
 		padding: 0;
 		margin: 0;
 		row-gap: 0.25rem;
