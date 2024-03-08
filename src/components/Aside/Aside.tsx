@@ -1,16 +1,17 @@
 import Image from "next/image";
 import styles from "@/components/Aside/aside.module.scss";
 import profile from "../../../public/profile.jpg";
-import { FaRegUser, FaTelegramPlane } from "react-icons/fa";
+import { FaRegUser, FaTelegramPlane, FaGithub } from "react-icons/fa";
 import {
 	MdAlternateEmail,
 	MdOutlineConnectWithoutContact,
 } from "react-icons/md";
+import { CiLinkedin } from "react-icons/ci";
 import {
 	IoExtensionPuzzleOutline,
 	IoLanguage,
 	IoPhonePortraitOutline,
-	IoLocationOutline
+	IoLocationOutline,
 } from "react-icons/io5";
 import Tags from "@/components/Tags";
 import clsx from "clsx";
@@ -155,6 +156,36 @@ export default function Aside() {
 						>
 							<FaTelegramPlane className={styles["address__item-icon"]} />{" "}
 							Telegram
+						</a>
+					</li>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--linkdin"],
+						)}
+					>
+						<a
+							href="https://www.linkedin.com/in/andrey-dyachenko/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.address__link}
+						>
+							<CiLinkedin className={styles["address__item-icon"]} /> LinkdIn
+						</a>
+					</li>
+					<li
+						className={clsx(
+							styles.address__item,
+							styles["address__item--github"],
+						)}
+					>
+						<a
+							href="https://github.com/Andrew-Dyachenko"
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.address__link}
+						>
+							<FaGithub className={styles["address__item-icon"]} /> GitHub
 						</a>
 					</li>
 					<li
