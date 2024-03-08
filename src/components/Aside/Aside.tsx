@@ -110,12 +110,12 @@ export default function Aside() {
 			</section>
 			<Education />
 			<address className={styles.address}>
-				<h3 className={styles.address__title}>
+				<div className={styles.address__title}>
 					<MdOutlineConnectWithoutContact
 						className={styles["address__title-icon"]}
 					/>{" "}
 					Contacts
-				</h3>
+				</div>
 				<ul className={styles.address__list}>
 					<li
 						className={clsx(
