@@ -1,4 +1,4 @@
-import styles from "@/components/Education/education.module.scss";
+import styles from "./education.module.scss";
 import { IoSchoolOutline } from "react-icons/io5";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
 

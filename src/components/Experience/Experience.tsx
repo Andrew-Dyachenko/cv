@@ -3,8 +3,8 @@
 // import { useId } from "react";
 import { Accordion } from "react-bootstrap";
 // import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import accordionStyles from "@/components/Accordion/accordion.module.scss";
-import styles from "@/components/Experience/experience.module.scss";
+import accordionStyles from "../Accordion/accordion.module.scss";
+import styles from "./experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "@/utils/getFormattedDateTime";
 import { FaExternalLinkAlt } from "react-icons/fa";

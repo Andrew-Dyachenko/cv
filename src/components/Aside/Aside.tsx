@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "@/components/Aside/aside.module.scss";
+import styles from "./aside.module.scss";
 import profile from "../../../public/profile.jpg";
 import { FaRegUser, FaTelegramPlane, FaGithub } from "react-icons/fa";
 import {

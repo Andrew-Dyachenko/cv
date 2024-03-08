@@ -1,4 +1,4 @@
-import styles from "@/components/CV/cv.module.scss";
+import styles from "./cv.module.scss";
 import Aside from "../Aside";
 import Main from "../Main";
 
