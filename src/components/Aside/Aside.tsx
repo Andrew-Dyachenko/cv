@@ -2,16 +2,15 @@ import Image from "next/image";
 import styles from "@/components/Aside/aside.module.scss";
 import profile from "../../../public/profile.jpg";
 import { FaRegUser, FaTelegramPlane } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
 import {
 	MdAlternateEmail,
 	MdOutlineConnectWithoutContact,
 } from "react-icons/md";
-// import Accordion from "@/components/Experience";
 import {
 	IoExtensionPuzzleOutline,
 	IoLanguage,
 	IoPhonePortraitOutline,
+	IoLocationOutline
 } from "react-icons/io5";
 import Tags from "@/components/Tags";
 import clsx from "clsx";
