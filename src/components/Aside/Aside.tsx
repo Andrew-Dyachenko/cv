@@ -35,7 +35,7 @@ export default function Aside() {
 				</figcaption>
 			</figure>
 			<h3 className={styles.occupation}>
-				<span className={styles.occupation__head}>Frontend developer</span>{" "}
+				<span className={styles.occupation__title}>Frontend developer</span>{" "}
 				<span className={styles.occupation__level}>
 					<abbr
 						className={styles.occupation__abbr}
@@ -137,7 +137,10 @@ export default function Aside() {
 							styles["address__item--email"],
 						)}
 					>
-						<a href="mailto:north.inhale@gmail.com" className={styles.address__link}>
+						<a
+							href="mailto:north.inhale@gmail.com"
+							className={styles.address__link}
+						>
 							<MdAlternateEmail className={styles["address__item-icon"]} />{" "}
 							north.inhale@gmail.com
 						</a>
