@@ -16,8 +16,8 @@ import {
 	// Ysabeau,
 } from "next/font/google";
 import "./styles/global.scss";
-import packageJSON from "../../package.json";
-import DirectionToggle from "@/app/components/DirectionToggle";
+import packageJSON from "../package.json";
+import DirectionToggle from "./components/DirectionToggle";
 
 const { author } = packageJSON;
 const font = Sofia_Sans({

@@ -1,6 +1,6 @@
 import styles from "./education.module.scss";
 import { IoSchoolOutline } from "react-icons/io5";
-import getFormattedDateTime from "@/app/utils/getFormattedDateTime";
+import getFormattedDateTime from "../../utils/getFormattedDateTime";
 
 export default function Education() {
 	return (

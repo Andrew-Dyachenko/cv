@@ -1,5 +1,5 @@
 import styles from "./main.module.scss";
-import Experience from "@/app/components/Experience";
+import Experience from "../Experience";
 import { AiTwotoneExperiment } from "react-icons/ai";
 import { BsCalculator } from "react-icons/bs";
 

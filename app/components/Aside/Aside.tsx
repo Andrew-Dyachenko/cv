@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./aside.module.scss";
-import profile from "../../../../public/profile.jpg";
+import profile from "../../../public/profile.jpg";
 import { FaRegUser, FaTelegramPlane, FaGithub } from "react-icons/fa";
 import {
 	MdAlternateEmail,
@@ -13,9 +13,9 @@ import {
 	IoPhonePortraitOutline,
 	IoLocationOutline,
 } from "react-icons/io5";
-import Tags from "@/app/components/Tags";
+import Tags from "../Tags";
 import clsx from "clsx";
-import Education from "@/app/components/Education";
+import Education from "../Education";
 
 export default function Aside() {
 	return (

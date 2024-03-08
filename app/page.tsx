@@ -1,4 +1,4 @@
-import { default as CVComponent } from "@/app/components/CV";
+import { default as CVComponent } from "./components/CV";
 import styles from "./page.module.scss";
 import clsx from "clsx";
 

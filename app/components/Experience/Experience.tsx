@@ -6,7 +6,7 @@ import { Accordion } from "react-bootstrap";
 import accordionStyles from "../Accordion/accordion.module.scss";
 import styles from "./experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
-import getFormattedDateTime from "@/app/utils/getFormattedDateTime";
+import getFormattedDateTime from "../../utils/getFormattedDateTime";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Sofia_Sans } from "next/font/google";
 import clsx from "clsx";
