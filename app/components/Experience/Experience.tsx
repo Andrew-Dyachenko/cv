@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["1"]}
+			defaultActiveKey={["1", "2"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -527,6 +527,63 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="https://dip.tnt4.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span>dip.tnt4.ru</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- project for the TV show &quot;Money or Shame&ldquo; (Final season)
+								</li>
+								<li>
+									<a
+										href="https://superkanal.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span>superkanal.ru</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- CRM portal for servicing the broker leads.
+								</li>
+								<li>
+									<a
+										href="https://its-nu.vercel.app/"
+										// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
+										target="_blank"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span>its-nu.vercel.app</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Representative website of the contracting company{" "}
+									<dfn>LLC ITSOLUTIONS</dfn>.
+								</li>
+							</ol>
+							<h4>Responsebilities:</h4>
+
 							Ensuring WEB interests of the company in the field of TV and
 							Internet broadcasting. - development of a free NPM package React
 							Range Gallery for the needs of internal projects.
