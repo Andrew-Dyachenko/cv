@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import Metrika from "./components/Metrika";
 import type { Metadata } from "next";
 import {
 	// Inter,
@@ -33,7 +35,7 @@ const font = Sofia_Sans({
 		// "900",
 		// "1000",
 	],
-	subsets: ["latin", /*"cyrillic"*/],
+	subsets: ["latin" /*"cyrillic"*/],
 });
 
 export const metadata: Metadata = {
@@ -45,7 +47,9 @@ export const metadata: Metadata = {
 	},
 };
 // console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
+// <!-- Yandex.Metrika counter -->
 
+// <!-- /Yandex.Metrika counter -->
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -58,6 +62,9 @@ export default function RootLayout({
 					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
 					{children}
 				</div>
+				<Suspense>
+					<Metrika />
+				</Suspense>
 			</body>
 		</html>
 	);
