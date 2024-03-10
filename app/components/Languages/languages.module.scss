@@ -1,0 +1,46 @@
+@use "sass:math";
+
+.languages {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+
+	&__title {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	&__icon {
+		margin-inline-end: 0.25em;
+	}
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		white-space: pre;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		row-gap: 0.25rem;
+	}
+
+	&__marker {
+		display: inline-block;
+		font-size: 2em;
+		vertical-align: top;
+		line-height: 0;
+	}
+
+	&__decoding {
+		font-weight: 300;
+		font-size: math.div(14, 16) + 0em;
+	}
+}

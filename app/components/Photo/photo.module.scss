@@ -1,0 +1,29 @@
+.photo {
+	&__figure {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.75rem;
+	}
+
+	&__image {
+		border-radius: 0.5rem;
+		height: auto;
+		max-width: 100%;
+
+		@at-root :root[dir="rtl"] & {
+			transform: scale(-1, 1); // Flip X
+		}
+	}
+
+	&__figcaption {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 1.5rem;
+
+		&-icon {
+			margin-inline-end: 0.25em;
+		}
+	}
+}

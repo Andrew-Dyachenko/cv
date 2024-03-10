@@ -1,0 +1,22 @@
+@use "../../styles/conf";
+
+.occupation {
+	font-weight: 500;
+	margin: 0;
+	display: flex;
+
+	@media (max-width: #{conf.$s - 1}) {
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 0.25em;
+	}
+
+	@media (min-width: conf.$s) {
+		flex-direction: column;
+	}
+
+	&__level {
+		font-size: 0.75em;
+		font-weight: 400;
+	}
+}
