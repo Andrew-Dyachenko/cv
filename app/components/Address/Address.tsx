@@ -53,7 +53,10 @@ export default function Address() {
 						className={styles.address__link}
 					>
 						<FaTelegramPlane className={styles["address__item-icon"]} />{" "}
-						Telegram
+						<span className="print-inline-visible">
+							https://t.me/pandamaximus
+						</span>
+						<span className="print-invisible">Telegram</span>
 					</a>
 				</li>
 				<li
@@ -68,7 +71,11 @@ export default function Address() {
 						rel="noopener noreferrer"
 						className={styles.address__link}
 					>
-						<CiLinkedin className={styles["address__item-icon"]} /> LinkdIn
+						<CiLinkedin className={styles["address__item-icon"]} />{" "}
+						<span className="print-inline-visible">
+							https://www.linkedin.com/in/andrey-dyachenko/
+						</span>
+						<span className="print-invisible">LinkdIn</span>
 					</a>
 				</li>
 				<li
@@ -83,7 +90,11 @@ export default function Address() {
 						rel="noopener noreferrer"
 						className={styles.address__link}
 					>
-						<FaGithub className={styles["address__item-icon"]} /> GitHub
+						<FaGithub className={styles["address__item-icon"]} />{" "}
+						<span className="print-inline-visible">
+							https://github.com/Andrew-Dyachenko
+						</span>
+						<span className="print-invisible">GitHub</span>
 					</a>
 				</li>
 				<li

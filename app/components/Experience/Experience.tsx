@@ -598,7 +598,12 @@ export default function Experience() {
 											rel="noopener noreferrer"
 											style={{ display: "inline-flex", alignItems: "center" }}
 										>
-											<span>react-range-gallery</span>{" "}
+											<span className="print-invisible">
+												react-range-gallery
+											</span>
+											<span className="print-inline-visible">
+												andrew-dyachenko.github.io/react-range-gallery
+											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
@@ -813,7 +818,10 @@ export default function Experience() {
 											color: "inherit",
 										}}
 									>
-										react-range-gallery{" "}
+										<span className="print-invisible">react-range-gallery</span>
+										<span className="print-inline-visible">
+											andrew-dyachenko.github.io/react-range-gallery
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
