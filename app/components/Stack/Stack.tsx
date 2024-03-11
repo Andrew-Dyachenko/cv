@@ -15,7 +15,7 @@ export default function Stack({
 				list={[
 					"HTML",
 					"CSS",
-					"JavaScript (ES5-11)",
+					"JavaScript (5-11)",
 					"React",
 					"Redux",
 					"Next.js",
