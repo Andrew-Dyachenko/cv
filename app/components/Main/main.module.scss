@@ -20,6 +20,7 @@
 		margin: 0;
 
 		&-icon {
+			flex-shrink: 0;
 			margin-inline-end: 0.25em;
 		}
 	}

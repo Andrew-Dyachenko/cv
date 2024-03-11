@@ -23,6 +23,7 @@
 		font-size: 1.5rem;
 
 		&-icon {
+			flex-shrink: 0;
 			margin-inline-end: 0.25em;
 		}
 	}
