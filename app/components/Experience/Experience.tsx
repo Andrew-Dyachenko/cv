@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["2"]}
+			defaultActiveKey={["1"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -529,64 +529,361 @@ export default function Experience() {
 						<div className={accordionStyles.accordion__body}>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								{/* DIP.TNT4.RU */}
 								<li>
+									<dfn>
+										<a
+											href="https://dip.tnt4.ru/"
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{ display: "inline-flex", alignItems: "center" }}
+										>
+											<span>dip.tnt4.ru</span>{" "}
+											<FaExternalLinkAlt
+												style={{
+													fontSize: "0.75em",
+													marginInlineStart: "0.3333em",
+												}}
+											/>
+										</a>
+									</dfn>{" "}
+									- TV show &quot;Money or Shame&ldquo; (Final season)
+								</li>
+								{/* SUBBOTA.TV */}
+								<li>
+									<dfn>
+										<a
+											href="https://subbota.tv/"
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{ display: "inline-flex", alignItems: "center" }}
+										>
+											<span>subbota.tv</span>{" "}
+											<FaExternalLinkAlt
+												style={{
+													fontSize: "0.75em",
+													marginInlineStart: "0.3333em",
+												}}
+											/>
+										</a>
+									</dfn>{" "}
+									- Federal entertainment TV channel.
+								</li>
+								{/* TNT4.RU */}
+								<li>
+									<dfn>
+										<a
+											href="https://tnt4.ru/"
+											// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
+											target="_blank"
+											style={{ display: "inline-flex", alignItems: "center" }}
+										>
+											<span>tnt4.ru</span>{" "}
+											<FaExternalLinkAlt
+												style={{
+													fontSize: "0.75em",
+													marginInlineStart: "0.3333em",
+												}}
+											/>
+										</a>
+									</dfn>{" "}
+									- Federal entertainment TV channel
+								</li>
+								{/* REACT RANGE GALLERY */}
+								<li>
+									<dfn>
+										<a
+											href="https://andrew-dyachenko.github.io/react-range-gallery/"
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{ display: "inline-flex", alignItems: "center" }}
+										>
+											<span>react-range-gallery</span>{" "}
+											<FaExternalLinkAlt
+												style={{
+													fontSize: "0.75em",
+													marginInlineStart: "0.3333em",
+												}}
+											/>
+										</a>
+									</dfn>{" "}
+									- Open source NPM package based on React for internal project
+									needs
+								</li>
+							</ol>
+							<h4>Responsebilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* DIP.TNT4.RU */}
+								<dt>
 									<a
 										href="https://dip.tnt4.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
-										style={{ display: "inline-flex", alignItems: "center" }}
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
 									>
-										<span>dip.tnt4.ru</span>{" "}
+										dip.tnt4.ru{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
 												marginInlineStart: "0.3333em",
 											}}
 										/>
-									</a>{" "}
-									- project for the TV show &quot;Money or Shame&ldquo; (Final season)
-								</li>
-								<li>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Start the project from a scratch with (
+											<strong>Gulp.js</strong>).
+										</li>
+										<li>
+											Create adaptive, pixel-perfect layout of the pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+											<strong>PUG</strong>, <strong>SASS</strong>).
+										</li>
+										<li>
+											Writing business logic using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>^ES6</code>).
+										</li>
+										<li>
+											Cross-browser support down to <strong>2018</strong> (last
+											2 version)
+										</li>
+										<li>
+											Configuring the assembly using (<strong>Gulp.js</strong>,{" "}
+											<strong>Node.js</strong>).
+										</li>
+										<li>
+											Communication with team members and project manager
+											through instant messengers and offline meetings.
+										</li>
+									</ul>
+								</dd>
+								{/* SUBBOTA.TV */}
+								<dt>
 									<a
 										href="https://subbota.tv/"
 										target="_blank"
 										rel="noopener noreferrer"
-										style={{ display: "inline-flex", alignItems: "center" }}
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
 									>
-										<span>superkanal.ru</span>{" "}
+										subbota.tv{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
 												marginInlineStart: "0.3333em",
 											}}
 										/>
-									</a>{" "}
-									- CRM portal for servicing the broker leads.
-								</li>
-								<li>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Support and improve the legacy app (<strong>Vue</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v2-3</code>).
+										</li>
+										<li>
+											Adding languages to the multi-language switcher using (
+											<strong>Vue</strong>) i18n library (<strong>Inter</strong>
+											).
+										</li>
+										<li>
+											Refactoring pages to support bi-directional content (
+											<strong>LTR</strong>, <strong>RTL</strong>) to include
+											Arabic language.
+										</li>
+										<li>
+											Setting up data reception using (<strong>REST API</strong>
+											, <strong>WebSocket</strong>).
+										</li>
+										<li>
+											Communication with team members and business customers
+											through instant messengers and online audio-video meetings
+											in two languages (<strong>English</strong>,{" "}
+											<strong>Russian</strong>).
+										</li>
+									</ul>
+								</dd>
+								{/* TNT4.RU */}
+								<dt>
 									<a
-										href="https://its-nu.vercel.app/"
+										href="https://tnt4.ru/"
 										// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
 										target="_blank"
-										style={{ display: "inline-flex", alignItems: "center" }}
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
 									>
-										<span>its-nu.vercel.app</span>{" "}
+										tnt4.ru{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
 												marginInlineStart: "0.3333em",
 											}}
 										/>
-									</a>{" "}
-									- Representative website of the contracting company{" "}
-									<dfn>LLC ITSOLUTIONS</dfn>.
-								</li>
-							</ol>
-							<h4>Responsebilities:</h4>
-
-							Ensuring WEB interests of the company in the field of TV and
-							Internet broadcasting. - development of a free NPM package React
-							Range Gallery for the needs of internal projects.
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Start the project from a scratch using (
+											<strong>Next.js</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v12</code>).
+										</li>
+										<li>
+											Create adaptive, pixel-perfect layout of the app using (
+											<strong>JSX</strong>, <strong>SASS</strong>).
+										</li>
+										<li>
+											Cross-browser support down to <strong>2019</strong>.
+										</li>
+										<li>
+											Multilingual feature support using (
+											<strong>next-i18</strong>).
+										</li>
+										<li>
+											Support for bidirectional content (<strong>RTL</strong>,{" "}
+											<strong>LTR</strong>).
+										</li>
+										<li>
+											Backend setup of a feedback form using (
+											<strong>Next.js API</strong>)
+										</li>
+										<li>
+											Create layout of an adaptive, themed (
+											<span style={{ fontWeight: 800 }}>dark</span>{" "}
+											<small
+												style={{ fontSize: "0.75em", verticalAlign: "middle" }}
+											>
+												|
+											</small>{" "}
+											<span style={{ fontWeight: 300 }}>light</span>), fillable
+											Email for the feedback form using the framework (
+											<strong>ZURB</strong>)
+										</li>
+										<li>
+											Optimizing site application using (
+											<strong>
+												Google Lighthouse{" "}
+												<small>
+													<i>(Core Web Vitals)</i>
+												</small>
+											</strong>
+											, <strong>W3C HTML Validator</strong>) and other linters.
+										</li>
+									</ul>
+								</dd>
+								{/* REACT RANGE GALLERY */}
+								<dt>
+									<a
+										href="https://andrew-dyachenko.github.io/react-range-gallery/"
+										// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
+										target="_blank"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										react-range-gallery{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem 0",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Start the project from a scratch using (
+											<strong>Next.js</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v12</code>).
+										</li>
+										<li>
+											Create adaptive, pixel-perfect layout of the app using (
+											<strong>JSX</strong>, <strong>SASS</strong>).
+										</li>
+										<li>
+											Cross-browser support down to <strong>2019</strong>.
+										</li>
+										<li>
+											Multilingual feature support using (
+											<strong>next-i18</strong>).
+										</li>
+										<li>
+											Support for bidirectional content (<strong>RTL</strong>,{" "}
+											<strong>LTR</strong>).
+										</li>
+										<li>
+											Backend setup of a feedback form using (
+											<strong>Next.js API</strong>)
+										</li>
+										<li>
+											Create layout of an adaptive, themed (
+											<span style={{ fontWeight: 800 }}>dark</span>{" "}
+											<small
+												style={{ fontSize: "0.75em", verticalAlign: "middle" }}
+											>
+												|
+											</small>{" "}
+											<span style={{ fontWeight: 300 }}>light</span>), fillable
+											Email for the feedback form using the framework (
+											<strong>ZURB</strong>)
+										</li>
+										<li>
+											Optimizing site application using (
+											<strong>
+												Google Lighthouse{" "}
+												<small>
+													<i>(Core Web Vitals)</i>
+												</small>
+											</strong>
+											, <strong>W3C HTML Validator</strong>) and other linters.
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<br/>
+							https://andrew-dyachenko.github.io/react-range-gallery/ Ensuring
+							WEB interests of the company in the field of TV and Internet
+							broadcasting. - development of a free NPM package React Range
+							Gallery for the needs of internal projects.
 							https://andrew-dyachenko.github.io/react-range-gallery/ using CSS
 							GRID, Flexbox, React, Redux. assembly with CRA - creating a
 							landing page for the project Money or Shame (Final)
