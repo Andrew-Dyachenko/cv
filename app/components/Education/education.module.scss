@@ -55,4 +55,14 @@
 		font-family: monospace;
 		font-size: 0.75rem;
 	}
+
+	&__faculty {
+		font-weight: 300;
+		font-size: 0.875em;
+	}
+
+	&__certificate {
+		vertical-align: middle;
+		margin-inline-end: 0.25em;
+	}
 }

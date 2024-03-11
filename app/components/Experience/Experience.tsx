@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["1", "2"]}
+			defaultActiveKey={["2"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -548,7 +548,7 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="https://superkanal.ru/"
+										href="https://subbota.tv/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
