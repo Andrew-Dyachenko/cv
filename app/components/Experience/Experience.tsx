@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["1"]}
+			defaultActiveKey={["2"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -542,7 +542,10 @@ export default function Experience() {
 											rel="noopener noreferrer"
 											style={{ display: "inline-flex", alignItems: "center" }}
 										>
-											<span>dip.tnt4.ru</span>{" "}
+											<span className="print-invisible">dip.tnt4.ru</span>
+											<span className="print-inline-visible">
+												https://dip.tnt4.ru/
+											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
@@ -551,7 +554,8 @@ export default function Experience() {
 											/>
 										</a>
 									</dfn>{" "}
-									- TV show &quot;Money or Shame&ldquo; (Final season)
+									- Landing for TV show &quot;Money or Shame&ldquo; (Final
+									season).
 								</li>
 								{/* SUBBOTA.TV */}
 								<li>
@@ -562,7 +566,10 @@ export default function Experience() {
 											rel="noopener noreferrer"
 											style={{ display: "inline-flex", alignItems: "center" }}
 										>
-											<span>subbota.tv</span>{" "}
+											<span className="print-invisible">subbota.tv</span>
+											<span className="print-inline-visible">
+												https://subbota.tv/
+											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
@@ -591,22 +598,20 @@ export default function Experience() {
 											/>
 										</a>
 									</dfn>{" "}
-									- Federal entertainment TV channel
+									- Federal entertainment TV channel.
 								</li>
-								{/* REACT RANGE GALLERY */}
-								<li>
+								{/* TNT Premier One/ */}
+								{/* <li>
 									<dfn>
 										<a
-											href="https://andrew-dyachenko.github.io/react-range-gallery/"
+											href="https://premier.one/"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{ display: "inline-flex", alignItems: "center" }}
 										>
-											<span className="print-invisible">
-												react-range-gallery
-											</span>
+											<span className="print-invisible">premier.one</span>
 											<span className="print-inline-visible">
-												andrew-dyachenko.github.io/react-range-gallery
+												https://premier.one/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
@@ -616,9 +621,8 @@ export default function Experience() {
 											/>
 										</a>
 									</dfn>{" "}
-									- Open source NPM package based on React for internal project
-									needs
-								</li>
+									- Online cinema (Movies, TV series, TV shows, Sports, 4Kids)
+								</li> */}
 							</ol>
 							<h4>Responsebilities:</h4>
 							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
@@ -634,7 +638,10 @@ export default function Experience() {
 											color: "inherit",
 										}}
 									>
-										dip.tnt4.ru{" "}
+										<span className="print-invisible">dip.tnt4.ru</span>
+										<span className="print-inline-visible">
+											https://dip.tnt4.ru/
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -656,25 +663,31 @@ export default function Experience() {
 											<strong>Gulp.js</strong>).
 										</li>
 										<li>
-											Create adaptive, pixel-perfect layout of the pages using (
-											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+											Create adaptive, pixel-perfect layout using (
 											<strong>PUG</strong>, <strong>SASS</strong>).
 										</li>
 										<li>
 											Writing business logic using (<strong>JavaScript</strong>{" "}
 											<code style={{ fontSize: "0.75em" }}>^ES6</code>).
 										</li>
+										<li>Add an ability to play video in full screen mode.</li>
+										<li>
+											Connect and set up analytical metrics (
+											<strong>Google Analytics</strong>,{" "}
+											<strong>Yandex Metrika</strong>).
+										</li>
 										<li>
 											Cross-browser support down to <strong>2018</strong> (last
-											2 version)
+											2 version).
 										</li>
 										<li>
 											Configuring the assembly using (<strong>Gulp.js</strong>,{" "}
 											<strong>Node.js</strong>).
 										</li>
 										<li>
-											Communication with team members and project manager
-											through instant messengers and offline meetings.
+											Communication with team members and a head of web
+											department through instant messengers and offline
+											meetings.
 										</li>
 									</ul>
 								</dd>
@@ -708,28 +721,122 @@ export default function Experience() {
 								>
 									<ul style={{ margin: 0 }}>
 										<li>
-											Support and improve the legacy app (<strong>Vue</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v2-3</code>).
+											Support and improve the legacy web site based at (
+											<strong>Laravel</strong>).
 										</li>
 										<li>
-											Adding languages to the multi-language switcher using (
-											<strong>Vue</strong>) i18n library (<strong>Inter</strong>
-											).
+											Layout of new and modification of existing pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+											<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>^ES6</code>).
 										</li>
 										<li>
-											Refactoring pages to support bi-directional content (
-											<strong>LTR</strong>, <strong>RTL</strong>) to include
-											Arabic language.
+											Extend the list of tracked items and user events on
+											existing pages using (<strong>Google Analytics</strong>).
+										</li>
+										<li>
+											Create embedded (<strong>React</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v16</code>)
+											applications with (<strong>Create React App</strong>) for
+											individual pages, such as:
+											<ul>
+												<li>
+													<a
+														href="https://subbota.tv/casting-test"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<span className="print-invisible">
+															/casting-test
+														</span>
+														<span className="print-inline-visible">
+															subbota.tv/casting-test/
+														</span>{" "}
+														<FaExternalLinkAlt
+															style={{
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
+															}}
+														/>
+													</a>{" "}
+													- Registration of participants in a children&apos;s
+													competition for the role of a TV presenter.
+												</li>
+												<li>
+													<a
+														href="https://subbota.tv/nastroi_subboty"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<span className="print-invisible">
+															/nastroi_subboty
+														</span>
+														<span className="print-inline-visible">
+															subbota.tv/nastroi_subboty/
+														</span>{" "}
+														<FaExternalLinkAlt
+															style={{
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
+															}}
+														/>
+													</a>{" "}
+													- Search for teleoperators by city to connect.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Create a{" "}
+											<dfn>
+												<a
+													href="https://andrew-dyachenko.github.io/react-range-gallery/"
+													target="_blank"
+													rel="noopener noreferrer"
+													style={{
+														display: "inline-flex",
+														alignItems: "center",
+													}}
+												>
+													<span className="print-invisible">
+														react-range-gallery
+													</span>
+													<span className="print-inline-visible">
+														andrew-dyachenko.github.io/react-range-gallery/
+													</span>{" "}
+													<FaExternalLinkAlt
+														style={{
+															fontSize: "0.75em",
+															marginInlineStart: "0.3333em",
+														}}
+													/>
+												</a>
+											</dfn>{" "}
+											- The open source NPM package builded with (
+											<strong>Create React Library</strong>), for the internal
+											project pages reuse.
 										</li>
 										<li>
 											Setting up data reception using (<strong>REST API</strong>
-											, <strong>WebSocket</strong>).
+											).
 										</li>
 										<li>
-											Communication with team members and business customers
-											through instant messengers and online audio-video meetings
-											in two languages (<strong>English</strong>,{" "}
-											<strong>Russian</strong>).
+											Optimize applications loading by caching data in (
+											<strong>localstorage</strong>,{" "}
+											<strong>sessionstorage</strong>).
+										</li>
+										<li>
+											Optimize applications response to display data using (
+											<strong>debouncing</strong>).
+										</li>
+										<li>
+											Create regular thematic, adaptive Email newsletters, with
+											support for regular email clients using the (
+											<strong>ZURB</strong>) framework.
+										</li>
+										<li>
+											Communication with team members and a head of web
+											department through instant messengers and offline
+											meetings.
 										</li>
 									</ul>
 								</dd>
@@ -745,7 +852,10 @@ export default function Experience() {
 											color: "inherit",
 										}}
 									>
-										tnt4.ru{" "}
+										<span className="print-invisible">tnt4.ru</span>
+										<span className="print-inline-visible">
+											https://tnt4.ru/
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -763,156 +873,74 @@ export default function Experience() {
 								>
 									<ul style={{ margin: 0 }}>
 										<li>
-											Start the project from a scratch using (
-											<strong>Next.js</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v12</code>).
+											Support and improve the legacy web site based at (
+											<strong>Laravel</strong>).
 										</li>
 										<li>
-											Create adaptive, pixel-perfect layout of the app using (
-											<strong>JSX</strong>, <strong>SASS</strong>).
+											Layout of new and modification of existing pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+											<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>^ES6</code>).
 										</li>
 										<li>
-											Cross-browser support down to <strong>2019</strong>.
+											Extend the list of tracked items and user events on
+											existing pages using (<strong>Google Analytics</strong>).
 										</li>
 										<li>
-											Multilingual feature support using (
-											<strong>next-i18</strong>).
+											Create embedded (<strong>React</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v16</code>)
+											applications with (<strong>Create React App</strong>) for
+											individual pages, such as:
+											<ul>
+												<li>
+													<a
+														href="https://tnt4.ru/nastroi_tnt4/"
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														<span className="print-invisible">
+															/nastroi_tnt4
+														</span>
+														<span className="print-inline-visible">
+															https://tnt4.ru/nastroi_tnt4/
+														</span>{" "}
+														<FaExternalLinkAlt
+															style={{
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
+															}}
+														/>
+													</a>{" "}
+													- Search for teleoperators by city to connect.
+												</li>
+											</ul>
 										</li>
 										<li>
-											Support for bidirectional content (<strong>RTL</strong>,{" "}
-											<strong>LTR</strong>).
+											Setting up data reception using (<strong>REST API</strong>
+											).
 										</li>
 										<li>
-											Backend setup of a feedback form using (
-											<strong>Next.js API</strong>)
+											Optimize applications loading by caching data in (
+											<strong>localstorage</strong>,{" "}
+											<strong>sessionstorage</strong>).
 										</li>
 										<li>
-											Create layout of an adaptive, themed (
-											<span style={{ fontWeight: 800 }}>dark</span>{" "}
-											<small
-												style={{ fontSize: "0.75em", verticalAlign: "middle" }}
-											>
-												|
-											</small>{" "}
-											<span style={{ fontWeight: 300 }}>light</span>), fillable
-											Email for the feedback form using the framework (
-											<strong>ZURB</strong>)
+											Optimize applications response to display data using (
+											<strong>debouncing</strong>).
 										</li>
 										<li>
-											Optimizing site application using (
-											<strong>
-												Google Lighthouse{" "}
-												<small>
-													<i>(Core Web Vitals)</i>
-												</small>
-											</strong>
-											, <strong>W3C HTML Validator</strong>) and other linters.
-										</li>
-									</ul>
-								</dd>
-								{/* REACT RANGE GALLERY */}
-								<dt>
-									<a
-										href="https://andrew-dyachenko.github.io/react-range-gallery/"
-										// biome-ignore lint/a11y/noBlankTarget: <The site is under our control>
-										target="_blank"
-										style={{
-											display: "inline-flex",
-											alignItems: "center",
-											color: "inherit",
-										}}
-									>
-										<span className="print-invisible">react-range-gallery</span>
-										<span className="print-inline-visible">
-											andrew-dyachenko.github.io/react-range-gallery
-										</span>{" "}
-										<FaExternalLinkAlt
-											style={{
-												fontSize: "0.75em",
-												marginInlineStart: "0.3333em",
-											}}
-										/>
-									</a>
-								</dt>
-								<dd
-									style={{
-										margin: 0,
-										paddingInlineStart: "1rem",
-										paddingBlock: "1rem 0",
-									}}
-								>
-									<ul style={{ margin: 0 }}>
-										<li>
-											Start the project from a scratch using (
-											<strong>Next.js</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v12</code>).
+											Create regular thematic, adaptive Email newsletters, with
+											support for regular email clients using the (
+											<strong>ZURB</strong>) framework.
 										</li>
 										<li>
-											Create adaptive, pixel-perfect layout of the app using (
-											<strong>JSX</strong>, <strong>SASS</strong>).
-										</li>
-										<li>
-											Cross-browser support down to <strong>2019</strong>.
-										</li>
-										<li>
-											Multilingual feature support using (
-											<strong>next-i18</strong>).
-										</li>
-										<li>
-											Support for bidirectional content (<strong>RTL</strong>,{" "}
-											<strong>LTR</strong>).
-										</li>
-										<li>
-											Backend setup of a feedback form using (
-											<strong>Next.js API</strong>)
-										</li>
-										<li>
-											Create layout of an adaptive, themed (
-											<span style={{ fontWeight: 800 }}>dark</span>{" "}
-											<small
-												style={{ fontSize: "0.75em", verticalAlign: "middle" }}
-											>
-												|
-											</small>{" "}
-											<span style={{ fontWeight: 300 }}>light</span>), fillable
-											Email for the feedback form using the framework (
-											<strong>ZURB</strong>)
-										</li>
-										<li>
-											Optimizing site application using (
-											<strong>
-												Google Lighthouse{" "}
-												<small>
-													<i>(Core Web Vitals)</i>
-												</small>
-											</strong>
-											, <strong>W3C HTML Validator</strong>) and other linters.
+											Communication with team members and a head of web
+											department through instant messengers and offline
+											meetings.
 										</li>
 									</ul>
 								</dd>
 							</dl>
-							<br/>
-							https://andrew-dyachenko.github.io/react-range-gallery/ Ensuring
-							WEB interests of the company in the field of TV and Internet
-							broadcasting. - development of a free NPM package React Range
-							Gallery for the needs of internal projects.
-							https://andrew-dyachenko.github.io/react-range-gallery/ using CSS
-							GRID, Flexbox, React, Redux. assembly with CRA - creating a
-							landing page for the project Money or Shame (Final)
-							https://dip.tnt4.ru/ using CSS GRID, Flexbox, JS (ES5,6), building
-							with custom gulp - layout of adaptive, thematic E-mail
-							newsletters, on the ZURB Emails (SASS) assembler platform -
-							development in JS (ES5,6) of a minimalistic tracker module for
-							collecting and sending analytical data from user pages from
-							scratch on the Parcel JS platform Widgets, forms based on React: -
-							registration of participants in the children contest of the TV
-							presenter https://superkanal.ru/casting-test - superchannel
-							settings: https://superkanal.ru/nastroi_super - search for
-							cameramen by city: https://tnt4.ru/nastroi_tnt4 - support and
-							modification of existing company projects, such as
-							https://tnt4.ru/, https://superkanal.ru/ using CSS, JS, HTML
-							Stack: JS (ES5,6), React, Redux, HTML5, CSS3, CRA, Gulp, Jira,
-							Slack, Gitlab, Git, BEM.
 						</div>
 					</Accordion.Collapse>
 				</div>
