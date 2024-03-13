@@ -92,9 +92,9 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							Providing services for the development of web applications, sites,
-							packages and email as an individual entrepreneur
-							(freelance/contracts).{" "}
+							Providing Frontend development services for web applications,
+							websites, NPM packages and emails, as an individual entrepreneur
+							(freelancer / contractor).{" "}
 							<abbr title="Non-Disclosure Agreement">NDA</abbr>.
 							{/* <hr style={{ width: "61.803398875%", marginInline: 0, marginBlock: "1rem 0" }} /> */}
 						</div>
@@ -457,6 +457,10 @@ export default function Experience() {
 												</small>
 											</strong>
 											, <strong>W3C HTML Validator</strong>) and other linters.
+										</li>
+										<li>
+											Communication with team members and business customer
+											through instant messengers and online / offline meetings.
 										</li>
 									</ul>
 								</dd>
