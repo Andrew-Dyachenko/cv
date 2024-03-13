@@ -4,10 +4,7 @@ import {
 	MdOutlineConnectWithoutContact,
 } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
-import {
-	IoPhonePortraitOutline,
-	IoLocationOutline,
-} from "react-icons/io5";
+import { IoPhonePortraitOutline, IoLocationOutline } from "react-icons/io5";
 import styles from "./address.module.scss";
 import clsx from "clsx";
 
