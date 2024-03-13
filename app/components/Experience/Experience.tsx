@@ -171,7 +171,10 @@ export default function Experience() {
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span>zfx.com</span>{" "}
+										<span className="print-invisible">zfx.com</span>
+										<span className="print-inline-visible">
+											https://www.zfx.com
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -183,12 +186,15 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="https://my.zfx.com/login"
+										href="https://my.zfx.com/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span>my.zfx.com</span>{" "}
+										<span className="print-invisible">my.zfx.com</span>
+										<span className="print-inline-visible">
+											https://my.zfx.com
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -205,7 +211,10 @@ export default function Experience() {
 										target="_blank"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span>its-nu.vercel.app</span>{" "}
+										<span className="print-invisible">its-nu.vercel.app</span>
+										<span className="print-inline-visible">
+											https://its-nu.vercel.app
+										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -331,7 +340,7 @@ export default function Experience() {
 								</dd>
 								<dt>
 									<a
-										href="https://my.zfx.com/login"
+										href="https://my.zfx.com/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -544,7 +553,7 @@ export default function Experience() {
 										>
 											<span className="print-invisible">dip.tnt4.ru</span>
 											<span className="print-inline-visible">
-												https://dip.tnt4.ru/
+												https://dip.tnt4.ru
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
@@ -568,7 +577,7 @@ export default function Experience() {
 										>
 											<span className="print-invisible">subbota.tv</span>
 											<span className="print-inline-visible">
-												https://subbota.tv/
+												https://subbota.tv
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
@@ -589,7 +598,10 @@ export default function Experience() {
 											target="_blank"
 											style={{ display: "inline-flex", alignItems: "center" }}
 										>
-											<span>tnt4.ru</span>{" "}
+											<span className="print-invisible">tnt4.ru</span>
+											<span className="print-inline-visible">
+												https://tnt4.ru
+											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
@@ -638,10 +650,7 @@ export default function Experience() {
 											color: "inherit",
 										}}
 									>
-										<span className="print-invisible">dip.tnt4.ru</span>
-										<span className="print-inline-visible">
-											https://dip.tnt4.ru/
-										</span>{" "}
+										dip.tnt4.ru{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -750,7 +759,7 @@ export default function Experience() {
 															/casting-test
 														</span>
 														<span className="print-inline-visible">
-															subbota.tv/casting-test/
+															https://subbota.tv/casting-test
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
@@ -772,7 +781,7 @@ export default function Experience() {
 															/nastroi_subboty
 														</span>
 														<span className="print-inline-visible">
-															subbota.tv/nastroi_subboty/
+															https://subbota.tv/nastroi_subboty
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
@@ -801,7 +810,7 @@ export default function Experience() {
 														react-range-gallery
 													</span>
 													<span className="print-inline-visible">
-														andrew-dyachenko.github.io/react-range-gallery/
+														https://andrew-dyachenko.github.io/react-range-gallery
 													</span>{" "}
 													<FaExternalLinkAlt
 														style={{
@@ -852,10 +861,7 @@ export default function Experience() {
 											color: "inherit",
 										}}
 									>
-										<span className="print-invisible">tnt4.ru</span>
-										<span className="print-inline-visible">
-											https://tnt4.ru/
-										</span>{" "}
+										tnt4.ru{" "}
 										<FaExternalLinkAlt
 											style={{
 												fontSize: "0.75em",
@@ -902,7 +908,7 @@ export default function Experience() {
 															/nastroi_tnt4
 														</span>
 														<span className="print-inline-visible">
-															https://tnt4.ru/nastroi_tnt4/
+															https://tnt4.ru/nastroi_tnt4
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
