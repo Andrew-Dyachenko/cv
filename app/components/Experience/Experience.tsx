@@ -33,7 +33,7 @@ const font = Sofia_Sans({
 export default function Experience() {
 	return (
 		<Accordion
-			defaultActiveKey={["2"]}
+			defaultActiveKey={["1"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -1012,7 +1012,52 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							Wholesale distributor of consumer goods. Led 2 projects. 1)
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="https://urraa.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">urraa.ru</span>
+										<span className="print-inline-visible">
+											https://urraa.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Wholesale distributor of consumer goods to retail
+									distributors.
+								</li>
+								<li>
+									<a
+										href="https://freshbroccoli.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">freshbroccoli.ru</span>
+										<span className="print-inline-visible">
+											https://freshbroccoli.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for retail sales of high-quality and exclusive
+									food products.
+								</li>
+							</ol>
+							{/* Wholesale distributor of consumer goods. Led 2 projects. 1)
 							Development and support of the main web service of the company
 							https://urraa.ru/, an online store for wholesale clothing. -
 							development of new pages based on Bitrix using JS (ES5) - layout
@@ -1023,7 +1068,7 @@ export default function Experience() {
 							using CSS3, HTML5, jQuery, Bootstrap 4 - regular layout of
 							adaptive, thematic E-mail newsletters on the ZURB Emails (SASS)
 							collector platform - development and implementation of interesting
-							widgets based on Canvas
+							widgets based on Canvas */}
 						</div>
 					</Accordion.Collapse>
 				</div>
