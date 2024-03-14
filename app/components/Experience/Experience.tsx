@@ -1023,7 +1023,7 @@ export default function Experience() {
 									>
 										<span className="print-invisible">urraa.ru</span>
 										<span className="print-inline-visible">
-											https://urraa.ru/
+											https://urraa.ru
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -1044,7 +1044,7 @@ export default function Experience() {
 									>
 										<span className="print-invisible">freshbroccoli.ru</span>
 										<span className="print-inline-visible">
-											https://freshbroccoli.ru/
+											https://freshbroccoli.ru
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -1057,6 +1057,62 @@ export default function Experience() {
 									food products.
 								</li>
 							</ol>
+							<h4>Responsebilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								<dt>
+									<p
+										style={{
+											marginBlockEnd: "1rem",
+											fontWeight: 700,
+											fontSize: "0.875em",
+										}}
+									>
+										🏗 The block is under reconstruction, will be ready soon... 🏗
+									</p>
+									<a
+										href="https://urraa.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										urraa.ru{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Support and improve the legacy web site based on (
+											<strong>Bitrix</strong>)
+										</li>
+										<li>
+											Create new and change existing pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
+											<strong>JavaScript</strong>,
+											<code style={{ fontSize: "0.75em" }}>^ES5.1+</code>)
+										</li>
+										<li>
+											Create media features using (<strong>Canvas</strong>) such
+											as snowfall in the header for Christmas.
+										</li>
+									</ul>
+								</dd>
+							</dl>
 							{/* Wholesale distributor of consumer goods. Led 2 projects. 1)
 							Development and support of the main web service of the company
 							https://urraa.ru/, an online store for wholesale clothing. -
@@ -1134,6 +1190,15 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<p
+								style={{
+									marginBlockEnd: "1rem",
+									fontWeight: 700,
+									fontSize: "0.875em",
+								}}
+							>
+								🏗 The block is under reconstruction, will be ready soon... 🏗
+							</p>
 							Work on large foreign outsourcing projects. Led 3 projects. 1)
 							Development of a web-platform for an elite taxi in London, focused
 							on Arab clients. - writing frontend in JS (ES5) and Bootstrap 3 -
@@ -1210,6 +1275,15 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<p
+								style={{
+									marginBlockEnd: "1rem",
+									fontWeight: 700,
+									fontSize: "0.875em",
+								}}
+							>
+								🏗 The block is under reconstruction, will be ready soon... 🏗
+							</p>
 							The company is focused on the real estate market. I participated
 							in the development of two start-up projects. My responsibilities
 							included site layout and front-end programming. I got invaluable
@@ -1278,6 +1352,15 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<p
+								style={{
+									marginBlockEnd: "1rem",
+									fontWeight: 700,
+									fontSize: "0.875em",
+								}}
+							>
+								🏗 The block is under reconstruction, will be ready soon... 🏗
+							</p>
 							A small outsourcing company, participated in the development and
 							development of project projects for regional and federal
 							customers. From online stores of children things to analogues
@@ -1350,6 +1433,15 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<p
+								style={{
+									marginBlockEnd: "1rem",
+									fontWeight: 700,
+									fontSize: "0.875em",
+								}}
+							>
+								🏗 The block is under reconstruction, will be ready soon... 🏗
+							</p>
 							<p>
 								Created online clothing stores on the Bitrix system.
 								Collectively led and completed at least 5 projects.
