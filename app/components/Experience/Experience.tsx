@@ -273,7 +273,7 @@ export default function Experience() {
 											<code style={{ fontSize: "0.75em" }}>v4</code>).
 										</li>
 										<li>
-											Writing business logic using (<strong>JavaScript</strong>{" "}
+											Write business logic using (<strong>JavaScript</strong>{" "}
 											<code style={{ fontSize: "0.75em" }}>^ES6</code>,{" "}
 											<strong>jQuery</strong>).
 										</li>
@@ -454,8 +454,8 @@ export default function Experience() {
 												|
 											</small>{" "}
 											<span style={{ fontWeight: 300 }}>light</span>), fillable
-											Email for the feedback form using the framework (
-											<strong>ZURB</strong>)
+											Email for the feedback form using (<strong>ZURB</strong>)
+											framework.
 										</li>
 										<li>
 											Optimizing site application using (
@@ -676,7 +676,7 @@ export default function Experience() {
 											<strong>PUG</strong>, <strong>SASS</strong>).
 										</li>
 										<li>
-											Writing business logic using (<strong>JavaScript</strong>{" "}
+											Write business logic using (<strong>JavaScript</strong>{" "}
 											<code style={{ fontSize: "0.75em" }}>^ES6</code>).
 										</li>
 										<li>Add an ability to play video in full screen mode.</li>
@@ -839,7 +839,7 @@ export default function Experience() {
 										</li>
 										<li>
 											Create regular thematic, adaptive Email newsletters, with
-											support for regular email clients using the (
+											support for regular email clients using (
 											<strong>ZURB</strong>) framework.
 										</li>
 										<li>
@@ -936,7 +936,7 @@ export default function Experience() {
 										</li>
 										<li>
 											Create regular thematic, adaptive Email newsletters, with
-											support for regular email clients using the (
+											support for regular email clients using (
 											<strong>ZURB</strong>) framework.
 										</li>
 										<li>
