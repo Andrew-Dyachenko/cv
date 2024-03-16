@@ -58,6 +58,16 @@ export default function RootLayout({
 	return (
 		<html lang="en" dir="ltr">
 			<body className={font.className}>
+				<noscript>
+					<div>
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img
+							src="https://mc.yandex.ru/watch/96691605"
+							style={{ position: "absolute", left: "-9999px;" }}
+							alt="Yandex Metrika noscript watcher"
+						/>
+					</div>
+				</noscript>
 				<div className="app">
 					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
 					{children}
