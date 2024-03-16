@@ -1091,7 +1091,7 @@ export default function Experience() {
 							>
 								Two projects: <strong style={{fontWeight: 500}}>URRAA</strong> and{" "}
 								<strong style={{fontWeight: 500}}>Freshbroccoli</strong> are actually very similar from a
-								technical point of view: : both use <strong style={{fontWeight: 500}}>Bitrix</strong> and
+								technical point of view: both use <strong style={{fontWeight: 500}}>Bitrix</strong> and
 								both use the same strater theme, but they look different and are
 								aimed at different -{" "}
 								<abbr title="Business to business">B2B</abbr> and{" "}
