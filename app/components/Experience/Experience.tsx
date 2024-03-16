@@ -1056,19 +1056,50 @@ export default function Experience() {
 									- Online store for retail sales of high-quality and exclusive
 									food products.
 								</li>
+								<li>
+									<a
+										href="https://new.freshbroccoli.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">
+											new.freshbroccoli.ru
+										</span>
+										<span className="print-inline-visible">
+											https://new.freshbroccoli.ru
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for retail sales of high-quality and exclusive
+									food products (New version).
+								</li>
 							</ol>
 							<h4>Responsebilities:</h4>
-							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
-								<dt>
-									<p
+							<blockquote
 										style={{
-											marginBlockEnd: "1rem",
-											fontWeight: 700,
-											fontSize: "0.875em",
-										}}
-									>
-										🏗 The block is under reconstruction, will be ready soon... 🏗
-									</p>
+									fontWeight: 300,
+									marginInline: 0,
+									paddingInlineStart: "1rem",
+									borderInlineStart: "0.125rem solid #c0c0c0",
+								}}
+							>
+								Two projects: <strong style={{fontWeight: 500}}>URRAA</strong> and{" "}
+								<strong style={{fontWeight: 500}}>Freshbroccoli</strong> are actually very similar from a
+								technical point of view: : both use <strong style={{fontWeight: 500}}>Bitrix</strong> and
+								both use the same strater theme, but they look different and are
+								aimed at different -{" "}
+								<abbr title="Business to business">B2B</abbr> and{" "}
+								<abbr title="Business to client">B2C</abbr> audiences models
+							</blockquote>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* URRAA.RU */}
+								<dt>
 									<a
 										href="https://urraa.ru/"
 										target="_blank"
@@ -1102,14 +1133,95 @@ export default function Experience() {
 										</li>
 										<li>
 											Create new and change existing pages using (
-											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
-											<strong>JavaScript</strong>,
-											<code style={{ fontSize: "0.75em" }}>^ES5.1+</code>)
+											<strong>HTML</strong>, <strong>CSS</strong>).
 										</li>
 										<li>
-											Create media features using (<strong>Canvas</strong>) such
-											as snowfall in the header for Christmas.
+											Write business logic using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>^ES5.1+</code>).
 										</li>
+										<li>
+											Setting up data reception using (<strong>REST API</strong>
+											).
+										</li>
+										<li>
+											Create media features using (modern <strong>CSS</strong>,{" "}
+											<strong>Canvas</strong>) such as snowfall in the header
+											for a Christmas.
+										</li>
+										<li>
+											Create regular thematic, adaptive Email newsletters, with
+											support for regular email clients using (
+											<strong>ZURB</strong>) framework.
+										</li>
+										<li>
+											Communication with team members, head of the web
+											department, designer and product manager, via instant
+											messengers and offline meetings.
+										</li>
+										<li>Support and mentoring junior frontend developer</li>
+									</ul>
+								</dd>
+								{/* FRESHBROCCOLI.RU */}
+								<dt>
+									<a
+										href="https://freshbroccoli.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										freshbroccoli.ru{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Support and improve the legacy web site based on (
+											<strong>Bitrix</strong>)
+										</li>
+										<li>
+											Create new and change existing pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>).
+										</li>
+										<li>
+											Write business logic using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>^ES5.1+</code>).
+										</li>
+										<li>
+											Setting up data reception using (<strong>REST API</strong>
+											).
+										</li>
+										<li>
+											Create media features using (modern <strong>CSS</strong>,{" "}
+											<strong>Canvas</strong>) such as snowfall in the header
+											for a Christmas.
+										</li>
+										<li>
+											Create regular thematic, adaptive Email newsletters, with
+											support for regular email clients using (
+											<strong>ZURB</strong>) framework.
+										</li>
+										<li>
+											Communication with team members, head of the web
+											department, designer and product manager, via instant
+											messengers and offline meetings.
+										</li>
+										<li>Support and mentoring junior frontend developer</li>
 									</ul>
 								</dd>
 							</dl>
