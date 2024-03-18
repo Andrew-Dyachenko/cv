@@ -1132,6 +1132,7 @@ export default function Experience() {
 											Support and improve the legacy web site based on (
 											<strong>Bitrix</strong>)
 										</li>
+										<li>Cross-browser support for evergreen browsers.</li>
 										<li>
 											Create new and change existing pages using (
 											<strong>HTML</strong>, <strong>CSS</strong>).
@@ -1195,6 +1196,7 @@ export default function Experience() {
 											Support and improve the legacy web site based on (
 											<strong>Bitrix</strong>).
 										</li>
+										<li>Cross-browser support for evergreen browsers.</li>
 										<li>
 											Create new and change existing pages using (
 											<strong>HTML</strong>, <strong>CSS</strong>).
