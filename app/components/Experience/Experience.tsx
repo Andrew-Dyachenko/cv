@@ -1159,7 +1159,7 @@ export default function Experience() {
 											department, designer and product manager, via instant
 											messengers and offline meetings.
 										</li>
-										<li>Support and mentoring junior frontend developer</li>
+										<li>Support and mentoring junior frontend developer.</li>
 									</ul>
 								</dd>
 								{/* FRESHBROCCOLI.RU */}
@@ -1193,7 +1193,7 @@ export default function Experience() {
 									<ul style={{ margin: 0 }}>
 										<li>
 											Support and improve the legacy web site based on (
-											<strong>Bitrix</strong>)
+											<strong>Bitrix</strong>).
 										</li>
 										<li>
 											Create new and change existing pages using (
@@ -1222,7 +1222,7 @@ export default function Experience() {
 											department, designer and product manager, via instant
 											messengers and offline meetings.
 										</li>
-										<li>Support and mentoring junior frontend developer</li>
+										<li>Support and mentoring junior frontend developer.</li>
 									</ul>
 								</dd>
 								{/* NEW.FRESHBROCCOLI.RU */}
@@ -1266,7 +1266,7 @@ export default function Experience() {
 										<li>
 											Deep integration and customization of (
 											<strong>Bootstrap</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v4-alpha</code>)..
+											<code style={{ fontSize: "0.75em" }}>v4-alpha</code>).
 										</li>
 										<li>
 											Setting up data reception using (<strong>REST API</strong>
@@ -1275,7 +1275,7 @@ export default function Experience() {
 										<li>
 											Cross-browser support down to{" "}
 											<strong>Internet Explorer</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v10</code>
+											<code style={{ fontSize: "0.75em" }}>v10</code>.
 										</li>
 										<li>
 											Configuring the assembly using (<strong>Gulp.js</strong>{" "}
@@ -1283,7 +1283,7 @@ export default function Experience() {
 											<strong>Node.js</strong>).
 										</li>
 										<li>
-											Writing documentation (<strong>Markdown</strong>)
+											Writing documentation (<strong>Markdown</strong>).
 										</li>
 										<li>
 											Communication with team members, head of the web
