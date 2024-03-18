@@ -1089,10 +1089,11 @@ export default function Experience() {
 									borderInlineStart: "0.125rem solid #c0c0c0",
 								}}
 							>
-								Two projects: <strong style={{fontWeight: 500}}>URRAA</strong> and{" "}
-								<strong style={{fontWeight: 500}}>Freshbroccoli</strong> are actually very similar from a
-								technical point of view: both use <strong style={{fontWeight: 500}}>Bitrix</strong> and
-								both use the same strater theme, but they look different and are
+								Two projects: <strong style={{ fontWeight: 500 }}>URRAA</strong>{" "}
+								and <strong style={{ fontWeight: 500 }}>Freshbroccoli</strong>{" "}
+								are actually very similar from a technical point of view: both
+								use <strong style={{ fontWeight: 500 }}>Bitrix</strong> and both
+								use the same strater theme, but they look different and are
 								aimed at different -{" "}
 								<abbr title="Business to business">B2B</abbr> and{" "}
 								<abbr title="Business to client">B2C</abbr> audiences models
@@ -1222,6 +1223,73 @@ export default function Experience() {
 											messengers and offline meetings.
 										</li>
 										<li>Support and mentoring junior frontend developer</li>
+									</ul>
+								</dd>
+								{/* NEW.FRESHBROCCOLI.RU */}
+								<dt>
+									<a
+										href="https://new.freshbroccoli.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										new.freshbroccoli.ru{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Start the project from a scratch for (
+											<strong>Bitrix</strong>) using (<strong>Vue</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v2</code>).
+										</li>
+										<li>
+											Create adaptive, pixel-perfect layout of the pages using (
+											<strong>PUG</strong>, <strong>SASS</strong>).
+										</li>
+										<li>
+											Deep integration and customization of (
+											<strong>Bootstrap</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v4-alpha</code>)..
+										</li>
+										<li>
+											Setting up data reception using (<strong>REST API</strong>
+											).
+										</li>
+										<li>
+											Cross-browser support down to{" "}
+											<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10</code>
+										</li>
+										<li>
+											Configuring the assembly using (<strong>Gulp.js</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v4</code>,{" "}
+											<strong>Node.js</strong>).
+										</li>
+										<li>
+											Writing documentation (<strong>Markdown</strong>)
+										</li>
+										<li>
+											Communication with team members, head of the web
+											department, designer and product manager, via instant
+											messengers and offline meetings.
+										</li>
 									</ul>
 								</dd>
 							</dl>
