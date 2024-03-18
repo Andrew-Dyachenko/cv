@@ -75,7 +75,7 @@ export default function Experience() {
 							<span className="visually-hidden">
 								Duration of the work as an individual entrepreneur is
 							</span>{" "}
-							1 year 2 months
+							1 year 3 months
 						</span>
 						<span className={styles.experience__position}>
 							Frontend developer
