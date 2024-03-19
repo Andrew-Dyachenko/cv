@@ -63,7 +63,6 @@ export default function RootLayout({
 						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img
 							src="https://mc.yandex.ru/watch/96691605"
-							style={{ position: "absolute", left: "-9999px;" }}
 							alt="Yandex Metrika noscript watcher"
 						/>
 					</div>
