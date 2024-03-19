@@ -1,0 +1,73 @@
+@use "sass:color";
+@use "sass:math";
+@use "../../styles/conf/fibonacci";
+
+.header {
+	background: color.mix(#e6e6e6, #b4b4b4);
+	background: linear-gradient(180deg, #e6e6e6 0%, #b4b4b4 100%);
+	// background: linear-gradient(to bottom, #d8d8d8, #a1a1a1);
+	// background: linear-gradient(to bottom, #C0C0C0, #B0B0B0);
+
+	&__container {
+		padding-block: 0.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem 1rem;
+	}
+
+	&__font {
+		margin-inline-start: auto;
+	}
+}
+
+.brand {
+	$-color: color.change(color.mix(#e6e6e6, #b4b4b4), $blackness: 50%);
+	font-size: fibonacci.$golden-ratio + 0rem;
+	color: $-color;
+	font-weight: 700;
+	text-shadow: 0 fibonacci.$asymp-m * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
+		0 fibonacci.$asymp-m * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
+
+	&:any-link {
+		text-decoration: none;
+	}
+}
+
+.font {
+	$-font: &;
+	display: flex;
+	column-gap: 0.25em;
+	font-size: 1rem;
+	align-items: baseline;
+
+	&__input {
+		display: none;
+
+		&:checked {
+			+ #{$-font} {
+				&__label {
+					background-color: rgba(0, 0, 0, 0.1);
+					border: math.div(1, 16) + 0rem solid rgba(0, 0, 0, 0.2);
+				}
+			}
+		}
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		line-height: 1;
+		border-radius: 0.125em;
+		padding: 0 0.25em;
+		font-weight: 500;
+
+		&:nth-of-type(2) {
+			font-size: 1.25em;
+		}
+
+		&:nth-of-type(3) {
+			font-size: 1.5em;
+		}
+	}
+}

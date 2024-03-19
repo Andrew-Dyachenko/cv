@@ -20,6 +20,7 @@ import {
 import "./styles/global.scss";
 import packageJSON from "../package.json";
 import DirectionToggle from "./components/DirectionToggle";
+import Header from "./components/Header";
 
 const { author } = packageJSON;
 const font = Sofia_Sans({
@@ -63,13 +64,15 @@ export default function RootLayout({
 						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img
 							src="https://mc.yandex.ru/watch/96691605"
+							style={{ position: "absolute", left: "-9999px" }}
 							alt="Yandex Metrika noscript watcher"
 						/>
 					</div>
 				</noscript>
 				<div className="app">
 					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
-					{children}
+					<Header />
+					<div className="app__body">{children}</div>
 				</div>
 				<Suspense>
 					<Metrika />

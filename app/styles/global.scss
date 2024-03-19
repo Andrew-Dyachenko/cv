@@ -156,13 +156,17 @@ h6,
 
 .app {
 	min-height: 100svh;
-	padding: 1rem;
+	// padding: 1rem;
+
+	&__body {
+		padding: 1rem;
+	}
 }
 
 .container {
-	padding: 0 1rem;
+	padding-inline: 1rem;
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 210mm;
 }
 
