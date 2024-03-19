@@ -8,6 +8,10 @@
 	// background: linear-gradient(to bottom, #d8d8d8, #a1a1a1);
 	// background: linear-gradient(to bottom, #C0C0C0, #B0B0B0);
 
+	@media print {
+		display: none;
+	}
+
 	&__container {
 		padding-block: 0.25rem;
 		display: flex;
