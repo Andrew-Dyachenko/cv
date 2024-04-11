@@ -25,6 +25,8 @@
 }
 
 .brand {
+	display: inline-block;
+	padding-top: 0.1em;
 	$-color: color.change(color.mix(#e6e6e6, #b4b4b4), $blackness: 50%);
 	font-size: fibonacci.$golden-ratio + 0rem;
 	color: $-color;
@@ -34,6 +36,14 @@
 
 	&:any-link {
 		text-decoration: none;
+	}
+
+	&__version {
+		font-weight: 400;
+		font-size: 0.5em;
+		vertical-align: baseline;
+		text-shadow: 0 fibonacci.$asymp-m * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
+			0 fibonacci.$asymp-m * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
 	}
 }
 
