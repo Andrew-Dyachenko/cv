@@ -26,7 +26,6 @@
 
 .brand {
 	display: inline-block;
-	padding-top: 0.1em;
 	$-color: color.change(color.mix(#e6e6e6, #b4b4b4), $blackness: 50%);
 	font-size: fibonacci.$golden-ratio + 0rem;
 	color: $-color;
@@ -36,6 +35,10 @@
 
 	&:any-link {
 		text-decoration: none;
+	}
+
+	&:not(:empty) {
+		padding-block-start: 0.1em;
 	}
 
 	&__version {
