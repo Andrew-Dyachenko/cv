@@ -18,7 +18,7 @@ import {
 	// Ysabeau,
 } from "next/font/google";
 import "./styles/global.scss";
-import packageJSON from "../package.json";
+import packageJSON from "../../package.json";
 import DirectionToggle from "./components/DirectionToggle";
 import Header from "./components/Header";
 

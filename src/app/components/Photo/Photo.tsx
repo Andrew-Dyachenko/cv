@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from "../../../public/profile.jpg";
+import profile from "../../../../public/profile.jpg";
 import { FaRegUser } from "react-icons/fa";
 import styles from "./photo.module.scss";
 
