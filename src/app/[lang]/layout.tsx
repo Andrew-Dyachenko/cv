@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Metrika from "./components/Metrika";
+import Metrika from "../components/Metrika";
 import type { Metadata } from "next";
 import {
 	// Inter,
@@ -17,10 +17,10 @@ import {
 	Sofia_Sans,
 	// Ysabeau,
 } from "next/font/google";
-import "./styles/global.scss";
-import packageJSON from "../../package.json";
-import DirectionToggle from "./components/DirectionToggle";
-import Header from "./components/Header";
+import "../styles/global.scss";
+import packageJSON from "../../../package.json";
+import DirectionToggle from "../components/DirectionToggle";
+import Header from "../components/Header";
 
 const { author } = packageJSON;
 const font = Sofia_Sans({
