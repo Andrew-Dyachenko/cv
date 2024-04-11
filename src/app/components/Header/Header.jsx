@@ -12,7 +12,7 @@ export default function Header() {
 		<header className={styles.header}>
 			<div className={clsx("container", styles.header__container)}>
 				<Link href="/" className={styles.brand}>
-					CV <sub className={styles.brand__version}>v{version}</sub>
+					CV <sub className={styles.brand__version}>{version}</sub>
 				</Link>
 				<FontSize />
 			</div>
