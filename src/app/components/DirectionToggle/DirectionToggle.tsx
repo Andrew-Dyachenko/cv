@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 import styles from "./directionToggle.module.scss";
+import clsx from "clsx";
 
-const DirectionToggle = () => {
+const DirectionToggle = ({
+	classNameModificator,
+}: { classNameModificator: string }) => {
 	const [direction, setDirection] = useState("ltr");
 
 	const toggleDirection = () => {
@@ -16,7 +19,7 @@ const DirectionToggle = () => {
 		<button
 			type="button"
 			onClick={toggleDirection}
-			className={styles.directionToggle}
+			className={clsx(styles.directionToggle, classNameModificator)}
 		>
 			Toggle Direction
 		</button>

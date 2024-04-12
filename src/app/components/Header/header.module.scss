@@ -17,10 +17,25 @@
 		display: flex;
 		align-items: center;
 		gap: 0.25rem 1rem;
+
+		// > *:first-child {
+		// 	+ * {
+		// 		margin-inline-start: auto;
+		// 	}
+		// }
 	}
 
-	&__font {
-		margin-inline-start: auto;
+	// &__font {
+	// 	margin-inline-start: auto;
+	// }
+
+	&__directionToggle {
+		position: static;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+		// margin-inline-start: auto;
 	}
 }
 
@@ -30,6 +45,7 @@
 	font-size: fibonacci.$golden-ratio + 0rem;
 	color: $-color;
 	font-weight: 700;
+	margin-inline-end: auto;
 	text-shadow: 0 fibonacci.$asymp-m * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
 		0 fibonacci.$asymp-m * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
 

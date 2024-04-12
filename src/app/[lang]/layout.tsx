@@ -19,7 +19,6 @@ import {
 } from "next/font/google";
 import "../styles/global.scss";
 import packageJSON from "../../../package.json";
-import DirectionToggle from "../components/DirectionToggle";
 import Header from "../components/Header";
 
 const { author } = packageJSON;
@@ -70,7 +69,6 @@ export default function RootLayout({
 					</div>
 				</noscript>
 				<div className="app">
-					{process.env.NODE_ENV === "development" ? <DirectionToggle /> : null}
 					<Header />
 					<div className="app__body">{children}</div>
 				</div>
