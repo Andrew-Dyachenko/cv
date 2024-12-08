@@ -1,6 +1,6 @@
 {
 	"name": "cv",
-	"version": "1.2.4",
+	"version": "1.2.5",
 	"private": true,
 	"author": "Andrey Dyachenko",
 	"contributors": [
@@ -10,7 +10,11 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"ncu": "./node_modules/.bin/npm-check-updates",
+		"ncu-update-patch-deps": "npm run ncu -- --target patch -u",
+		"ncu-update-minor-deps": "npm run ncu -- --target minor -u",
+		"ncu-update-major-deps": "npm run ncu -- --target latest -u"
 	},
 	"dependencies": {
 		"clsx": "2.1.1",
@@ -26,6 +30,7 @@
 		"@types/react-dom": "18.3.2",
 		"eslint": "8.57.1",
 		"eslint-config-next": "14.2.20",
+		"npm-check-updates": "17.1.11",
 		"sass": "1.82.0",
 		"sharp": "0.33.5",
 		"typescript": "5.7.2"
