@@ -5,6 +5,7 @@ import {
 } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { IoPhonePortraitOutline, IoLocationOutline } from "react-icons/io5";
+import { BsAirplane } from "react-icons/bs";
 import styles from "./address.module.scss";
 import clsx from "clsx";
 
@@ -22,8 +23,10 @@ export default function Address() {
 					className={clsx(styles.address__item, styles["address__item--phone"])}
 				>
 					<a href="tel:+995597746863" className={styles.address__link}>
-						<IoPhonePortraitOutline className={styles["address__item-icon"]} />{" "}
-						+995 597 746 863
+						<IoPhonePortraitOutline className={styles["address__item-icon"]} />
+						<div className={styles["address__item-text"]}>
+							+995 597 746 863
+						</div>
 					</a>
 				</li>
 				<li
@@ -33,8 +36,10 @@ export default function Address() {
 						href="mailto:north.inhale@gmail.com"
 						className={styles.address__link}
 					>
-						<MdAlternateEmail className={styles["address__item-icon"]} />{" "}
-						north.inhale@gmail.com
+						<MdAlternateEmail className={styles["address__item-icon"]} />
+						<div className={styles["address__item-text"]}>
+							north.inhale@gmail.com
+						</div>
 					</a>
 				</li>
 				<li
@@ -49,11 +54,13 @@ export default function Address() {
 						rel="noopener noreferrer"
 						className={styles.address__link}
 					>
-						<FaTelegramPlane className={styles["address__item-icon"]} />{" "}
-						<span className="print-inline-visible">
-							https://t.me/pandamaximus
-						</span>
-						<span className="print-invisible">Telegram</span>
+						<FaTelegramPlane className={styles["address__item-icon"]} />
+						<div className={styles["address__item-text"]}>
+							<span className="print-inline-visible">
+								https://t.me/pandamaximus
+							</span>
+							<span className="print-invisible">Telegram</span>
+						</div>
 					</a>
 				</li>
 				<li
@@ -68,11 +75,13 @@ export default function Address() {
 						rel="noopener noreferrer"
 						className={styles.address__link}
 					>
-						<CiLinkedin className={styles["address__item-icon"]} />{" "}
-						<span className="print-inline-visible">
-							https://www.linkedin.com/in/andrey-dyachenko/
-						</span>
-						<span className="print-invisible">LinkdIn</span>
+						<CiLinkedin className={styles["address__item-icon"]} />
+						<div className={styles["address__item-text"]}>
+							<span className="print-inline-visible">
+								https://www.linkedin.com/in/andrey-dyachenko/
+							</span>
+							<span className="print-invisible">LinkdIn</span>
+						</div>
 					</a>
 				</li>
 				<li
@@ -87,11 +96,13 @@ export default function Address() {
 						rel="noopener noreferrer"
 						className={styles.address__link}
 					>
-						<FaGithub className={styles["address__item-icon"]} />{" "}
-						<span className="print-inline-visible">
-							https://github.com/Andrew-Dyachenko
-						</span>
-						<span className="print-invisible">GitHub</span>
+						<FaGithub className={styles["address__item-icon"]} />
+						<div className={styles["address__item-text"]}>
+							<span className="print-inline-visible">
+								https://github.com/Andrew-Dyachenko
+							</span>
+							<span className="print-invisible">GitHub</span>
+						</div>
 					</a>
 				</li>
 				<li
@@ -100,8 +111,21 @@ export default function Address() {
 						styles["address__item--location"],
 					)}
 				>
-					<IoLocationOutline className={styles["address__item-icon"]} /> Batumi,
-					Georgia 🇬🇪
+					<IoLocationOutline className={styles["address__item-icon"]} />
+					<div className={styles["address__item-text"]}>
+						Moscow, Russia 🇷🇺
+					</div>
+				</li>
+				<li
+					className={clsx(
+						styles.address__item,
+						styles["address__item--relocation"],
+					)}
+				>
+					<BsAirplane className={styles["address__item-icon"]} />
+					<div className={styles["address__item-text"]}>
+						Relocation: <span style={{ color: "#2E6A89" }}>Considered</span>
+					</div>
 				</li>
 			</ul>
 		</address>

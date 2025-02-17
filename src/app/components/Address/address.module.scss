@@ -28,21 +28,22 @@
 
 	&__item {
 		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
 		word-wrap: break-word;
 		word-break: break-all;
 
 		&-icon {
+			line-height: 1;
 			flex-shrink: 0;
 			margin-inline-end: 0.25em;
+		}
+
+		&-text {
+			line-height: 1.2;
 		}
 	}
 
 	&__link {
 		display: flex;
-		// flex-wrap: wrap;
-		align-items: center;
-		// line-height: 1.2;
+		line-height: 1.2;
 	}
 }
