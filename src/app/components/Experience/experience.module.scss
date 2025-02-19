@@ -4,6 +4,7 @@
 
 .experience {
 	&__button {
+		line-height: 1.2;
 		display: grid;
 		grid-template-columns: 1fr 0.5rem auto;
 		grid-template-rows: auto 0.5rem auto 0 auto;
@@ -37,60 +38,48 @@
 	}
 
 	&__where {
+		display: flex;
+		column-gap: 0.25em;
+		align-items:flex-start;
 		grid-area: experience__where;
 		font-weight: 300;
+
+		&-wrapper {
+			// Guide line prop to align icons START
+			// position: relative;
+			// Guide line prop to align icons END
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 1em;
+			height: 1em;
+			transform: translateY(calc((1.1em - 100%) / 2));
+
+			// Guide line to align icons START
+			// &::before,
+			// &::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	height: 1px;
+			// 	background-color: tomato;
+			// 	left: 50%;
+			// 	transform: translateX(-50%);
+			// 	width: 100vw;
+			// }
+
+			// &::before {
+			// 	bottom: 100%;
+			// }
+
+			// &::after {
+			// 	top: 100%;
+			// }
+			// Guide line to align icons END
+		}
+
+		&-icon {
+			object-fit: contain;
+			max-width: 100%;
+		}
 	}
-
-	// &__hr {
-	// 	width: fibonacci.$asymp-xxxl-percentage;
-	// 	margin-block: 1rem 0;
-	// 	margin-inline: 0;
-	// }
-
-	// &__link {
-	// 	$-link: &;
-	// 	display: inline-flex;
-	// 	align-items: center;
-
-	// 	&--responsebilities {
-	// 		color: inherit;
-	// 	}
-
-	// 	&--external {
-	// 		#{$-link} {
-	// 			&-icon {
-	// 				font-size: math.div(12, 16) + 0em;
-
-	// 				&:not(:first-child) {
-	// 					margin-inline-start: math.div(4, 12) + 0em;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-
-	// 	&-icon {
-	// 		&--responsebilities {
-	// 			font-size: math.div(12, 16) + 0em;
-	// 			margin-inline-start: math.div(4, 12) + 0em;
-	// 		}
-	// 	}
-	// }
-
-	// &__dd {
-	// 	margin-inline-start: 1rem;
-	// }
-
-	// &__strong {
-	// 	font-weight: 600;
-	// }
-
-	// &__ul {
-	// 	&:first-child {
-	// 		margin-block-start: 0;
-	// 	}
-
-	// 	&:last-child {
-	// 		margin-block-end: 0;
-	// 	}
-	// }
 }

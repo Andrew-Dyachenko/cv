@@ -7,9 +7,20 @@ import accordionStyles from "../Accordion/accordion.module.scss";
 import styles from "./experience.module.scss";
 // import { FaExternalLinkAlt } from "react-icons/fa";
 import getFormattedDateTime from "../../utils/getFormattedDateTime";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGlobeAfrica } from "react-icons/fa";
 import { Sofia_Sans } from "next/font/google";
 import clsx from "clsx";
+import Image from "next/image";
+
+import b2broker from "../../../../public/b2broker.svg";
+import zfx from "../../../../public/zfx.png";
+import gazprommedia from '../../../../public/gazprommedia.png';
+import uurraa from "../../../../public/uurraa.png";
+import freshbroccoli from "../../../../public/freshbroccoli.svg";
+import magorasystems from "../../../../public/magora-systems.png";
+import btipro from "../../../../public/btipro.png";
+import omegadesignpro from "../../../../public/omegadesignpro.png";
+import alfateam from "../../../../public/alfateam-favicon.png";
 
 // import Link from "next/link";
 // import { DateTime } from "luxon";
@@ -37,9 +48,215 @@ export default function Experience() {
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
-			{/* INDIVIDUAL ENTREPRENEUR */}
+			{/* B2BROKER START */}
 			<Accordion.Item
-				eventKey="0"
+				eventKey="1"
+				bsPrefix="_"
+				className={accordionStyles.accordion__item}
+			>
+				<h3 className={accordionStyles.accordion__header}>
+					<Accordion.Button
+						bsPrefix="_"
+						className={clsx(
+							accordionStyles.accordion__button,
+							styles.experience__button,
+							font.className,
+						)}
+					>
+						<span className={styles.experience__when}>
+							(
+							<time
+								dateTime={getFormattedDateTime({
+									year: 2024,
+									month: 4,
+									day: 10,
+									hour: 0,
+									timezoneOffset: 60 * 4,
+								})}
+							>
+								April 2024
+							</time>{" "}
+							-{" "}
+							<time dateTime={getFormattedDateTime({
+								year: 2024,
+								month: 9,
+								day: 26,
+								hour: 0,
+								timezoneOffset: 60 * 4,
+							})}>
+								September 2024
+							</time>
+							)
+						</span>
+						<span className={styles.experience__duration}>
+							<span className="visually-hidden">
+								Duration of the work as an individual entrepreneur is
+							</span>{" "}
+							6 months
+						</span>
+						<span className={styles.experience__position}>
+							HTML developer
+						</span>
+						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={b2broker}
+									height={20}
+									alt="B2Broker logo"
+								/>
+							</span>
+							B2Broker - Tbilisi, Georgia 🇬🇪
+						</span>
+					</Accordion.Button>
+				</h3>
+				<div className={accordionStyles.accordion__wrapper}>
+					<Accordion.Collapse
+						eventKey="1"
+						bsPrefix="_"
+						className={accordionStyles.accordion__collapse}
+					>
+						<div className={accordionStyles.accordion__body}>
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="https://b2core.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">B2Core</span>
+										<span className="print-inline-visible">https://b2core.com/</span>
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+									- CRM system for managing broker leads and customer interactions.
+								</li>
+								<li>
+									<a
+										href="https://b2prime.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">B2Prime</span>
+										<span className="print-inline-visible">https://b2prime.com/</span>
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+									- Main trading platform of the company.
+								</li>
+							</ol>
+							<h4>Responsibilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								<dt>
+									<a
+										href="https://b2core.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										B2Core{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Received tasks from Frontend developers with initial logic and draft
+											layouts, finalized by styling and adjusting the layout to ensure pixel-perfect design.
+										</li>
+										<li>
+											Maintained and refined SCSS styles to meet company’s coding standards and avoid code conflicts.
+										</li>
+										<li>
+											Collaborated with designers to align mockups with the shared component
+											library in Storybook.
+										</li>
+										<li>
+											Conducted code reviews, ensuring compliance with internal guidelines before merging to the development branch.
+										</li>
+										<li>
+											Participated in Agile development cycles, including daily stand-ups,
+											sprint planning, and retrospectives using Jira and Slack.
+										</li>
+									</ul>
+								</dd>
+
+								<dt>
+									<a
+										href="https://b2prime.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										B2Prime{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul style={{ margin: 0 }}>
+										<li>
+											Developed adaptive, product-specific email templates using Maizzle framework for B2Prime notifications and updates.
+										</li>
+										<li>
+											Created reusable email components to improve template consistency and
+											development speed.
+										</li>
+										<li>
+											Ensured cross-client compatibility, including thorough testing for Outlook and other major clients.
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</Accordion.Collapse>
+				</div>
+			</Accordion.Item>
+			{/* B2BROKER END */}
+
+			{/* INDIVIDUAL ENTREPRENEUR START */}
+			<Accordion.Item
+				eventKey="2"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -81,13 +298,16 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<FaGlobeAfrica className={styles["experience__where-icon"]} />
+							</span>
 							Individual Entrepreneur - Batumi, Georgia 🇬🇪
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="0"
+						eventKey="2"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -96,14 +316,16 @@ export default function Experience() {
 							websites, NPM packages and emails, as an individual entrepreneur
 							(freelancer / contractor).{" "}
 							<abbr title="Non-Disclosure Agreement">NDA</abbr>.
-							{/* <hr style={{ width: "61.803398875%", marginInline: 0, marginBlock: "1rem 0" }} /> */}
+
 						</div>
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* LLC ITSOLUTIONS */}
+			{/* INDIVIDUAL ENTREPRENEUR END */}
+
+			{/* LLC ITSOLUTIONS START */}
 			<Accordion.Item
-				eventKey="1"
+				eventKey="3"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -151,13 +373,21 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--zfx"])}
+									src={zfx}
+									width={20}
+									alt="ZFX logo"
+								/>
+							</span>
 							LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="1"
+						eventKey="3"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -474,14 +704,15 @@ export default function Experience() {
 									</ul>
 								</dd>
 							</dl>
-							{/* <hr style={{ width: "61.803398875%", marginInline: 0, marginBlock: "1rem 0" }} /> */}
 						</div>
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* GAZPROM MEDIA */}
+			{/* LLC ITSOLUTIONS END */}
+
+			{/* GAZPROM MEDIA START */}
 			<Accordion.Item
-				eventKey="2"
+				eventKey="4"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -529,13 +760,21 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--gazprommedia"])}
+									src={gazprommedia}
+									height={20}
+									alt="Gazprom Media logo"
+								/>
+							</span>
 							Gazprom RTV Media - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="2"
+						eventKey="4"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -951,9 +1190,11 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* URRAA & FRESHBROCCOLI */}
+			{/* GAZPROM MEDIA END */}
+
+			{/* URRAA & FRESHBROCCOLI START */}
 			<Accordion.Item
-				eventKey="3"
+				eventKey="5"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -1001,13 +1242,29 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={uurraa}
+									width={20}
+									alt="UURRAA logo"
+								/>
+							</span>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={freshbroccoli}
+									width={20}
+									alt="Freshbroccoli logo"
+								/>
+							</span>
 							UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="3"
+						eventKey="5"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -1082,7 +1339,7 @@ export default function Experience() {
 							</ol>
 							<h4>Responsebilities:</h4>
 							<blockquote
-										style={{
+								style={{
 									fontWeight: 300,
 									marginInline: 0,
 									paddingInlineStart: "1rem",
@@ -1311,9 +1568,11 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* MAGORA SYSTEMS*/}
+			{/* URRAA & FRESHBROCCOLI END */}
+
+			{/* MAGORA SYSTEMS START */}
 			<Accordion.Item
-				eventKey="4"
+				eventKey="6"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -1361,13 +1620,21 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--magorasystems"])}
+									src={magorasystems}
+									height={20}
+									alt="Magora-Systems logo"
+								/>
+							</span>
 							Magora Systems - Novosibirsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="4"
+						eventKey="6"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -1396,9 +1663,11 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* BTI Pro */}
+			{/* MAGORA SYSTEMS END */}
+
+			{/* BTI PRO START */}
 			<Accordion.Item
-				eventKey="5"
+				eventKey="7"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -1446,13 +1715,21 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={btipro}
+									height={20}
+									alt="BTI Pro logo"
+								/>
+							</span>
 							BTI Pro - Novosibirsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="5"
+						eventKey="7"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -1475,9 +1752,11 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* Omega Design*/}
+			{/* BTI PRO END */}
+
+			{/* OMEGA DESIGN START */}
 			<Accordion.Item
-				eventKey="6"
+				eventKey="8"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -1523,13 +1802,21 @@ export default function Experience() {
 						</span>
 						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={omegadesignpro}
+									height={20}
+									alt="Omega Design Pro logo"
+								/>
+							</span>
 							Omega Design - Krasnoyarsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="6"
+						eventKey="8"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -1556,9 +1843,11 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
-			{/* Alfateam */}
+			{/* OMEGA DESIGN END */}
+
+			{/* ALFATEAM START */}
 			<Accordion.Item
-				eventKey="7"
+				eventKey="9"
 				bsPrefix="_"
 				className={accordionStyles.accordion__item}
 			>
@@ -1604,13 +1893,21 @@ export default function Experience() {
 						</span>
 						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
+							<span className={styles["experience__where-wrapper"]}>
+								<Image
+									className={styles["experience__where-icon"]}
+									src={alfateam}
+									height={16}
+									alt="Alfateam logo"
+								/>
+							</span>
 							Alfateam - Krasnoyarsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
 				</h3>
 				<div className={accordionStyles.accordion__wrapper}>
 					<Accordion.Collapse
-						eventKey="7"
+						eventKey="9"
 						bsPrefix="_"
 						className={accordionStyles.accordion__collapse}
 					>
@@ -1637,92 +1934,7 @@ export default function Experience() {
 					</Accordion.Collapse>
 				</div>
 			</Accordion.Item>
+			{/* ALFATEAM END */}
 		</Accordion>
 	);
-}
-
-{
-	/* <details className={accordionStyles.experience__details}>
-	<summary className={accordionStyles.experience__summary}>
-		<h2 className={accordionStyles.experience__position}>Frontend developer</h2>
-		<h3 className={accordionStyles.experience__where}>
-			Individual Entrepreneur - Atumi, Georgia 🇬🇪
-		</h3>
-		<span className={accordionStyles.experience__range}>
-			(
-			<time
-				dateTime={getFormattedDateTime({
-					year: 2023,
-					month: 1,
-					day: 25,
-					hour: 0,
-					timezoneOffset: 60 * 4,
-				})}
-			>
-				January 2023
-			</time>{" "}
-			-{" "}
-			<time dateTime={getFormattedDateTime({ timezoneOffset: 60 * 4 })}>
-				Now
-			</time>
-			)
-		</span>
-		<small className={accordionStyles.experience__diff}>1 year 2 months</small>
-	</summary>
-	<div className={accordionStyles.experience__info}>
-		The provision of online services for the development of front-end
-		web applications by the developer:{" "}
-		<abbr title="MPA (Multi-Page Application): is a type of web application in which each page is loaded separately">
-			MPA
-		</abbr>
-		,{" "}
-		<abbr title="SPA (Single-Page Application): is a type of web application or website that interacts with the user by dynamically rewriting the current page, rather than loading entire new pages from the server. In SPA, the initial HTML, CSS, and JavaScript are loaded once, and subsequent interactions are handled through AJAX requests to update the content on the page, providing a smoother and more seamless user experience.">
-			SPA
-		</abbr>{" "}
-		,{" "}
-		<abbr title="Landing (Landing page): is a separate web page aimed at a specific goal of the marketing campaign. The purpose of the landing page can be the collection of contact details, the sale of a product or service, attracting subscribers, etc. Landing pages are usually designed so that it is most effectively attracted and motivated by the visitor to perform the desired action.">
-			Landings
-		</abbr>{" "}
-		and{" "}
-		<abbr title="Email (Electronic Mail): is an electronic communication form that allows you to send and receive messages via the Internet. Email users can send text messages, html code, attach files, exchange documents and interact with other people using email addresses.">
-			Emails
-		</abbr>{" "}
-		as an individual entrepreneur
-	</div>
-</details>
-<details className={accordionStyles.experience__details}>
-	<summary className={accordionStyles.experience__summary}>
-		<h2 className={accordionStyles.experience__position}>Frontend developer</h2>
-		<h3 className={accordionStyles.experience__where}>
-			LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺
-		</h3>
-		<span className={accordionStyles.experience__range}>
-			(October 2019 - August 2022)
-		</span>
-		<small className={accordionStyles.experience__diff}>2 years 11 months</small>
-	</summary>
-	<div className={accordionStyles.experience__info}>
-		Maintained projects:
-		<ol>
-			<li>
-				<Link href="https://www.zfx.com/" target="_blank">
-					zfx.com <FaExternalLinkAlt />
-				</Link>{" "}
-				- ZFX executive website / aggregator.
-			</li>
-			<li>
-				<Link href="https://my.zfx.com/" target="_blank">
-					my.zfx.com <FaExternalLinkAlt />
-				</Link>{" "}
-				- CRM portal to work with leads.
-			</li>
-			<li>
-				<Link href="https://its-nu.vercel.app/" target="_blank">
-					its-nu.vercel.app <FaExternalLinkAlt />
-				</Link>{" "}
-				- LLC ITSOLUTIONS executive website.
-			</li>
-		</ol>
-	</div>
-</details> */
 }
