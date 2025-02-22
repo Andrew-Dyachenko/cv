@@ -170,3 +170,16 @@ h6,
 	max-width: 210mm;
 }
 
+ol, ul {
+	margin: 0;
+	&.cv {
+		li, dd {
+			&:not(:first-of-type) {
+				margin-top: 0.5em;
+			}
+			&:not(:last-of-type) {
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+}

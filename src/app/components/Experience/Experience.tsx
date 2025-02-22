@@ -98,14 +98,12 @@ export default function Experience() {
 							HTML developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={b2broker}
-									height={20}
-									alt="B2Broker logo"
-								/>
-							</span>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={b2broker}
+								height={20}
+								alt="B2Broker logo"
+							/>
 							B2Broker - Tbilisi, Georgia 🇬🇪
 						</span>
 					</Accordion.Button>
@@ -135,7 +133,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>
-									- CRM system for managing broker leads and customer interactions.
+									- <abbr title="Business to Business">B2B</abbr> solution designed for brokers, exchanges, and other financial institutions. It provides a comprehensive back-office system, including CRM, reporting, and client management tools, to streamline operations and enhance customer experience.
 								</li>
 								<li>
 									<a
@@ -153,9 +151,10 @@ export default function Experience() {
 											}}
 										/>
 									</a>
-									- Main trading platform of the company.
+									- <abbr title="Business to Business">B2B</abbr> solution for brokers, exchanges, and financial institutions. It acts as a <abbr title="When a broker&rsquo;s internal liquidity is insufficient to cover client orders, B2Prime ensures seamless execution by providing access to external liquidity, helping brokers fulfill orders quickly and at competitive market prices">liquidity provider</abbr>, offering deep multi-asset liquidity across Forex, crypto, metals, indices, and more.
 								</li>
 							</ol>
+
 							<h4>Responsibilities:</h4>
 							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
 								<dt>
@@ -178,35 +177,6 @@ export default function Experience() {
 										/>
 									</a>
 								</dt>
-								<dd
-									style={{
-										margin: 0,
-										paddingInlineStart: "1rem",
-										paddingBlock: "1rem",
-									}}
-								>
-									<ul style={{ margin: 0 }}>
-										<li>
-											Received tasks from Frontend developers with initial logic and draft
-											layouts, finalized by styling and adjusting the layout to ensure pixel-perfect design.
-										</li>
-										<li>
-											Maintained and refined SCSS styles to meet company’s coding standards and avoid code conflicts.
-										</li>
-										<li>
-											Collaborated with designers to align mockups with the shared component
-											library in Storybook.
-										</li>
-										<li>
-											Conducted code reviews, ensuring compliance with internal guidelines before merging to the development branch.
-										</li>
-										<li>
-											Participated in Agile development cycles, including daily stand-ups,
-											sprint planning, and retrospectives using Jira and Slack.
-										</li>
-									</ul>
-								</dd>
-
 								<dt>
 									<a
 										href="https://b2prime.com/"
@@ -234,16 +204,56 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
-											Developed adaptive, product-specific email templates using Maizzle framework for B2Prime notifications and updates.
+											Worked with company monorepo:
+											<ul>
+												<li>
+													{/* Received the drafted layouts with ready-made logic from the Frontend developers, based on the global styles of the projects, shared components and the (<strong>Storybook</strong>) library, and finalized its styling and logic using (<strong>HTML</strong>, <strong>SCSS</strong>, <strong>Angular</strong> <code style={{ fontSize: "0.75em" }}>v16</code>), (<strong>TypeScript</strong> <code style={{ fontSize: "0.75em" }}>v5</code>) in accordance with the layouts. */}
+													Finalized draft layouts with pre-implemented logic, received from the frontend developers, by based on the project&rsquo;s global styles, shared components, from the (<strong>Storybook</strong>) library styling and functionality by using (<strong>HTML</strong>, <strong>SCSS</strong>, <strong>Angular</strong> <code style={{ fontSize: "0.75em" }}>v16</code>), and (<strong>TypeScript</strong> <code style={{ fontSize: "0.75em" }}>v5</code>), ensuring full compliance with the provided design layouts.
+												</li>
+												<li>
+													Held to the corporate coding and style standards. For example: using fixed pixels (<strong>px</strong>) instead of (<s><strong>rem</strong></s>) or (<s><strong>em</strong></s>).
+												</li>
+												<li>
+													Collaborated with designers to ensure all mockups were aligned with the
+													shared component library.
+												</li>
+												<li>
+													Worked under the supervision of (<strong>Substream</strong>) and (<strong>Stream</strong>) project leads, took a part in the daily meetings, periodic stand-ups.
+												</li>
+											</ul>
 										</li>
 										<li>
-											Created reusable email components to improve template consistency and
-											development speed.
+											Worked with Emails:
+											<ul>
+												<li>
+													Developed and maintained from the scratch reusable adaptive email templates for notifications and
+													updates using (<strong>HTML</strong>, <strong>SCSS</strong>) in the (<strong>Maizzle</strong> <code style={{ fontSize: "0.75em" }}>v4</code>) framework.
+												</li>
+												<li>
+													Ensured email templates were compatible across all major clients like (<strong>Gmail</strong>) and (<strong>Yahoo</strong>),
+													including (<strong>Outlook</strong> <code style={{ fontSize: "0.75em" }}>^2007</code>), through the testing and debugging.
+												</li>
+												<li>
+													Created regular marketing and informational emails manually (without a framework) in collaboration with the email manager, repurposing existing templates for efficiency and ensuring content accuracy.
+												</li>
+												<li>
+													Close cooperation with the email content manager for prompt updating and testing of regular custom made none email templates.
+												</li>
+											</ul>
 										</li>
 										<li>
-											Ensured cross-client compatibility, including thorough testing for Outlook and other major clients.
+											Participation in code review, creation and verification of pull requests in (<strong>GitLab</strong>) with mandatory receipt of at least 3 approvals before merging into the dev branch.
+										</li>
+										<li>
+											Managing tasks in (<strong>Jira</strong>), tracking time and creating daily reports.
+										</li>
+										<li>
+											Help improve current documentation in Confluence.
+										</li>
+										<li>
+											Interacting with the team via (<strong>Slack</strong>), (<strong>Google Meet</strong>), (<strong>Zoom</strong>), (<strong>Jira</strong>), (<strong>Confluence</strong>), (<strong>Gitlab</strong>). Participating in daily meetings, personal meetings, various events.
 										</li>
 									</ul>
 								</dd>
@@ -298,9 +308,7 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<FaGlobeAfrica className={styles["experience__where-icon"]} />
-							</span>
+							<FaGlobeAfrica className={styles["experience__where-icon"]} />
 							Individual Entrepreneur - Batumi, Georgia 🇬🇪
 						</span>
 					</Accordion.Button>
@@ -373,14 +381,12 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--zfx"])}
-									src={zfx}
-									width={20}
-									alt="ZFX logo"
-								/>
-							</span>
+							<Image
+								className={clsx(styles["experience__where-icon"], styles["experience__where-icon--zfx"])}
+								src={zfx}
+								width={20}
+								alt="ZFX logo"
+							/>
 							LLC ITSOLUTIONS (ZFX) - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -487,7 +493,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Start the project from a scratch for (
 											<strong>WordPress</strong>).
@@ -595,7 +601,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Support and improve the legacy app (<strong>Vue</strong>{" "}
 											<code style={{ fontSize: "0.75em" }}>v2-3</code>).
@@ -650,7 +656,7 @@ export default function Experience() {
 										paddingBlock: "1rem 0",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Start the project from a scratch using (
 											<strong>Next.js</strong>{" "}
@@ -760,14 +766,12 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--gazprommedia"])}
-									src={gazprommedia}
-									height={20}
-									alt="Gazprom Media logo"
-								/>
-							</span>
+							<Image
+								className={clsx(styles["experience__where-icon"], styles["experience__where-icon--gazprommedia"])}
+								src={gazprommedia}
+								height={20}
+								alt="Gazprom Media logo"
+							/>
 							Gazprom RTV Media - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -905,7 +909,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Start the project from a scratch with (
 											<strong>Gulp.js</strong>).
@@ -967,7 +971,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Support and improve the legacy web site based at (
 											<strong>Laravel</strong>).
@@ -1116,7 +1120,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Support and improve the legacy web site based at (
 											<strong>Laravel</strong>).
@@ -1242,22 +1246,18 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={uurraa}
-									width={20}
-									alt="UURRAA logo"
-								/>
-							</span>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={freshbroccoli}
-									width={20}
-									alt="Freshbroccoli logo"
-								/>
-							</span>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={uurraa}
+								width={20}
+								alt="UURRAA logo"
+							/>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={freshbroccoli}
+								width={20}
+								alt="Freshbroccoli logo"
+							/>
 							UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -1384,7 +1384,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Support and improve the legacy web site based on (
 											<strong>Bitrix</strong>)
@@ -1448,7 +1448,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Support and improve the legacy web site based on (
 											<strong>Bitrix</strong>).
@@ -1512,7 +1512,7 @@ export default function Experience() {
 										paddingBlock: "1rem",
 									}}
 								>
-									<ul style={{ margin: 0 }}>
+									<ul className="cv">
 										<li>
 											Start the project from a scratch for (
 											<strong>Bitrix</strong>) using (<strong>Vue</strong>{" "}
@@ -1620,14 +1620,12 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={clsx(styles["experience__where-icon"], styles["experience__where-icon--magorasystems"])}
-									src={magorasystems}
-									height={20}
-									alt="Magora-Systems logo"
-								/>
-							</span>
+							<Image
+								className={clsx(styles["experience__where-icon"], styles["experience__where-icon--magorasystems"])}
+								src={magorasystems}
+								height={20}
+								alt="Magora-Systems logo"
+							/>
 							Magora Systems - Novosibirsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -1715,14 +1713,12 @@ export default function Experience() {
 							Frontend developer
 						</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={btipro}
-									height={20}
-									alt="BTI Pro logo"
-								/>
-							</span>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={btipro}
+								height={20}
+								alt="BTI Pro logo"
+							/>
 							BTI Pro - Novosibirsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -1802,14 +1798,12 @@ export default function Experience() {
 						</span>
 						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={omegadesignpro}
-									height={20}
-									alt="Omega Design Pro logo"
-								/>
-							</span>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={omegadesignpro}
+								height={20}
+								alt="Omega Design Pro logo"
+							/>
 							Omega Design - Krasnoyarsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
@@ -1893,14 +1887,12 @@ export default function Experience() {
 						</span>
 						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
-							<span className={styles["experience__where-wrapper"]}>
-								<Image
-									className={styles["experience__where-icon"]}
-									src={alfateam}
-									height={16}
-									alt="Alfateam logo"
-								/>
-							</span>
+							<Image
+								className={styles["experience__where-icon"]}
+								src={alfateam}
+								height={16}
+								alt="Alfateam logo"
+							/>
 							Alfateam - Krasnoyarsk, Russia 🇷🇺
 						</span>
 					</Accordion.Button>
