@@ -571,10 +571,6 @@ export default function Experience() {
 											in two languages (<strong>English</strong>,{" "}
 											<strong>Russian</strong>).
 										</li>
-										{/* <li>
-										Continuous self-training using (<strong>Paper books</strong>
-										)
-									</li> */}
 									</ul>
 								</dd>
 								<dt>
@@ -1640,26 +1636,251 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							<p
-								style={{
-									marginBlockEnd: "1rem",
-									fontWeight: 700,
-									fontSize: "0.875em",
-								}}
-							>
-								🏗 The block is under reconstruction, will be ready soon... 🏗
-							</p>
-							Work on large foreign outsourcing projects. Led 3 projects. 1)
-							Development of a web-platform for an elite taxi in London, focused
-							on Arab clients. - writing frontend in JS (ES5) and Bootstrap 3 -
-							layout on jQuery, HTML5, CSS3 - active work with the Hightcharts
-							library to build sections of financial and other reporting, for
-							example, line and share charts 2) Development of an Indian dating
-							social network like Badoo, a web platform. - writing frontend in
-							JS (ES5) and FlatUI - layout on jQuery, HTML5, CSS3 3) A web-based
-							music platform like SoundCloud. - writing frontend in JS (ES5) and
-							Bootstrap 3 - layout on jQuery, HTML5, CSS3 - layout of E-mail
-							newsletters All projects supported IE10+, pixel perfect layout.
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">Elite Taxi Platform</span>
+										<span className="print-inline-visible">
+											Elite Taxi Platform (London)
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Web platform for an elite taxi service in London, targeting Arab clients.
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">Dating Social Network</span>
+										<span className="print-inline-visible">
+											Dating Social Network (India)
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Web platform for an Indian dating social network similar to Badoo.
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">Music Platform</span>
+										<span className="print-inline-visible">
+											Music Platform (SoundCloud-like)
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Web-based music platform similar to SoundCloud.
+								</li>
+							</ol>
+							<h4>Responsibilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* Elite Taxi Platform */}
+								<dt>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										Elite Taxi Platform{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>, <strong>jQuery</strong>,{" "}
+											<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v3</code>).
+										</li>
+										<li>
+											Integrated and customized the (<strong>Highcharts</strong>) library for
+											building financial and other reporting sections, including line and share
+											charts.
+										</li>
+										<li>
+											Ensured cross-browser compatibility, including support for (
+											<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>).
+										</li>
+										<li>
+											Delivered pixel-perfect layouts in accordance with design requirements.
+										</li>
+										<li>
+											Used (<strong>Git</strong>) for version control and collaboration.
+										</li>
+										<li>
+											Prepared and submitted reports using (<strong>Redmine</strong>) for task
+											tracking and project management.
+										</li>
+										<li>
+											Collaborated with backend developers working on the (
+											<strong>.NET</strong>) framework to ensure seamless integration between
+											frontend and backend.
+										</li>
+									</ul>
+								</dd>
+								{/* Dating Social Network */}
+								<dt>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										Dating Social Network{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>, <strong>jQuery</strong>,{" "}
+											<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>FlatUI</strong>).
+										</li>
+										<li>
+											Ensured cross-browser compatibility, including support for (
+											<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>).
+										</li>
+										<li>
+											Delivered pixel-perfect layouts in accordance with design requirements.
+										</li>
+										<li>
+											Used (<strong>Git</strong>) for version control and collaboration.
+										</li>
+										<li>
+											Prepared and submitted reports using (<strong>Redmine</strong>) for task
+											tracking and project management.
+										</li>
+										<li>
+											The project was in the early stages of development and did not yet have a
+											backend. It was running on a frontend build tool, likely (
+											<strong>Gulp.js</strong>) or (<strong>Grunt.js</strong>), with live-reload
+											functionality for automatic page refresh during development.
+										</li>
+									</ul>
+								</dd>
+								{/* Music Platform */}
+								<dt>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										Music Platform{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>, <strong>jQuery</strong>,{" "}
+											<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v3</code>).
+										</li>
+										<li>
+											Designed and implemented email newsletters for the platform.
+										</li>
+										<li>
+											Ensured cross-browser compatibility, including support for (
+											<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>).
+										</li>
+										<li>
+											Delivered pixel-perfect layouts in accordance with design requirements.
+										</li>
+										<li>
+											Used (<strong>Git</strong>) for version control and collaboration.
+										</li>
+										<li>
+											Prepared and submitted reports using (<strong>Redmine</strong>) for task
+											tracking and project management.
+										</li>
+										<li>
+											Collaborated with backend developers working on the (
+											<strong>.NET</strong>) framework to ensure seamless integration between
+											frontend and backend.
+										</li>
+									</ul>
+								</dd>
+							</dl>
 						</div>
 					</Accordion.Collapse>
 				</div>
@@ -1733,20 +1954,103 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							<p
-								style={{
-									marginBlockEnd: "1rem",
-									fontWeight: 700,
-									fontSize: "0.875em",
-								}}
-							>
-								🏗 The block is under reconstruction, will be ready soon... 🏗
-							</p>
-							The company is focused on the real estate market. I participated
-							in the development of two start-up projects. My responsibilities
-							included site layout and front-end programming. I got invaluable
-							experience in start-up projects start and honest my first
-							experience in working with language Javascript.
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="https://ktotam.pro/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">ktotam.pro</span>
+										<span className="print-inline-visible">
+											https://ktotam.pro
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Real estate startup project aimed at simplifying access to property information.
+									<ul>
+										<li>
+											The project aimed to simplify access to property information by allowing
+											users to enter a cadastral number or address and receive free basic
+											information or detailed data for a small fee.
+										</li>
+										<li>
+											Solved the problem of complex and confusing forms on official government
+											websites by providing a user-friendly interface.
+										</li>
+									</ul>
+								</li>
+							</ol>
+							<h4>Responsibilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* KTO-TAM.PRO */}
+								<dt>
+									<a
+										href="https://ktotam.pro/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										ktotam.pro{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Developed the website from scratch using pixel-perfect methodology.
+										</li>
+										<li>
+											Implemented front-end programming using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>).
+										</li>
+										<li>
+											Added JavaScript logic to handle events using native (
+											<strong>XMLHttpRequest</strong>) for making HTTP requests.
+										</li>
+										<li>
+											Created layouts and animations using (<strong>HTML</strong>,{" "}
+											<strong>CSS</strong>).
+										</li>
+										<li>
+											Used (<strong>Git</strong>) for version control and collaboration.
+										</li>
+										<li>
+											Worked with tools such as (<strong>Avocode</strong>), (
+											<strong>Sublime Editor</strong>), and (<strong>Git Tortoise</strong>).
+										</li>
+										<li>
+											Collaborated with a small team consisting of a full-stack developer, a
+											designer, and a Scrum manager.
+										</li>
+										<li>
+											Participated in Scrum meetings with tasks visualized on a whiteboard.
+										</li>
+									</ul>
+								</dd>
+							</dl>
 						</div>
 					</Accordion.Collapse>
 				</div>
