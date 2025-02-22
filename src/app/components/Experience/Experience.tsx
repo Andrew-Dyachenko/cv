@@ -320,11 +320,14 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							Providing Frontend development services for web applications,
-							websites, NPM packages and emails, as an individual entrepreneur
-							(freelancer / contractor).{" "}
-							<abbr title="Non-Disclosure Agreement">NDA</abbr>.
-
+							<p>
+								Providing Frontend development services for web applications,
+								websites, NPM packages and emails, as an individual entrepreneur
+								(freelancer / contractor). Including signing an <abbr title="Non-Disclosure Agreement">NDA</abbr>.
+							</p>
+							<p>
+								Basically, worked with the classic trio (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), using (<strong>WordPress</strong>) and it&rsquo;s <abbr title="What You See Is What You Get">WYSIWYG</abbr>s.
+							</p>
 						</div>
 					</Accordion.Collapse>
 				</div>
