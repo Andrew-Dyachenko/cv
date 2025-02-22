@@ -170,6 +170,12 @@ h6,
 	max-width: 210mm;
 }
 
+.nextjs-toast-errors-parent {
+	@media print {
+		display: none;
+	}
+}
+
 ol, ul {
 	margin: 0;
 	&.cv {
