@@ -14,7 +14,7 @@ import Image from "next/image";
 
 import b2broker from "../../../../public/b2broker.svg";
 import zfx from "../../../../public/zfx.png";
-import gazprommedia from '../../../../public/gazprommedia.png';
+import gazprommedia from "../../../../public/gazprommedia.png";
 import uurraa from "../../../../public/uurraa.png";
 import freshbroccoli from "../../../../public/freshbroccoli.svg";
 import magorasystems from "../../../../public/magora-systems.png";
@@ -2122,24 +2122,166 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							<p
-								style={{
-									marginBlockEnd: "1rem",
-									fontWeight: 700,
-									fontSize: "0.875em",
-								}}
-							>
-								🏗 The block is under reconstruction, will be ready soon... 🏗
-							</p>
-							A small outsourcing company, participated in the development and
-							development of project projects for regional and federal
-							customers. From online stores of children things to analogues
-							Avito. Some projects were taken from scratch, but most were
-							Legacy, so the main task was mainly to edit and maintain the code.
-							- work with WordPress, Joomla, Droopal platforms - interaction
-							with the backend part of sites written in PHP (Yii) - MPA layout
-							on CSS3, jQuery, HTML5 Stack: CSS3, jQuery, HTML5, WordPress,
-							Joomla, Droopal, PHP, Yii, Redmine
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="http://никалюкс.рф"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">никалюкс.рф</span>
+										<span className="print-inline-visible">
+											http://никалюкс.рф
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for children&apos;s products.
+								</li>
+								<li>
+									<a
+										href="http://heat.omegadesign.pro/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">heat.omegadesign.pro</span>
+										<span className="print-inline-visible">
+											http://heat.omegadesign.pro/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Project related to heating systems.
+								</li>
+								<li>
+									<a
+										href="http://aurum-tours.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">aurum-tours.ru</span>
+										<span className="print-inline-visible">
+											http://aurum-tours.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Website for a travel agency.
+								</li>
+								<li>
+									<a
+										href="http://eco-d.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">eco-d.ru</span>
+										<span className="print-inline-visible">
+											http://eco-d.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Website for an eco-friendly products company.
+								</li>
+								<li>
+									<a
+										href="http://capitel24.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">capitel24.ru</span>
+										<span className="print-inline-visible">
+											http://capitel24.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Website for a construction company.
+								</li>
+							</ol>
+							<h4>Responsibilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* Omega Design */}
+								<dt>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										Omega Design{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Worked on a variety of projects for regional and federal clients, ranging
+											from online stores for children&apos;s products to platforms similar to Avito.
+										</li>
+										<li>
+											Some projects were developed from scratch, but most involved maintaining
+											and editing legacy code.
+										</li>
+										<li>
+											Created and maintained layouts for multi-page applications <abbr title="Multi-Page Application">MPA</abbr> using (
+											<strong>CSS3</strong>, <strong>jQuery</strong>, <strong>HTML5</strong>).
+										</li>
+										<li>
+											Worked with CMS platforms such as (<strong>WordPress</strong>), (
+											<strong>Joomla</strong>), and (<strong>Drupal</strong>).
+										</li>
+										<li>
+											Interacted with the backend part of websites written in (<strong>PHP</strong>) using the (
+											<strong>Yii</strong>) framework.
+										</li>
+										<li>
+											Used (<strong>Redmine</strong>) for task tracking and project management.
+										</li>
+									</ul>
+								</dd>
+							</dl>
 						</div>
 					</Accordion.Collapse>
 				</div>
