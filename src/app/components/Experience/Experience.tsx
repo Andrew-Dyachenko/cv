@@ -2353,24 +2353,180 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
-							<p
-								style={{
-									marginBlockEnd: "1rem",
-									fontWeight: 700,
-									fontSize: "0.875em",
-								}}
-							>
-								🏗 The block is under reconstruction, will be ready soon... 🏗
-							</p>
-							<p>
-								Created online clothing stores on the Bitrix system.
-								Collectively led and completed at least 5 projects.
-							</p>
-							<p>
-								- layout of sites on the Bitrix system - support for older
-								browsers (IE7, IE8, IE9, IE10, IE11) - work with markup and
-								style sheets in HTML and CSS
-							</p>
+							<p>Worked on the following projects:</p>
+							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
+								<li>
+									<a
+										href="http://besm.alfateam.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">@+dress</span>
+										<span className="print-inline-visible">
+											http://besm.alfateam.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for fashionable clothing, shoes, and accessories (Bitrix). My first serious project and the first online store I developed.
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">KPOHAH</span>
+										<span className="print-inline-visible">
+											KPOHAH (Bitrix)
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for fashionable clothing, shoes, and accessories (Bitrix).
+								</li>
+								<li>
+									<a
+										href="http://www.m2m-sib.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">M2M-Телематика Сибирь</span>
+										<span className="print-inline-visible">
+											http://www.m2m-sib.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Website for M2M Telematics Siberia (Bitrix).
+								</li>
+								<li>
+									<a
+										href="http://regtime24.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">Регтайм</span>
+										<span className="print-inline-visible">
+											http://regtime24.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for fashionable clothing, shoes, and accessories (Bitrix).
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">Меркурий - Сибирская Топливная Компания</span>
+										<span className="print-inline-visible">
+											Меркурий - Сибирская Топливная Компания (Bitrix)
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Website for Mercury - Siberian Fuel Company (Bitrix).
+								</li>
+								<li>
+									<a
+										href="http://wandmart.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">wandmart.ru</span>
+										<span className="print-inline-visible">
+											http://wandmart.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store for fashionable clothing, shoes, and accessories (Bitrix).
+								</li>
+							</ol>
+							<h4>Responsibilities:</h4>
+							<dl style={{ paddingInlineStart: 0, marginBlockEnd: 0 }}>
+								{/* Alfateam */}
+								<dt>
+									<a
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											display: "inline-flex",
+											alignItems: "center",
+											color: "inherit",
+										}}
+									>
+										Alfateam{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>
+								</dt>
+								<dd
+									style={{
+										margin: 0,
+										paddingInlineStart: "1rem",
+										paddingBlock: "1rem",
+									}}
+								>
+									<ul className="cv">
+										<li>
+											Developed and launched at least 5 online clothing stores on the (
+											<strong>Bitrix</strong>) system.
+										</li>
+										<li>
+											Created layouts and maintained websites on the (<strong>Bitrix</strong>)
+											platform.
+										</li>
+										<li>
+											Ensured compatibility with older browsers, including (
+											<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v7-11</code>).
+										</li>
+										<li>
+											Worked with markup and style sheets using (<strong>HTML</strong>) and (
+											<strong>CSS</strong>).
+										</li>
+									</ul>
+								</dd>
+							</dl>
 						</div>
 					</Accordion.Collapse>
 				</div>
