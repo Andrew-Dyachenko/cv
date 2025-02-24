@@ -22,10 +22,10 @@ export default function Address() {
 				<li
 					className={clsx(styles.address__item, styles["address__item--phone"])}
 				>
-					<a href="tel:+995597746863" className={styles.address__link}>
+					<a href="tel:+79152519666" className={styles.address__link}>
 						<IoPhonePortraitOutline className={styles["address__item-icon"]} />
 						<div className={styles["address__item-text"]}>
-							+995 597 746 863
+							+7 (915) 251-96-66
 						</div>
 					</a>
 				</li>

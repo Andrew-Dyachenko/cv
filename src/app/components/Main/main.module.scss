@@ -18,10 +18,22 @@
 		display: flex;
 		align-items: center;
 		margin: 0;
+		column-gap: 0.5rem;
 
 		&-icon {
 			flex-shrink: 0;
-			margin-inline-end: 0.25em;
+		}
+
+		&-text {
+			flex-grow: 1;
+		}
+
+		&-duration {
+			font-weight: 400;
+			font-family: monospace;
+			grid-area: experience__duration;
+			font-size: 0.5em;
+			flex-shrink: 0;
 		}
 	}
 
