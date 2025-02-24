@@ -115,6 +115,18 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://b2broker.com/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">b2broker</span>
+									<span className="print-inline-visible">https://b2broker.com/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
@@ -401,6 +413,18 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://its-nu.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">its-nu.vercel.app</span>
+									<span className="print-inline-visible">https://its-nu.vercel.app/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
@@ -782,6 +806,18 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://www.gazprom-media.com/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">gazprom-media.com</span>
+									<span className="print-inline-visible">https://www.gazprom-media.com/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								{/* DIP.TNT4.RU */}
@@ -1268,18 +1304,30 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://web.archive.org/web/20170709032816/https://urraa.ru/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">urraa.ru</span>
+									<span className="print-inline-visible">https://web.archive.org/web/20170709032816/https://urraa.ru/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
 									<a
-										href="https://urraa.ru/"
+										href="https://web.archive.org/web/20170709032816/https://urraa.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">urraa.ru</span>
 										<span className="print-inline-visible">
-											https://urraa.ru
+											https://web.archive.org/web/20170709032816/https://urraa.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -1293,14 +1341,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="https://freshbroccoli.ru/"
+										href="https://web.archive.org/web/20170603211147/https://freshbroccoli.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">freshbroccoli.ru</span>
 										<span className="print-inline-visible">
-											https://freshbroccoli.ru
+											https://web.archive.org/web/20170603211147/https://freshbroccoli.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -1314,7 +1362,7 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="https://new.freshbroccoli.ru/"
+										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
@@ -1358,7 +1406,7 @@ export default function Experience() {
 								{/* URRAA.RU */}
 								<dt>
 									<a
-										href="https://urraa.ru/"
+										href="https://web.archive.org/web/20170709032816/https://urraa.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -1636,6 +1684,18 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://magora-systems.com/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">magora-systems.com</span>
+									<span className="print-inline-visible">https://magora-systems.com/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
@@ -1954,18 +2014,30 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://web.archive.org/web/20140510091338/http://btipro.ru/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">btipro.ru</span>
+									<span className="print-inline-visible">https://web.archive.org/web/20140510091338/http://btipro.ru/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
 									<a
-										href="https://ktotam.pro/"
+										href="https://web.archive.org/web/20141023134413/http://ktotam.pro/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">ktotam.pro</span>
 										<span className="print-inline-visible">
-											https://ktotam.pro
+											https://web.archive.org/web/20141023134413/http://ktotam.pro/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -1993,7 +2065,7 @@ export default function Experience() {
 								{/* KTO-TAM.PRO */}
 								<dt>
 									<a
-										href="https://ktotam.pro/"
+										href="https://web.archive.org/web/20141023134413/http://ktotam.pro/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -2122,18 +2194,30 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://www.omegadesign.pro/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">omegadesign.pro</span>
+									<span className="print-inline-visible">https://www.omegadesign.pro/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
 									<a
-										href="http://никалюкс.рф"
+										href="https://web.archive.org/web/20180409060127/http://%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8E%D0%BA%D1%81.%D1%80%D1%84/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">никалюкс.рф</span>
 										<span className="print-inline-visible">
-											http://никалюкс.рф
+											https://web.archive.org/web/20180409060127/http://%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8E%D0%BA%D1%81.%D1%80%D1%84/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2146,7 +2230,7 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://heat.omegadesign.pro/"
+										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
@@ -2166,14 +2250,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://aurum-tours.ru/"
+										href="https://web.archive.org/web/20140707080406/http://aurum-tours.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">aurum-tours.ru</span>
 										<span className="print-inline-visible">
-											http://aurum-tours.ru/
+											https://web.archive.org/web/20140707080406/http://aurum-tours.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2186,14 +2270,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://eco-d.ru/"
+										href="https://web.archive.org/web/20150407021801/http://www.eco-d.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span className="print-invisible">eco-d.ru</span>
+										<span className="print-invisible">http://eco-d.ru/</span>
 										<span className="print-inline-visible">
-											http://eco-d.ru/
+											https://web.archive.org/web/20150407021801/http://www.eco-d.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2206,14 +2290,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://capitel24.ru/"
+										href="https://web.archive.org/web/20140517065703/http://capitel24.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span className="print-invisible">capitel24.ru</span>
+										<span className="print-invisible">http://capitel24.ru/</span>
 										<span className="print-inline-visible">
-											http://capitel24.ru/
+											https://web.archive.org/web/20140517065703/http://capitel24.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2230,7 +2314,7 @@ export default function Experience() {
 								{/* Omega Design */}
 								<dt>
 									<a
-										href="#"
+										href="https://www.omegadesign.pro/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -2257,16 +2341,11 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Worked on a variety of projects for regional and federal clients, ranging
-											from online stores for children&apos;s products to platforms similar to Avito.
-										</li>
-										<li>
-											Some projects were developed from scratch, but most involved maintaining
-											and editing legacy code.
+											Developed HTML layouts from the scratch, as well as improve and support projects with legacy code.
 										</li>
 										<li>
 											Created and maintained layouts for multi-page applications <abbr title="Multi-Page Application">MPA</abbr> using (
-											<strong>CSS3</strong>, <strong>jQuery</strong>, <strong>HTML5</strong>).
+											<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>jQuery</strong>, <strong>Photoshop</strong> <code style={{ fontSize: "0.75em" }}>v5</code>).
 										</li>
 										<li>
 											Worked with CMS platforms such as (<strong>WordPress</strong>), (
@@ -2353,6 +2432,18 @@ export default function Experience() {
 						className={accordionStyles.accordion__collapse}
 					>
 						<div className={accordionStyles.accordion__body}>
+							<div>
+								<a href="https://alfateam.ru/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center" }}>
+									<span className="print-invisible">alfateam.ru</span>
+									<span className="print-inline-visible">https://alfateam.ru/</span>
+									<FaExternalLinkAlt
+										style={{
+											fontSize: "0.75em",
+											marginInlineStart: "0.3333em",
+										}}
+									/>
+								</a>
+							</div>
 							<p>Worked on the following projects:</p>
 							<ol style={{ listStylePosition: "inside", paddingInline: 0 }}>
 								<li>
@@ -2377,14 +2468,54 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="#"
+										href="https://proffcom24.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span className="print-invisible">KPOHAH</span>
+										<span className="print-invisible">proffcom24.ru</span>
 										<span className="print-inline-visible">
-											KPOHAH (Bitrix)
+											https://proffcom24.ru/
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- Online store of furniture and office accessories (Bitrix).
+								</li>
+								<li>
+									<a
+										href="https://web-arhive.ru/page?url=http%3A%2F%2Fm2m-sib.ru%2F&date=20141228&hidden=0"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">m2m-sib.ru</span>
+										<span className="print-inline-visible">
+											https://web-arhive.ru/page?url=http%3A%2F%2Fm2m-sib.ru%2F&date=20141228&hidden=0
+										</span>{" "}
+										<FaExternalLinkAlt
+											style={{
+												fontSize: "0.75em",
+												marginInlineStart: "0.3333em",
+											}}
+										/>
+									</a>{" "}
+									- M2M-Telematics Siberia LLC is a multi-platform representative of the GLONASS market leaders and a licensed workshop for the installation and repair of tachographs. (Bitrix).
+								</li>
+								<li>
+									<a
+										href="https://web.archive.org/web/20140911111454/http://www.regtime24.ru/"
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{ display: "inline-flex", alignItems: "center" }}
+									>
+										<span className="print-invisible">regtime24.ru</span>
+										<span className="print-inline-visible">
+											https://web.archive.org/web/20140911111454/http://www.regtime24.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2397,54 +2528,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://www.m2m-sib.ru/"
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{ display: "inline-flex", alignItems: "center" }}
-									>
-										<span className="print-invisible">M2M-Телематика Сибирь</span>
-										<span className="print-inline-visible">
-											http://www.m2m-sib.ru/
-										</span>{" "}
-										<FaExternalLinkAlt
-											style={{
-												fontSize: "0.75em",
-												marginInlineStart: "0.3333em",
-											}}
-										/>
-									</a>{" "}
-									- Website for M2M Telematics Siberia (Bitrix).
-								</li>
-								<li>
-									<a
-										href="http://regtime24.ru/"
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{ display: "inline-flex", alignItems: "center" }}
-									>
-										<span className="print-invisible">Регтайм</span>
-										<span className="print-inline-visible">
-											http://regtime24.ru/
-										</span>{" "}
-										<FaExternalLinkAlt
-											style={{
-												fontSize: "0.75em",
-												marginInlineStart: "0.3333em",
-											}}
-										/>
-									</a>{" "}
-									- Online store for fashionable clothing, shoes, and accessories (Bitrix).
-								</li>
-								<li>
-									<a
 										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
-										<span className="print-invisible">Меркурий - Сибирская Топливная Компания</span>
+										<span className="print-invisible">Mercury - Siberian Fuel Company</span>
 										<span className="print-inline-visible">
-											Меркурий - Сибирская Топливная Компания (Bitrix)
+											Mercury - Siberian Fuel Company (Bitrix)
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2457,14 +2548,14 @@ export default function Experience() {
 								</li>
 								<li>
 									<a
-										href="http://wandmart.ru/"
+										href="https://web.archive.org/web/20151117114253/http://wandmart.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{ display: "inline-flex", alignItems: "center" }}
 									>
 										<span className="print-invisible">wandmart.ru</span>
 										<span className="print-inline-visible">
-											http://wandmart.ru/
+											https://web.archive.org/web/20151117114253/http://wandmart.ru/
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -2481,7 +2572,7 @@ export default function Experience() {
 								{/* Alfateam */}
 								<dt>
 									<a
-										href="#"
+										href="https://alfateam.ru/"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -2508,21 +2599,22 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Developed and launched at least 5 online clothing stores on the (
-											<strong>Bitrix</strong>) system.
-										</li>
-										<li>
 											Created layouts and maintained websites on the (<strong>Bitrix</strong>)
-											platform.
+											platform, using (<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>Photoshop</strong> <code style={{ fontSize: "0.75em" }}>v5</code>).
 										</li>
 										<li>
-											Ensured compatibility with older browsers, including (
+											Followed the (<strong>Pixel-Perfect</strong>) methodology to ensure the
+											layout fully matched the provided designs.
+										</li>
+										<li>
+											Ensured сross-browser compatibility, including (
 											<strong>Internet Explorer</strong>{" "}
-											<code style={{ fontSize: "0.75em" }}>v7-11</code>).
+											<code style={{ fontSize: "0.75em" }}>v8-10</code>).
 										</li>
 										<li>
-											Worked with markup and style sheets using (<strong>HTML</strong>) and (
-											<strong>CSS</strong>).
+											Collaborated closely with the designer, backend developer, and company
+											director to ensure smooth project execution and alignment with business
+											goals.
 										</li>
 									</ul>
 								</dd>
