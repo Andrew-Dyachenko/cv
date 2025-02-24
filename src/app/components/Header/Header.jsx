@@ -5,6 +5,7 @@ import Link from "next/link";
 import FontSize from "./FontSize";
 import packageJSON from "../../../../package.json";
 import DirectionToggle from "../DirectionToggle";
+import PrintButton from "../PrintButton";
 
 const { version } = packageJSON;
 
@@ -20,6 +21,7 @@ export default function Header() {
 						classNameModificator={styles.header__directionToggle}
 					/>
 				) : null}
+				<PrintButton />
 				<FontSize />
 			</div>
 		</header>
