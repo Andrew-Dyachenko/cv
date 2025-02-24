@@ -8,6 +8,15 @@
 	// background: linear-gradient(to bottom, #d8d8d8, #a1a1a1);
 	// background: linear-gradient(to bottom, #C0C0C0, #B0B0B0);
 
+	@media (prefers-color-scheme: dark) {
+		background: color.mix(darken(#e6e6e6, fibonacci.$asymp-xl-percentage), darken(#b4b4b4, fibonacci.$asymp-xl-percentage));
+		background: linear-gradient(
+			180deg,
+			darken(#e6e6e6, fibonacci.$asymp-xl-percentage) 0%,
+			darken(#b4b4b4, fibonacci.$asymp-xl-percentage) 100%
+		);
+	}
+
 	@media print {
 		display: none;
 	}
@@ -46,9 +55,24 @@
 	color: $-color;
 	font-weight: 700;
 	margin-inline-end: auto;
-	text-shadow: 0 fibonacci.$asymp-m * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
-		0 fibonacci.$asymp-m * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
+	text-shadow: 0 fibonacci.$asymp-m * -1em 0
+			color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
+		0 fibonacci.$asymp-m * 1em 0
+			color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
 
+	@media (prefers-color-scheme: dark) {
+		color: darken($-color, fibonacci.$asymp-xl-percentage);
+		text-shadow: 0 fibonacci.$asymp-m * -1em 0
+				darken(
+					color.change(
+						$-color,
+						$lightness: fibonacci.$asymp-xxl-percentage
+					),
+					fibonacci.$asymp-xl-percentage
+				),
+			0 fibonacci.$asymp-m * 1em 0
+				color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
+	}
 	&:any-link {
 		text-decoration: none;
 	}
