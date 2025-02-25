@@ -1,0 +1,123 @@
+@use "../../styles/conf/fibonacci";
+@use "../../styles/mix/color-scheme";
+
+.scheme-switcher {
+	$-scheme-switcher: &;
+	position: relative;
+	display: inline-flex;
+	border-bottom-color: rgba(255, 255, 255, fibonacci.$asymp-xxl-percentage);
+	border-top-color: rgba(0, 0, 0, fibonacci.$asymp-xl-percentage + fibonacci.$asymp-l-percentage);
+	border-style: solid;
+	border-width: 0.0625rem 0;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, fibonacci.$asymp-xl-percentage);
+	border-radius: 9999rem;
+
+	@include color-scheme.dark {
+		border-bottom-color: rgba(255, 255, 255, fibonacci.$asymp-xl-percentage + fibonacci.$asymp-l-percentage);
+	}
+
+	&__input {
+		display: none;
+
+		&--light:checked {
+			~ #{$-scheme-switcher} {
+				&__status {
+					background-position-x: 0.1875rem;
+				}
+
+				&__label--light {
+					filter: invert(1);
+
+					@include color-scheme.dark {
+						filter: invert(0);
+					}
+				}
+			}
+		}
+
+		&--system:checked {
+			~ #{$-scheme-switcher} {
+				&__label--system {
+					@include color-scheme.light {
+						filter: invert(1);
+					}
+
+					@include color-scheme.dark {
+						filter: invert(0);
+					}
+				}
+			}
+		}
+
+		&--dark:checked {
+			~ #{$-scheme-switcher} {
+				&__status {
+					background-position-x: calc(100% - 0.1875rem);
+				}
+
+				&__label--dark {
+					@include color-scheme.dark {
+						filter: invert(0);
+					}
+				}
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.75rem;
+		height: 1.75rem;
+		font-size: 0;
+		line-height: 0;
+		background-size: 1rem;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		z-index: 1;
+
+		@include color-scheme.dark {
+			filter: invert(1);
+		}
+
+		&--light {
+			background-image: url(../../../../public/scheme-switcher/light.svg);
+			background-position-x: 50%;
+		}
+
+		&--system {
+			background-image: url(../../../../public/scheme-switcher/system.svg);
+		}
+
+		&--dark {
+			background-image: url(../../../../public/scheme-switcher/dark.svg);
+			background-position-x: 50%;
+		}
+	}
+
+	&__status {
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: fibonacci.$asymp-xxxl-percentage;
+		border-radius: inherit;
+		background-repeat: no-repeat;
+		background-image: url(../../../../public/scheme-switcher/status.svg);
+		background-size: 1.375rem;
+		background-position-y: 50%;
+		background-position-x: center;
+		transition: background-position 0.1s ease-in;
+
+		@include color-scheme.dark {
+			filter: invert(1);
+		}
+	}
+}

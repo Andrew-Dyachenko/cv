@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Metrika from "../components/Metrika";
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import {
 	// Inter,
 	// Ubuntu,
@@ -46,8 +47,12 @@ export const metadata: Metadata = {
 		url: "https://github.com/Andrew-Dyachenko/cv",
 	},
 };
+
+export const viewport: Viewport = {
+	colorScheme: "light dark",
+};
+
 // console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
-// <!-- Yandex.Metrika counter -->
 
 // <!-- /Yandex.Metrika counter -->
 export default function RootLayout({

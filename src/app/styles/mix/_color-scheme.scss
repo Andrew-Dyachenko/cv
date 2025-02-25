@@ -1,0 +1,167 @@
+@mixin dark($global: true) {
+	@if $global {
+		@at-root :root:global(.dark) & {
+			@content;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@at-root :root:not(:global(.light)) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@at-root :root:global(.dark) & {
+				@content;
+			}
+		}
+	} @else {
+		@at-root :root.dark & {
+			@content;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@at-root :root:not(.light) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@at-root :root.dark & {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin light($global: true) {
+	@if $global {
+		@at-root :root:global(.light) & {
+			@content;
+		}
+
+		@media (prefers-color-scheme: light) {
+			@at-root :root:not(:global(.dark)) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@at-root :root:global(.light) & {
+				@content;
+			}
+		}
+	} @else {
+		@at-root :root.light & {
+			@content;
+		}
+
+		@media (prefers-color-scheme: light) {
+			@at-root :root:not(.dark) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@at-root :root.light & {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin dark-and-not-print($global: true) {
+	@if $global {
+		@media not print {
+			@at-root :root:global(.dark) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@media not print {
+				@at-root :root:not(:global(.light)) & {
+					@content;
+				}
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@media not print {
+				@at-root :root:global(.dark) & {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@media not print {
+			@at-root :root.dark & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@media not print {
+				@at-root :root:not(.light) & {
+					@content;
+				}
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@media not print {
+				@at-root :root.dark & {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin light-and-not-print($global: true) {
+	@if $global {
+		@media not print {
+			@at-root :root:global(.light) & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@media not print {
+				@at-root :root:not(:global(.dark)) & {
+					@content;
+				}
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@media not print {
+				@at-root :root:global(.light) & {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@media not print {
+			@at-root :root.light & {
+				@content;
+			}
+		}
+
+		@media (prefers-color-scheme: light) {
+			@media not print {
+				@at-root :root:not(.dark) & {
+					@content;
+				}
+			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			@media not print {
+				@at-root :root.light & {
+					@content;
+				}
+			}
+		}
+	}
+}

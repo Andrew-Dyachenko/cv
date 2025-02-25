@@ -1,8 +1,10 @@
-@use 'sass:math';
-@use '../styles/conf';
+@use "sass:math";
+@use "../styles/conf";
+@use "../styles/mix/color-scheme";
 
 :root {
 	font-size: 16px;
+	color-scheme: light dark;
 
 	@media (prefers-reduced-motion: no-preference) {
 		scroll-behavior: smooth;
@@ -10,6 +12,7 @@
 }
 
 body {
+	color: #000;
 	line-height: 1.5;
 	margin: 0;
 	background-color: aliceblue;
@@ -21,6 +24,11 @@ body {
 	/* Old Firefox versions */
 	@-moz-document url-prefix() {
 		text-rendering: optimizeLegibility;
+	}
+
+	@include color-scheme.dark-and-not-print($global: false) {
+		color: #f3f4f5;
+		background-color: #0d1b2a;
 	}
 
 	overflow-x: clip;
@@ -45,7 +53,7 @@ abbr {
 	cursor: help;
 	text-underline-offset: 0.1em;
 	text-decoration-style: dashed;
-	text-decoration-color: rgba(0, 0, 0, 0.5);
+	// text-decoration-color: rgba(0, 0, 0, 0.5);
 
 	@media print {
 		text-decoration: none;
@@ -176,10 +184,12 @@ h6,
 	}
 }
 
-ol, ul {
+ol,
+ul {
 	margin: 0;
 	&.cv {
-		li, dd {
+		li,
+		dd {
 			&:not(:first-of-type) {
 				margin-top: 0.5em;
 			}

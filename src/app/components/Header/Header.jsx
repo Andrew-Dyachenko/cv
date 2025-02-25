@@ -6,6 +6,7 @@ import FontSize from "./FontSize";
 import packageJSON from "../../../../package.json";
 import DirectionToggle from "../DirectionToggle";
 import PrintButton from "../PrintButton";
+import ColorSchemeSwitcher from "../ColorSchemeSwitcher";
 
 const { version } = packageJSON;
 
@@ -23,6 +24,7 @@ export default function Header() {
 				) : null}
 				<PrintButton />
 				<FontSize />
+				<ColorSchemeSwitcher />
 			</div>
 		</header>
 	);
