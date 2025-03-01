@@ -3,10 +3,15 @@
 import React, { useState } from "react";
 import styles from "./directionToggle.module.scss";
 import clsx from "clsx";
+import { TbArrowsLeftRight } from "react-icons/tb";
 
 const DirectionToggle = ({
 	classNameModificator,
-}: { classNameModificator: string }) => {
+	children,
+}: {
+	classNameModificator: string;
+	children: React.ReactNode
+}) => {
 	const [direction, setDirection] = useState("ltr");
 
 	const toggleDirection = () => {
@@ -21,7 +26,8 @@ const DirectionToggle = ({
 			onClick={toggleDirection}
 			className={clsx(styles.directionToggle, classNameModificator)}
 		>
-			Toggle Direction
+			<TbArrowsLeftRight />
+			{children}
 		</button>
 	);
 };

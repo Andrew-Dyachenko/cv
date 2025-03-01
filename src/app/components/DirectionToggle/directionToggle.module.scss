@@ -1,4 +1,7 @@
 .directionToggle {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 0.25em;
 	position: fixed;
 	left: 0;
 	top: 0;

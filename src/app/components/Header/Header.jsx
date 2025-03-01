@@ -20,9 +20,11 @@ export default function Header() {
 				{process.env.NODE_ENV === "development" ? (
 					<DirectionToggle
 						classNameModificator={styles.header__directionToggle}
-					/>
+					>
+						Toggle Direction
+					</DirectionToggle>
 				) : null}
-				<PrintButton />
+				<PrintButton>Print</PrintButton>
 				<FontSize />
 				<ColorSchemeSwitcher />
 			</div>

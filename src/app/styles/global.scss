@@ -44,6 +44,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+	font-size: 0.875rem;
+	padding: 0.125em 0.5em;
 	&:not(:disabled) {
 		cursor: pointer;
 	}
