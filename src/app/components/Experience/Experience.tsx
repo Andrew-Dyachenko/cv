@@ -12,15 +12,15 @@ import { Sofia_Sans } from "next/font/google";
 import clsx from "clsx";
 import Image from "next/image";
 
-import b2broker from "../../../../public/b2broker.svg";
-import zfx from "../../../../public/zfx.png";
-import gazprommedia from "../../../../public/gazprommedia.png";
-import uurraa from "../../../../public/uurraa.png";
-import freshbroccoli from "../../../../public/freshbroccoli.svg";
-import magorasystems from "../../../../public/magora-systems.png";
-import btipro from "../../../../public/btipro.png";
-import omegadesignpro from "../../../../public/omegadesignpro.png";
-import alfateam from "../../../../public/alfateam-favicon.png";
+import b2broker from "../../../../public/experience/b2broker.svg";
+import zfx from "../../../../public/experience/zfx.png";
+import gazprommedia from "../../../../public/experience/gazprommedia.png";
+import uurraa from "../../../../public/experience/uurraa.png";
+import freshbroccoli from "../../../../public/experience/freshbroccoli.svg";
+import magorasystems from "../../../../public/experience/magora-systems.png";
+import btipro from "../../../../public/experience/btipro.png";
+import omegadesignpro from "../../../../public/experience/omegadesignpro.png";
+import alfateam from "../../../../public/experience/alfateam-favicon.png";
 
 // import Link from "next/link";
 // import { DateTime } from "luxon";
