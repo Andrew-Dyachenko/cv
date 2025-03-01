@@ -1,18 +1,39 @@
 @use "../../styles/conf";
 @use "../../styles/conf/fibonacci";
+@use "../../styles/mix/color-scheme";
 
 .aside {
+	$-bgc: #d3d3d3;
+	$-bgc--dark: #34495e;
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
 
-	// @media print {
-	// 	box-shadow: none;
-	// }
-
 	@media (min-width: conf.$s) {
-		background-color: #d3d3d3;
-		box-shadow: 0 0 0 1rem #d3d3d3, inset 0 0 0 100vw #d3d3d3;
+		background-color: $-bgc;
+		box-shadow: 0 0 0 1rem $-bgc, inset 0 0 0 100vw $-bgc;
 		width: calc(fibonacci.$asymp-xxl-percentage - 1rem);
+	}
+
+	@include color-scheme.dark-and-not-print {
+		color: #f3f4f5;
+		background-color: $-bgc--dark;
+		box-shadow: 0 0 0 1rem $-bgc--dark, inset 0 0 0 100vw $-bgc--dark;
+	}
+
+	:any-link {
+		color: #0000ee;
+
+		&:visited {
+			color: #551a8b;
+		}
+
+		@include color-scheme.dark-and-not-print {
+			color: #9e9eff;
+
+			&:visited {
+				color: #d0adf0;
+			}
+		}
 	}
 }

@@ -1,11 +1,21 @@
+@use "../styles/mix/color-scheme" as color-scheme;
+
 .container {
 	background-color: #fff;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	overflow: hidden;
-	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
 
-	@media print {
-		box-shadow: none;
+	@include color-scheme.dark-and-not-print {
+		background-color: #faf3e0;
+		color: #000;
+	}
+
+	:any-link {
+		color: #0000ee;
+
+		&:visited {
+			color: #551a8b;
+		}
 	}
 }

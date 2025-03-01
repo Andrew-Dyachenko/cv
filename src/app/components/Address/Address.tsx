@@ -124,7 +124,7 @@ export default function Address() {
 				>
 					<BsAirplane className={styles["address__item-icon"]} />
 					<div className={styles["address__item-text"]}>
-						Relocation: <span style={{ color: "#2E6A89" }}>Considered</span>
+						Relocation: <span className={styles["address__item-relocation"]}>Considered</span>
 					</div>
 				</li>
 			</ul>

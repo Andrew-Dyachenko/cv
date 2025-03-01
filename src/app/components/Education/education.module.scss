@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../../styles/conf/fibonacci";
+@use "../../styles/mix/color-scheme";
 
 .education {
 	display: flex;
@@ -40,6 +41,10 @@
 				border-style: solid;
 				border-color: #000;
 				bottom: 0;
+
+				@include color-scheme.dark-and-not-print {
+					border-color: #f3f4f5;
+				}
 
 				@at-root :root:not([dir="rtl"]) & {
 					left: 0;

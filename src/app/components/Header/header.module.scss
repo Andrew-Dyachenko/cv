@@ -1,12 +1,23 @@
 @use "sass:color";
 @use "sass:math";
 @use "../../styles/conf/fibonacci";
+@use "../../styles/mix/color-scheme";
 
 .header {
 	background: color.mix(#e6e6e6, #b4b4b4);
 	background: linear-gradient(180deg, #e6e6e6 0%, #b4b4b4 100%);
-	// background: linear-gradient(to bottom, #d8d8d8, #a1a1a1);
-	// background: linear-gradient(to bottom, #C0C0C0, #B0B0B0);
+
+	@include color-scheme.dark-and-not-print {
+		background: color.mix(
+			lighten(#34495e, fibonacci.$asymp-xl-percentage),
+			darken(#34495e, fibonacci.$asymp-l-percentage)
+		);
+		background: linear-gradient(
+			180deg,
+			lighten(#34495e, fibonacci.$asymp-xl-percentage) 0%,
+			darken(#34495e, fibonacci.$asymp-l-percentage) 100%
+		);
+	}
 
 	@media print {
 		display: none;
@@ -17,17 +28,7 @@
 		display: flex;
 		align-items: center;
 		gap: 0.25rem 1rem;
-
-		// > *:first-child {
-		// 	+ * {
-		// 		margin-inline-start: auto;
-		// 	}
-		// }
 	}
-
-	// &__font {
-	// 	margin-inline-start: auto;
-	// }
 
 	&__directionToggle {
 		position: static;
@@ -35,7 +36,6 @@
 		right: auto;
 		bottom: auto;
 		left: auto;
-		// margin-inline-start: auto;
 	}
 }
 
@@ -46,8 +46,15 @@
 	color: $-color;
 	font-weight: 700;
 	margin-inline-end: auto;
-	text-shadow: 0 fibonacci.$asymp-m * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
-		0 fibonacci.$asymp-m * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
+	text-shadow: 0 fibonacci.$asymp-m * -1em 0
+			color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
+		0 fibonacci.$asymp-m * 1em 0
+			color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
+
+	@include color-scheme.dark-and-not-print {
+		color: #f3f4f5;
+		text-shadow: none;
+	}
 
 	&:any-link {
 		text-decoration: none;
@@ -61,8 +68,6 @@
 		font-weight: 400;
 		font-size: 0.5em;
 		vertical-align: baseline;
-		// text-shadow: 0 fibonacci.$asymp-l * -1em 0 color.change($-color, $lightness: fibonacci.$asymp-xxl-percentage),
-		// 	0 fibonacci.$asymp-l * 1em 0 color.change(#fff, $blackness: fibonacci.$asymp-xl-percentage);
 	}
 }
 
@@ -71,7 +76,7 @@
 	display: flex;
 	column-gap: 0.25em;
 	font-size: 1rem;
-	align-items: baseline;
+	align-items: center;
 
 	&__input {
 		display: none;
@@ -81,6 +86,13 @@
 				&__label {
 					background-color: rgba(0, 0, 0, 0.1);
 					border: math.div(1, 16) + 0rem solid rgba(0, 0, 0, 0.2);
+
+					@include color-scheme.dark-and-not-print {
+						border-color: darken(
+							#f3f4f5,
+							fibonacci.$asymp-xl-percentage
+						);
+					}
 				}
 			}
 		}
@@ -94,6 +106,10 @@
 		border-radius: 0.125em;
 		padding: 0 0.25em;
 		font-weight: 500;
+
+		@include color-scheme.dark-and-not-print {
+			color: #f3f4f5;
+		}
 
 		&:nth-of-type(2) {
 			font-size: 1.25em;
