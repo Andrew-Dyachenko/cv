@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import Metrika from "../components/Metrika";
-import type { Metadata } from "next";
-import type { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import {
 	// Inter,
 	// Ubuntu,
