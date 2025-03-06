@@ -360,6 +360,7 @@
 	&__toggle {
 		font-size: fibonacci.$asymp-xxxl + 0rem;
 		align-self: center;
+		font-size: 0.875rem;
 
 		@media print {
 			display: none;

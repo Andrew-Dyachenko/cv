@@ -12,11 +12,15 @@ export default function Tags<T extends TagsProps>({
 	stylesheet,
 	className = "tags",
 	count = 6,
+	buttonTextOnShow = "Show all",
+	buttonTextOnHide = "Hide",
 }: {
 	list: Array<string>;
 	stylesheet: T;
 	className: string;
 	count?: number;
+	buttonTextOnShow?: string;
+	buttonTextOnHide?: string;
 }) {
 	const [showAll, setShowAll] = useState(false);
 
@@ -32,8 +36,9 @@ export default function Tags<T extends TagsProps>({
 								.toLowerCase()
 								.replace(/\s/gim, "")
 								.replace(/[\(\)\.]/gim, "_")}`
-						],
+						]
 					)}
+					lang="en"
 				>
 					{tag}
 				</div>
@@ -43,7 +48,7 @@ export default function Tags<T extends TagsProps>({
 				type="button"
 				onClick={() => setShowAll((prev) => !prev)}
 			>
-				{showAll ? "Hide" : "Show all"}
+				{showAll ? buttonTextOnHide : buttonTextOnShow}
 			</button>
 		</div>
 	);
