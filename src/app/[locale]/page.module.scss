@@ -3,7 +3,7 @@
 .container {
 	background-color: #fff;
 	padding: 1rem;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	overflow: hidden;
 
 	@include color-scheme.dark-and-not-print {
