@@ -21,6 +21,7 @@ import magorasystems from "../../../../public/experience/magora-systems.png";
 import btipro from "../../../../public/experience/btipro.png";
 import omegadesignpro from "../../../../public/experience/omegadesignpro.png";
 import alfateam from "../../../../public/experience/alfateam-favicon.png";
+import llcitsolutions from "../../../../public/experience/llcitsolutions-512x512.png";
 
 import { useTranslations } from "next-intl";
 import parse from "html-react-parser";
@@ -48,7 +49,7 @@ export default function Experience() {
 	const t = useTranslations("experience");
 	return (
 		<Accordion
-			defaultActiveKey={["4"]}
+			defaultActiveKey={["5"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -64,7 +65,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -107,8 +108,7 @@ export default function Experience() {
 								height={20}
 								alt="B2Broker logo"
 							/>
-							{t.raw("list")[0].company} -{" "}
-							{t.raw("list")[0].where}
+							{t.raw("list")[0].company} - {t.raw("list")[0].where}
 						</span>
 					</Accordion.Button>
 				</h3>
@@ -129,9 +129,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										b2broker
-									</span>
+									<span className="print-invisible">b2broker</span>
 									<span className="print-inline-visible">
 										https://b2broker.com/
 									</span>
@@ -161,9 +159,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											B2Core
-										</span>
+										<span className="print-invisible">B2Core</span>
 										<span className="print-inline-visible">
 											https://b2core.com/
 										</span>
@@ -174,8 +170,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									-{" "}
-									{parse(t.raw("list")[0].projects.b2broker)}
+									- {parse(t.raw("list")[0].projects.b2broker)}
 								</li>
 								<li>
 									<a
@@ -187,9 +182,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											B2Prime
-										</span>
+										<span className="print-invisible">B2Prime</span>
 										<span className="print-inline-visible">
 											https://b2prime.com/
 										</span>
@@ -260,82 +253,72 @@ export default function Experience() {
 									<ul className="cv">
 										<li>
 											{
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
 												][0]
 											}
 											<ul>
 												<li>
 													{parse(
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
-														][1][0]
+														][1][0],
 													)}
 												</li>
 												<li>
 													{parse(
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
-														][1][1]
+														][1][1],
 													)}
 												</li>
 												<li>
 													{
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
 														][1][2]
 													}
 												</li>
 												<li>
 													{parse(
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
-														][1][3]
+														][1][3],
 													)}
 												</li>
 											</ul>
 										</li>
 										<li>
 											{
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
 												][2]
 											}
 											<ul>
 												<li>
 													{parse(
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
-														][3][0]
+														][3][0],
 													)}
 												</li>
 												<li>
 													{parse(
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
-														][3][1]
+														][3][1],
 													)}
 												</li>
 												<li>
 													{
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
 														][3][2]
 													}
 												</li>
 												<li>
 													{
-														t.raw("list")[0]
-															.responsibilities[
+														t.raw("list")[0].responsibilities[
 															"b2broker-and-b2core"
 														][3][3]
 													}
@@ -344,34 +327,30 @@ export default function Experience() {
 										</li>
 										<li>
 											{parse(
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
-												][4]
+												][4],
 											)}
 										</li>
 										<li>
 											{parse(
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
-												][5]
+												][5],
 											)}
 										</li>
 										<li>
 											{
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
 												][6]
 											}
 										</li>
 										<li>
 											{parse(
-												t.raw("list")[0]
-													.responsibilities[
+												t.raw("list")[0].responsibilities[
 													"b2broker-and-b2core"
-												][7]
+												][7],
 											)}
 										</li>
 									</ul>
@@ -395,7 +374,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -428,11 +407,8 @@ export default function Experience() {
 							{t.raw("list")[1].position}
 						</span>
 						<span className={styles.experience__where}>
-							<FaGlobeAfrica
-								className={styles["experience__where-icon"]}
-							/>
-							{t.raw("list")[1].company} -{" "}
-							{t.raw("list")[1].where}
+							<FaGlobeAfrica className={styles["experience__where-icon"]} />
+							{t.raw("list")[1].company} - {t.raw("list")[1].where}
 						</span>
 					</Accordion.Button>
 				</h3>
@@ -465,11 +441,7 @@ export default function Experience() {
 								</abbr>
 								s. */}
 
-								{parse(
-									t.raw("list")[1].responsibilities[
-										"all-projects"
-									][0]
-								)}
+								{parse(t.raw("list")[1].responsibilities["all-projects"][0])}
 							</p>
 						</div>
 					</Accordion.Collapse>
@@ -489,7 +461,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -527,14 +499,22 @@ export default function Experience() {
 							<Image
 								className={clsx(
 									styles["experience__where-icon"],
-									styles["experience__where-icon--zfx"]
+									styles["experience__where-icon--llcitsolutions"],
+								)}
+								src={llcitsolutions}
+								width={20}
+								alt="LLC ITSOLUTIONS logo"
+							/>
+							<Image
+								className={clsx(
+									styles["experience__where-icon"],
+									styles["experience__where-icon--zfx"],
 								)}
 								src={zfx}
 								width={20}
 								alt="ZFX logo"
 							/>
-							{t.raw("list")[2].company} -{" "}
-							{t.raw("list")[2].where}
+							{t.raw("list")[2].company} - {t.raw("list")[2].where}
 						</span>
 					</Accordion.Button>
 				</h3>
@@ -555,9 +535,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										its-nu.vercel.app
-									</span>
+									<span className="print-invisible">its-nu.vercel.app</span>
 									<span className="print-inline-visible">
 										https://its-nu.vercel.app/
 									</span>
@@ -586,9 +564,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											zfx.com
-										</span>
+										<span className="print-invisible">zfx.com</span>
 										<span className="print-inline-visible">
 											https://www.zfx.com
 										</span>{" "}
@@ -611,9 +587,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											my.zfx.com
-										</span>
+										<span className="print-invisible">my.zfx.com</span>
 										<span className="print-inline-visible">
 											https://my.zfx.com
 										</span>{" "}
@@ -636,9 +610,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											its-nu.vercel.app
-										</span>
+										<span className="print-invisible">its-nu.vercel.app</span>
 										<span className="print-inline-visible">
 											https://its-nu.vercel.app
 										</span>{" "}
@@ -649,12 +621,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									-{" "}
-									{parse(
-										t.raw("list")[2].projects[
-											"its-nu_vercel_app"
-										]
-									)}
+									- {parse(t.raw("list")[2].projects["its-nu_vercel_app"])}
 								</li>
 							</ol>
 							<h4>{t.raw("list")[2].responsibilities.title}</h4>
@@ -694,124 +661,47 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][0]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[0])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][1]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[1])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][2]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[2])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][3]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[3])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][4]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[4])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][5]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[5])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][6]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[6])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][7]
-											)}
+											{parse(t.raw("list")[2].responsibilities.zfx_com[7])}
+										</li>
+										<li>{t.raw("list")[2].responsibilities.zfx_com[8]}</li>
+										<li>
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][9])}
 										</li>
 										<li>
-											{
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][8]
-											}
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][10])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][9]
-											)}
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][11])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][10]
-											)}
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][12])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][11]
-											)}
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][13])}
 										</li>
 										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][12]
-											)}
-										</li>
-										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][13]
-											)}
-										</li>
-										<li>
-											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"zfx_com"
-												][14]
-											)}
+											{parse(t.raw("list")[2].responsibilities["zfx_com"][14])}
 										</li>
 									</ul>
 								</dd>
@@ -847,10 +737,7 @@ export default function Experience() {
 									<ul className="cv">
 										<li>
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"my_zfx_com"
-												][0]
+												t.raw("list")[2].responsibilities["my_zfx_com"][0],
 											)}
 											{/* Support and improve the legacy app (
 											<strong>Vue</strong>{" "}
@@ -868,10 +755,7 @@ export default function Experience() {
 											<strong>Inter</strong>
 											). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"my_zfx_com"
-												][1]
+												t.raw("list")[2].responsibilities["my_zfx_com"][1],
 											)}
 										</li>
 										<li>
@@ -881,10 +765,7 @@ export default function Experience() {
 											<strong>RTL</strong>) to include
 											Arabic language. */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"my_zfx_com"
-												][2]
+												t.raw("list")[2].responsibilities["my_zfx_com"][2],
 											)}
 										</li>
 										<li>
@@ -892,10 +773,7 @@ export default function Experience() {
 											<strong>REST API</strong>,{" "}
 											<strong>WebSocket</strong>). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"my_zfx_com"
-												][3]
+												t.raw("list")[2].responsibilities["my_zfx_com"][3],
 											)}
 										</li>
 										<li>
@@ -906,10 +784,7 @@ export default function Experience() {
 											<strong>English</strong>,{" "}
 											<strong>Russian</strong>). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
-													"my_zfx_com"
-												][4]
+												t.raw("list")[2].responsibilities["my_zfx_com"][4],
 											)}
 										</li>
 									</ul>
@@ -946,126 +821,63 @@ export default function Experience() {
 									<ul className="cv">
 										<li>
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][0]
+												][0],
 											)}
-											{/* Start the project from a scratch
-											using (<strong>Next.js</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v12
-											</code>
-											). */}
 										</li>
 										<li>
-											{/* Create adaptive, pixel-perfect
-											layout of the app using (
-											<strong>JSX</strong>,{" "}
-											<strong>SASS</strong>). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][1]
+												][1],
 											)}
 										</li>
 										<li>
-											{/* Cross-browser support down to{" "}
-											<strong>2019</strong>. */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][2]
+												][2],
 											)}
 										</li>
 										<li>
-											{/* Multilingual feature support using (
-											<strong>next-i18</strong>). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][3]
+												][3],
 											)}
 										</li>
 										<li>
-											{/* Support for bidirectional content (
-											<strong>RTL</strong>,{" "}
-											<strong>LTR</strong>). */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][4]
+												][4],
 											)}
 										</li>
 										<li>
-											{/* Backend setup of a feedback form
-											using (<strong>Next.js API</strong>) */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][5]
+												][5],
 											)}
 										</li>
 										<li>
-											{/* Create layout of an adaptive, themed
-											(
-											<span style={{ fontWeight: 800 }}>
-												dark
-											</span>{" "}
-											<small
-												style={{
-													fontSize: "0.75em",
-													verticalAlign: "middle",
-												}}
-											>
-												|
-											</small>{" "}
-											<span style={{ fontWeight: 300 }}>
-												light
-											</span>
-											), fillable Email for the feedback
-											form using (<strong>ZURB</strong>)
-											framework. */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][6]
+												][6],
 											)}
 										</li>
 										<li>
-											{/* Optimizing site application using (
-											<strong>
-												Google Lighthouse{" "}
-												<small>
-													<i>(Core Web Vitals)</i>
-												</small>
-											</strong>
-											,{" "}
-											<strong>W3C HTML Validator</strong>)
-											and other linters. */}
 											{parse(
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
-												][7]
+												][7],
 											)}
 										</li>
 										<li>
-											{/* Communication with team members and
-											business customer through instant
-											messengers and online / offline
-											meetings. */}
 											{
-												t.raw("list")[2]
-													.responsibilities[
+												t.raw("list")[2].responsibilities[
 													"its-nu_vercel_app"
 												][8]
 											}
@@ -1092,7 +904,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -1130,9 +942,7 @@ export default function Experience() {
 							<Image
 								className={clsx(
 									styles["experience__where-icon"],
-									styles[
-										"experience__where-icon--gazprommedia"
-									]
+									styles["experience__where-icon--gazprommedia"],
 								)}
 								src={gazprommedia}
 								height={20}
@@ -1159,9 +969,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										gazprom-media.com
-									</span>
+									<span className="print-invisible">gazprom-media.com</span>
 									<span className="print-inline-visible">
 										https://www.gazprom-media.com/
 									</span>
@@ -1192,17 +1000,14 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">
-												dip.tnt4.ru
-											</span>
+											<span className="print-invisible">dip.tnt4.ru</span>
 											<span className="print-inline-visible">
 												https://dip.tnt4.ru
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart:
-														"0.3333em",
+													marginInlineStart: "0.3333em",
 												}}
 											/>
 										</a>
@@ -1225,17 +1030,14 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">
-												subbota.tv
-											</span>
+											<span className="print-invisible">subbota.tv</span>
 											<span className="print-inline-visible">
 												https://subbota.tv
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart:
-														"0.3333em",
+													marginInlineStart: "0.3333em",
 												}}
 											/>
 										</a>
@@ -1254,17 +1056,14 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">
-												tnt4.ru
-											</span>
+											<span className="print-invisible">tnt4.ru</span>
 											<span className="print-inline-visible">
 												https://tnt4.ru
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart:
-														"0.3333em",
+													marginInlineStart: "0.3333em",
 												}}
 											/>
 										</a>
@@ -1311,21 +1110,13 @@ export default function Experience() {
 										<li>
 											{/* Start the project from a scratch
 											with (<strong>Gulp.js</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[0]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[0])}
 										</li>
 										<li>
 											{/* Create adaptive, pixel-perfect
 											layout using (<strong>PUG</strong>,{" "}
 											<strong>SASS</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[1]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[1])}
 										</li>
 										<li>
 											{/* Write business logic using (
@@ -1336,62 +1127,38 @@ export default function Experience() {
 												^ES6
 											</code>
 											). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[2]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[2])}
 										</li>
 										<li>
 											{/* Add an ability to play video in full
 											screen mode. */}
-											{
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[3]
-											}
+											{t.raw("list")[3].responsibilities.dip_tnt4_ru[3]}
 										</li>
 										<li>
 											{/* Connect and set up analytical
 											metrics (
 											<strong>Google Analytics</strong>,{" "}
 											<strong>Yandex Metrika</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[4]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[4])}
 										</li>
 										<li>
 											{/* Cross-browser support down to{" "}
 											<strong>2018</strong> (last 2
 											version). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[5]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[5])}
 										</li>
 										<li>
 											{/* Configuring the assembly using (
 											<strong>Gulp.js</strong>,{" "}
 											<strong>Node.js</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[6]
-											)}
+											{parse(t.raw("list")[3].responsibilities.dip_tnt4_ru[6])}
 										</li>
 										<li>
 											{/* Communication with team members and
 											a head of web department through
 											instant messengers and offline
 											meetings. */}
-											{
-												t.raw("list")[3]
-													.responsibilities
-													.dip_tnt4_ru[7]
-											}
+											{t.raw("list")[3].responsibilities.dip_tnt4_ru[7]}
 										</li>
 									</ul>
 								</dd>
@@ -1428,11 +1195,7 @@ export default function Experience() {
 											{/* Support and improve the legacy web
 											site based at (
 											<strong>Laravel</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[0]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[0])}
 										</li>
 										<li>
 											{/* Layout of new and modification of
@@ -1446,21 +1209,13 @@ export default function Experience() {
 												^ES6
 											</code>
 											). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[1]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[1])}
 										</li>
 										<li>
 											{/* Extend the list of tracked items and
 											user events on existing pages using
 											(<strong>Google Analytics</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[2]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[2])}
 										</li>
 										<li>
 											{/* Create embedded (
@@ -1473,11 +1228,7 @@ export default function Experience() {
 											) applications with (
 											<strong>Create React App</strong>)
 											for individual pages, such as: */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[3]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[3])}
 											<ul>
 												<li>
 													<a
@@ -1493,18 +1244,14 @@ export default function Experience() {
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
-																fontSize:
-																	"0.75em",
-																marginInlineStart:
-																	"0.3333em",
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
 															}}
 														/>
 													</a>{" "}
 													-{" "}
 													{parse(
-														t.raw("list")[3]
-															.responsibilities
-															.subbota_tv[4][0]
+														t.raw("list")[3].responsibilities.subbota_tv[4][0],
 													)}
 												</li>
 												<li>
@@ -1521,27 +1268,21 @@ export default function Experience() {
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
-																fontSize:
-																	"0.75em",
-																marginInlineStart:
-																	"0.3333em",
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
 															}}
 														/>
 													</a>{" "}
 													-{" "}
 													{parse(
-														t.raw("list")[3]
-															.responsibilities
-															.subbota_tv[4][1]
+														t.raw("list")[3].responsibilities.subbota_tv[4][1],
 													)}
 												</li>
 											</ul>
 										</li>
 										<li>
 											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[5][0]
+												t.raw("list")[3].responsibilities.subbota_tv[5][0],
 											)}{" "}
 											<dfn>
 												<a
@@ -1562,8 +1303,7 @@ export default function Experience() {
 													<FaExternalLinkAlt
 														style={{
 															fontSize: "0.75em",
-															marginInlineStart:
-																"0.3333em",
+															marginInlineStart: "0.3333em",
 														}}
 													/>
 												</a>
@@ -1575,65 +1315,42 @@ export default function Experience() {
 											</strong>
 											), for the internal project pages
 											reuse. */}
-											-{" "}
 											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[5][1]
+												t.raw("list")[3].responsibilities.subbota_tv[5][1],
 											)}
 										</li>
 										<li>
 											{/* Setting up data reception using (
 											<strong>REST API</strong>
 											). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[6]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[6])}
 										</li>
 										<li>
 											{/* Optimize applications loading by
 											caching data in (
 											<strong>localStorage</strong>,{" "}
 											<strong>sessionStorage</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[7]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[7])}
 										</li>
 										<li>
 											{/* Optimize applications response to
 											display data using (
 											<strong>debouncing</strong>). */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[8]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[8])}
 										</li>
 										<li>
 											{/* Create regular thematic, adaptive
 											Email newsletters, with support for
 											regular email clients using (
 											<strong>ZURB</strong>) framework. */}
-											{parse(
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[9]
-											)}
+											{parse(t.raw("list")[3].responsibilities.subbota_tv[9])}
 										</li>
 										<li>
 											{/* Communication with team members and
 											a head of web department through
 											instant messengers and offline
 											meetings. */}
-											{
-												t.raw("list")[3]
-													.responsibilities
-													.subbota_tv[10]
-											}
+											{t.raw("list")[3].responsibilities.subbota_tv[10]}
 										</li>
 									</ul>
 								</dd>
@@ -1667,39 +1384,30 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Support and improve the legacy web
+											{/* Support and improve the legacy web
 											site based at (
-											<strong>Laravel</strong>).
+											<strong>Laravel</strong>). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[0])}
 										</li>
 										<li>
-											Layout of new and modification of
-											existing pages using (
-											<strong>HTML</strong>,{" "}
-											<strong>CSS</strong>,{" "}
+											{/* Layout of new and modification of existing pages using (
+											<strong>HTML</strong>, <strong>CSS</strong>,{" "}
 											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												^ES6
-											</code>
-											).
+											<code style={{ fontSize: "0.75em" }}>^ES6</code>
+											). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[1])}
 										</li>
 										<li>
-											Extend the list of tracked items and
-											user events on existing pages using
-											(<strong>Google Analytics</strong>).
+											{/* Extend the list of tracked items and user events on
+											existing pages using (<strong>Google Analytics</strong>). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[2])}
 										</li>
 										<li>
-											Create embedded (
-											<strong>React</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v16
-											</code>
-											) applications with (
-											<strong>Create React App</strong>)
-											for individual pages, such as:
+											{/* Create embedded (<strong>React</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v16</code>)
+											applications with (<strong>Create React App</strong>) for
+											individual pages, such as: */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[3])}
 											<ul>
 												<li>
 													<a
@@ -1715,45 +1423,43 @@ export default function Experience() {
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
-																fontSize:
-																	"0.75em",
-																marginInlineStart:
-																	"0.3333em",
+																fontSize: "0.75em",
+																marginInlineStart: "0.3333em",
 															}}
 														/>
 													</a>{" "}
-													- Search for teleoperators
-													by city to connect.
+													{/* - Search for teleoperators by city to connect. */}
+													{t.raw("list")[3].responsibilities.tnt4_ru[4][0]}
 												</li>
 											</ul>
 										</li>
 										<li>
-											Setting up data reception using (
-											<strong>REST API</strong>
-											).
+											{/* Setting up data reception using (<strong>REST API</strong>
+											). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[5])}
 										</li>
 										<li>
-											Optimize applications loading by
-											caching data in (
+											{/* Optimize applications loading by caching data in (
 											<strong>localStorage</strong>,{" "}
-											<strong>sessionStorage</strong>).
+											<strong>sessionStorage</strong>). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[6])}
 										</li>
 										<li>
-											Optimize applications response to
-											display data using (
-											<strong>debouncing</strong>).
+											{/* Optimize applications response to display data using (
+											<strong>debouncing</strong>). */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[7])}
 										</li>
 										<li>
-											Create regular thematic, adaptive
-											Email newsletters, with support for
-											regular email clients using (
-											<strong>ZURB</strong>) framework.
+											{/* Create regular thematic, adaptive Email newsletters, with
+											support for regular email clients using (
+											<strong>ZURB</strong>) framework. */}
+											{parse(t.raw("list")[3].responsibilities.tnt4_ru[8])}
 										</li>
 										<li>
-											Communication with team members and
-											a head of web department through
-											instant messengers and offline
-											meetings.
+											{/* Communication with team members and a head of web
+											department through instant messengers and offline
+											meetings. */}
+											{t.raw("list")[3].responsibilities.tnt4_ru[9]}
 										</li>
 									</ul>
 								</dd>
@@ -1776,7 +1482,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -1789,7 +1495,8 @@ export default function Experience() {
 									timezoneOffset: 60 * 3,
 								})}
 							>
-								October 2016
+								{/* October 2016 */}
+								{t.raw("list")[4].from}
 							</time>{" "}
 							-{" "}
 							<time
@@ -1800,15 +1507,18 @@ export default function Experience() {
 									timezoneOffset: 60 * 3,
 								})}
 							>
-								October 2017
+								{/* October 2017 */}
+								{t.raw("list")[4].to}
 							</time>
 							)
 						</span>
 						<span className={styles.experience__duration}>
-							1 year
+							{/* 1 year */}
+							{t.raw("list")[4].duration}
 						</span>
 						<span className={styles.experience__position}>
-							Frontend developer
+							{/* Frontend developer */}
+							{t.raw("list")[4].position}
 						</span>
 						<span className={styles.experience__where}>
 							<Image
@@ -1823,7 +1533,8 @@ export default function Experience() {
 								width={20}
 								alt="Freshbroccoli logo"
 							/>
-							UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺
+							{/* UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺 */}
+							{t.raw("list")[4].company} - {t.raw("list")[4].where}
 						</span>
 					</Accordion.Button>
 				</h3>
@@ -1844,9 +1555,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										urraa.ru
-									</span>
+									<span className="print-invisible">urraa.ru</span>
 									<span className="print-inline-visible">
 										https://web.archive.org/web/20170709032816/https://urraa.ru/
 									</span>
@@ -1858,7 +1567,7 @@ export default function Experience() {
 									/>
 								</a>
 							</div>
-							<p>Worked on the following projects:</p>
+							<p>{t.raw("list")[4].paragraph}</p>
 							<ol
 								style={{
 									listStylePosition: "inside",
@@ -1875,9 +1584,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											urraa.ru
-										</span>
+										<span className="print-invisible">urraa.ru</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20170709032816/https://urraa.ru/
 										</span>{" "}
@@ -1888,8 +1595,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Wholesale distributor of consumer goods to
-									retail distributors.
+									- {t.raw("list")[4].projects.urraa}
 								</li>
 								<li>
 									<a
@@ -1901,9 +1607,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											freshbroccoli.ru
-										</span>
+										<span className="print-invisible">freshbroccoli.ru</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20170603211147/https://freshbroccoli.ru/
 										</span>{" "}
@@ -1914,12 +1618,11 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store for retail sales of
-									high-quality and exclusive food products.
+									- {t.raw("list")[4].projects.freshbroccoli}
 								</li>
 								<li>
 									<a
-										href="#"
+										href="https://new.freshbroccoli.ru"
 										target="_blank"
 										rel="noopener noreferrer"
 										style={{
@@ -1940,12 +1643,10 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store for retail sales of
-									high-quality and exclusive food products
-									(New version).
+									- {t.raw("list")[4].projects.new_freshbroccoli}
 								</li>
 							</ol>
-							<h4>Responsebilities:</h4>
+							<h4>{t.raw("list")[4].responsibilities.title}</h4>
 							<blockquote
 								style={{
 									fontWeight: 300,
@@ -1954,24 +1655,7 @@ export default function Experience() {
 									borderInlineStart: "0.125rem solid #c0c0c0",
 								}}
 							>
-								Two projects:{" "}
-								<strong style={{ fontWeight: 500 }}>
-									URRAA
-								</strong>{" "}
-								and{" "}
-								<strong style={{ fontWeight: 500 }}>
-									Freshbroccoli
-								</strong>{" "}
-								are actually very similar from a technical point
-								of view: both use{" "}
-								<strong style={{ fontWeight: 500 }}>
-									Bitrix
-								</strong>{" "}
-								and both use the same strater theme, but they
-								look different and are aimed at different -{" "}
-								<abbr title="Business to business">B2B</abbr>{" "}
-								and <abbr title="Business to client">B2C</abbr>{" "}
-								audiences models
+								{parse(t.raw("list")[4].responsibilities.blockquote)}
 							</blockquote>
 							<dl
 								style={{
@@ -1979,7 +1663,7 @@ export default function Experience() {
 									marginBlockEnd: 0,
 								}}
 							>
-								{/* URRAA.RU */}
+								{/* URRAA & FRESHBROCCOLI */}
 								<dt>
 									<a
 										href="https://web.archive.org/web/20170709032816/https://urraa.ru/"
@@ -2000,69 +1684,6 @@ export default function Experience() {
 										/>
 									</a>
 								</dt>
-								<dd
-									style={{
-										margin: 0,
-										paddingInlineStart: "1rem",
-										paddingBlock: "1rem",
-									}}
-								>
-									<ul className="cv">
-										<li>
-											Support and improve the legacy web
-											site based on (
-											<strong>Bitrix</strong>)
-										</li>
-										<li>
-											Cross-browser support for evergreen
-											browsers.
-										</li>
-										<li>
-											Create new and change existing pages
-											using (<strong>HTML</strong>,{" "}
-											<strong>CSS</strong>).
-										</li>
-										<li>
-											Write business logic using (
-											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												^ES5.1+
-											</code>
-											).
-										</li>
-										<li>
-											Setting up data reception using (
-											<strong>REST API</strong>
-											).
-										</li>
-										<li>
-											Create media features using (modern{" "}
-											<strong>CSS</strong>,{" "}
-											<strong>Canvas</strong>) such as
-											snowfall in the header for a
-											Christmas.
-										</li>
-										<li>
-											Create regular thematic, adaptive
-											Email newsletters, with support for
-											regular email clients using (
-											<strong>ZURB</strong>) framework.
-										</li>
-										<li>
-											Communication with team members,
-											head of the web department, designer
-											and product manager, via instant
-											messengers and offline meetings.
-										</li>
-										<li>
-											Support and mentoring junior
-											frontend developer.
-										</li>
-									</ul>
-								</dd>
-								{/* FRESHBROCCOLI.RU */}
 								<dt>
 									<a
 										href="https://freshbroccoli.ru/"
@@ -2092,60 +1713,73 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Support and improve the legacy web
-											site based on (
-											<strong>Bitrix</strong>).
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][0],
+											)}
 										</li>
 										<li>
-											Cross-browser support for evergreen
-											browsers.
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][1],
+											)}
 										</li>
 										<li>
-											Create new and change existing pages
-											using (<strong>HTML</strong>,{" "}
-											<strong>CSS</strong>).
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][2],
+											)}
 										</li>
 										<li>
-											Write business logic using (
-											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												^ES5.1+
-											</code>
-											).
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][3],
+											)}
 										</li>
 										<li>
-											Setting up data reception using (
-											<strong>REST API</strong>
-											).
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][4],
+											)}
 										</li>
 										<li>
-											Create media features using (modern{" "}
-											<strong>CSS</strong>,{" "}
-											<strong>Canvas</strong>) such as
-											snowfall in the header for a
-											Christmas.
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][5],
+											)}
 										</li>
 										<li>
-											Create regular thematic, adaptive
-											Email newsletters, with support for
-											regular email clients using (
-											<strong>ZURB</strong>) framework.
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][6],
+											)}
 										</li>
 										<li>
-											Communication with team members,
-											head of the web department, designer
-											and product manager, via instant
-											messengers and offline meetings.
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][7],
+											)}
 										</li>
 										<li>
-											Support and mentoring junior
-											frontend developer.
+											{parse(
+												t.raw("list")[4].responsibilities[
+													"urraa-and-freshbroccoli"
+												][8],
+											)}
 										</li>
 									</ul>
 								</dd>
-								{/* NEW.FRESHBROCCOLI.RU */}
+								{/* /URRAA & FRESHBROCCOLI */}
+
+								{/* NEW.FRESHBROCCOLI */}
 								<dt>
 									<a
 										href="https://new.freshbroccoli.ru/"
@@ -2175,82 +1809,47 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Start the project from a scratch for
-											(<strong>Bitrix</strong>) using (
-											<strong>Vue</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v2
-											</code>
-											).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[0],
+											)}
 										</li>
 										<li>
-											Create adaptive, pixel-perfect
-											layout of the pages using (
-											<strong>PUG</strong>,{" "}
-											<strong>SASS</strong>).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[1],
+											)}
 										</li>
 										<li>
-											Deep integration and customization
-											of (<strong>Bootstrap</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v4-alpha
-											</code>
-											).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[2],
+											)}
 										</li>
 										<li>
-											Setting up data reception using (
-											<strong>REST API</strong>
-											).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[3],
+											)}
 										</li>
 										<li>
-											Cross-browser support down to{" "}
-											<strong>Internet Explorer</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v10
-											</code>
-											.
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[4],
+											)}
 										</li>
 										<li>
-											Configuring the assembly using (
-											<strong>Gulp.js</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v4
-											</code>
-											, <strong>Node.js</strong>).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[5],
+											)}
 										</li>
 										<li>
-											Writing documentation (
-											<strong>Markdown</strong>).
+											{parse(
+												t.raw("list")[4].responsibilities.new_freshbroccoli[6],
+											)}
 										</li>
 										<li>
-											Communication with team members,
-											head of the web department, designer
-											and product manager, via instant
-											messengers and offline meetings.
+											{t.raw("list")[4].responsibilities.new_freshbroccoli[7]}
 										</li>
 									</ul>
 								</dd>
 							</dl>
-							{/* Wholesale distributor of consumer goods. Led 2 projects. 1)
-							Development and support of the main web service of the company
-							https://urraa.ru/, an online store for wholesale clothing. -
-							development of new pages based on Bitrix using JS (ES5) - layout
-							using CSS3, HTML5, jQuery, Bootstrap 4 2) Development and support
-							of a subsidiary project of the company https://freshbroccoli.ru/,
-							online store for retail sales of quality food products. -
-							development of new pages based on Bitrix using JS (ES5) - layout
-							using CSS3, HTML5, jQuery, Bootstrap 4 - regular layout of
-							adaptive, thematic E-mail newsletters on the ZURB Emails (SASS)
-							collector platform - development and implementation of interesting
-							widgets based on Canvas */}
+							{/* /NEW.FRESHBROCCOLI */}
 						</div>
 					</Accordion.Collapse>
 				</div>
@@ -2269,7 +1868,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -2297,9 +1896,7 @@ export default function Experience() {
 							</time>
 							)
 						</span>
-						<span className={styles.experience__duration}>
-							7 months
-						</span>
+						<span className={styles.experience__duration}>7 months</span>
 						<span className={styles.experience__position}>
 							Frontend developer
 						</span>
@@ -2307,9 +1904,7 @@ export default function Experience() {
 							<Image
 								className={clsx(
 									styles["experience__where-icon"],
-									styles[
-										"experience__where-icon--magorasystems"
-									]
+									styles["experience__where-icon--magorasystems"],
 								)}
 								src={magorasystems}
 								height={20}
@@ -2336,9 +1931,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										magora-systems.com
-									</span>
+									<span className="print-invisible">magora-systems.com</span>
 									<span className="print-inline-visible">
 										https://magora-systems.com/
 									</span>
@@ -2367,9 +1960,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											Elite Taxi Platform
-										</span>
+										<span className="print-invisible">Elite Taxi Platform</span>
 										<span className="print-inline-visible">
 											Elite Taxi Platform (London)
 										</span>{" "}
@@ -2380,8 +1971,8 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Web platform for an elite taxi service in
-									London, targeting Arab clients.
+									- Web platform for an elite taxi service in London, targeting
+									Arab clients.
 								</li>
 								<li>
 									<a
@@ -2406,8 +1997,8 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Web platform for an Indian dating social
-									network similar to Badoo.
+									- Web platform for an Indian dating social network similar to
+									Badoo.
 								</li>
 								<li>
 									<a
@@ -2419,9 +2010,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											Music Platform
-										</span>
+										<span className="print-invisible">Music Platform</span>
 										<span className="print-inline-visible">
 											Music Platform (SoundCloud-like)
 										</span>{" "}
@@ -2432,8 +2021,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Web-based music platform similar to
-									SoundCloud.
+									- Web-based music platform similar to SoundCloud.
 								</li>
 							</ol>
 							<h4>Responsibilities:</h4>
@@ -2473,61 +2061,41 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Created layouts using (
-											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												ES5
-											</code>
-											, <strong>jQuery</strong>,{" "}
-											<strong>HTML5</strong>,{" "}
-											<strong>CSS3</strong>,{" "}
-											<strong>Bootstrap</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v3
-											</code>
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>,{" "}
+											<strong>jQuery</strong>, <strong>HTML5</strong>,{" "}
+											<strong>CSS3</strong>, <strong>Bootstrap</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v3</code>
 											).
 										</li>
 										<li>
-											Integrated and customized the (
-											<strong>Highcharts</strong>) library
-											for building financial and other
-											reporting sections, including line
-											and share charts.
+											Integrated and customized the (<strong>Highcharts</strong>
+											) library for building financial and other reporting
+											sections, including line and share charts.
 										</li>
 										<li>
-											Ensured cross-browser compatibility,
-											including support for (
-											<strong>Internet Explorer</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v10+
-											</code>
+											Ensured cross-browser compatibility, including support for
+											(<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>
 											).
 										</li>
 										<li>
-											Delivered pixel-perfect layouts in
-											accordance with design requirements.
+											Delivered pixel-perfect layouts in accordance with design
+											requirements.
 										</li>
 										<li>
-											Used (<strong>Git</strong>) for
-											version control and collaboration.
+											Used (<strong>Git</strong>) for version control and
+											collaboration.
 										</li>
 										<li>
-											Prepared and submitted reports using
-											(<strong>Redmine</strong>) for task
-											tracking and project management.
+											Prepared and submitted reports using (
+											<strong>Redmine</strong>) for task tracking and project
+											management.
 										</li>
 										<li>
-											Collaborated with backend developers
-											working on the (
-											<strong>.NET</strong>) framework to
-											ensure seamless integration between
-											frontend and backend.
+											Collaborated with backend developers working on the (
+											<strong>.NET</strong>) framework to ensure seamless
+											integration between frontend and backend.
 										</li>
 									</ul>
 								</dd>
@@ -2561,52 +2129,36 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Created layouts using (
-											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												ES5
-											</code>
-											, <strong>jQuery</strong>,{" "}
-											<strong>HTML5</strong>,{" "}
-											<strong>CSS3</strong>,{" "}
-											<strong>FlatUI</strong>).
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>,{" "}
+											<strong>jQuery</strong>, <strong>HTML5</strong>,{" "}
+											<strong>CSS3</strong>, <strong>FlatUI</strong>).
 										</li>
 										<li>
-											Ensured cross-browser compatibility,
-											including support for (
-											<strong>Internet Explorer</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v10+
-											</code>
+											Ensured cross-browser compatibility, including support for
+											(<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>
 											).
 										</li>
 										<li>
-											Delivered pixel-perfect layouts in
-											accordance with design requirements.
+											Delivered pixel-perfect layouts in accordance with design
+											requirements.
 										</li>
 										<li>
-											Used (<strong>Git</strong>) for
-											version control and collaboration.
+											Used (<strong>Git</strong>) for version control and
+											collaboration.
 										</li>
 										<li>
-											Prepared and submitted reports using
-											(<strong>Redmine</strong>) for task
-											tracking and project management.
+											Prepared and submitted reports using (
+											<strong>Redmine</strong>) for task tracking and project
+											management.
 										</li>
 										<li>
-											The project was in the early stages
-											of development and did not yet have
-											a backend. It was running on a
-											frontend build tool, likely (
-											<strong>Gulp.js</strong>) or (
-											<strong>Grunt.js</strong>), with
-											live-reload functionality for
-											automatic page refresh during
-											development.
+											The project was in the early stages of development and did
+											not yet have a backend. It was running on a frontend build
+											tool, likely (<strong>Gulp.js</strong>) or (
+											<strong>Grunt.js</strong>), with live-reload functionality
+											for automatic page refresh during development.
 										</li>
 									</ul>
 								</dd>
@@ -2640,58 +2192,40 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Created layouts using (
-											<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												ES5
-											</code>
-											, <strong>jQuery</strong>,{" "}
-											<strong>HTML5</strong>,{" "}
-											<strong>CSS3</strong>,{" "}
-											<strong>Bootstrap</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v3
-											</code>
+											Created layouts using (<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>,{" "}
+											<strong>jQuery</strong>, <strong>HTML5</strong>,{" "}
+											<strong>CSS3</strong>, <strong>Bootstrap</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v3</code>
 											).
 										</li>
 										<li>
-											Designed and implemented email
-											newsletters for the platform.
+											Designed and implemented email newsletters for the
+											platform.
 										</li>
 										<li>
-											Ensured cross-browser compatibility,
-											including support for (
-											<strong>Internet Explorer</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v10+
-											</code>
+											Ensured cross-browser compatibility, including support for
+											(<strong>Internet Explorer</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v10+</code>
 											).
 										</li>
 										<li>
-											Delivered pixel-perfect layouts in
-											accordance with design requirements.
+											Delivered pixel-perfect layouts in accordance with design
+											requirements.
 										</li>
 										<li>
-											Used (<strong>Git</strong>) for
-											version control and collaboration.
+											Used (<strong>Git</strong>) for version control and
+											collaboration.
 										</li>
 										<li>
-											Prepared and submitted reports using
-											(<strong>Redmine</strong>) for task
-											tracking and project management.
+											Prepared and submitted reports using (
+											<strong>Redmine</strong>) for task tracking and project
+											management.
 										</li>
 										<li>
-											Collaborated with backend developers
-											working on the (
-											<strong>.NET</strong>) framework to
-											ensure seamless integration between
-											frontend and backend.
+											Collaborated with backend developers working on the (
+											<strong>.NET</strong>) framework to ensure seamless
+											integration between frontend and backend.
 										</li>
 									</ul>
 								</dd>
@@ -2714,7 +2248,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -2742,9 +2276,7 @@ export default function Experience() {
 							</time>
 							)
 						</span>
-						<span className={styles.experience__duration}>
-							6 months
-						</span>
+						<span className={styles.experience__duration}>6 months</span>
 						<span className={styles.experience__position}>
 							Frontend developer
 						</span>
@@ -2776,9 +2308,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										btipro.ru
-									</span>
+									<span className="print-invisible">btipro.ru</span>
 									<span className="print-inline-visible">
 										https://web.archive.org/web/20140510091338/http://btipro.ru/
 									</span>
@@ -2807,9 +2337,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											ktotam.pro
-										</span>
+										<span className="print-invisible">ktotam.pro</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20141023134413/http://ktotam.pro/
 										</span>{" "}
@@ -2820,22 +2348,19 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Real estate startup project aimed at
-									simplifying access to property information.
+									- Real estate startup project aimed at simplifying access to
+									property information.
 									<ul>
 										<li>
-											The project aimed to simplify access
-											to property information by allowing
-											users to enter a cadastral number or
-											address and receive free basic
-											information or detailed data for a
-											small fee.
+											The project aimed to simplify access to property
+											information by allowing users to enter a cadastral number
+											or address and receive free basic information or detailed
+											data for a small fee.
 										</li>
 										<li>
-											Solved the problem of complex and
-											confusing forms on official
-											government websites by providing a
-											user-friendly interface.
+											Solved the problem of complex and confusing forms on
+											official government websites by providing a user-friendly
+											interface.
 										</li>
 									</ul>
 								</li>
@@ -2877,49 +2402,39 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Developed the website from scratch
-											using pixel-perfect methodology.
+											Developed the website from scratch using pixel-perfect
+											methodology.
 										</li>
 										<li>
-											Implemented front-end programming
-											using (<strong>JavaScript</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												ES5
-											</code>
+											Implemented front-end programming using (
+											<strong>JavaScript</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>ES5</code>
 											).
 										</li>
 										<li>
-											Added JavaScript logic to handle
-											events using native (
-											<strong>XMLHttpRequest</strong>) for
-											making HTTP requests.
+											Added JavaScript logic to handle events using native (
+											<strong>XMLHttpRequest</strong>) for making HTTP requests.
 										</li>
 										<li>
-											Created layouts and animations using
-											(<strong>HTML</strong>,{" "}
-											<strong>CSS</strong>).
+											Created layouts and animations using (
+											<strong>HTML</strong>, <strong>CSS</strong>).
 										</li>
 										<li>
-											Used (<strong>Git</strong>) for
-											version control and collaboration.
+											Used (<strong>Git</strong>) for version control and
+											collaboration.
 										</li>
 										<li>
-											Worked with tools such as (
-											<strong>Avocode</strong>), (
-											<strong>Sublime Editor</strong>),
-											and (<strong>Git Tortoise</strong>).
+											Worked with tools such as (<strong>Avocode</strong>), (
+											<strong>Sublime Editor</strong>), and (
+											<strong>Git Tortoise</strong>).
 										</li>
 										<li>
-											Collaborated with a small team
-											consisting of a full-stack
-											developer, a designer, and a Scrum
-											manager.
+											Collaborated with a small team consisting of a full-stack
+											developer, a designer, and a Scrum manager.
 										</li>
 										<li>
-											Participated in Scrum meetings with
-											tasks visualized on a whiteboard.
+											Participated in Scrum meetings with tasks visualized on a
+											whiteboard.
 										</li>
 									</ul>
 								</dd>
@@ -2942,7 +2457,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -2970,12 +2485,8 @@ export default function Experience() {
 							</time>
 							)
 						</span>
-						<span className={styles.experience__duration}>
-							10 months
-						</span>
-						<span className={styles.experience__position}>
-							HTML developer
-						</span>
+						<span className={styles.experience__duration}>10 months</span>
+						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
 							<Image
 								className={styles["experience__where-icon"]}
@@ -3004,9 +2515,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										omegadesign.pro
-									</span>
+									<span className="print-invisible">omegadesign.pro</span>
 									<span className="print-inline-visible">
 										https://www.omegadesign.pro/
 									</span>
@@ -3035,9 +2544,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											никалюкс.рф
-										</span>
+										<span className="print-invisible">никалюкс.рф</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20180409060127/http://%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8E%D0%BA%D1%81.%D1%80%D1%84/
 										</span>{" "}
@@ -3085,9 +2592,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											aurum-tours.ru
-										</span>
+										<span className="print-invisible">aurum-tours.ru</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20140707080406/http://aurum-tours.ru/
 										</span>{" "}
@@ -3110,9 +2615,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											http://eco-d.ru/
-										</span>
+										<span className="print-invisible">http://eco-d.ru/</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20150407021801/http://www.eco-d.ru/
 										</span>{" "}
@@ -3123,8 +2626,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Website for an eco-friendly products
-									company.
+									- Website for an eco-friendly products company.
 								</li>
 								<li>
 									<a
@@ -3189,43 +2691,30 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Developed HTML layouts from the
-											scratch, as well as improve and
-											support projects with legacy code.
+											Developed HTML layouts from the scratch, as well as
+											improve and support projects with legacy code.
 										</li>
 										<li>
-											Created and maintained layouts for
-											multi-page applications{" "}
-											<abbr title="Multi-Page Application">
-												MPA
-											</abbr>{" "}
-											using (<strong>HTML4</strong>,{" "}
-											<strong>CSS2</strong>,{" "}
-											<strong>jQuery</strong>,{" "}
-											<strong>Photoshop</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v5
-											</code>
+											Created and maintained layouts for multi-page applications{" "}
+											<abbr title="Multi-Page Application">MPA</abbr> using (
+											<strong>HTML4</strong>, <strong>CSS2</strong>,{" "}
+											<strong>jQuery</strong>, <strong>Photoshop</strong>{" "}
+											<code style={{ fontSize: "0.75em" }}>v5</code>
 											).
 										</li>
 										<li>
 											Worked with CMS platforms such as (
-											<strong>WordPress</strong>), (
-											<strong>Joomla</strong>), and (
-											<strong>Drupal</strong>).
+											<strong>WordPress</strong>), (<strong>Joomla</strong>),
+											and (<strong>Drupal</strong>).
 										</li>
 										<li>
-											Interacted with the backend part of
-											websites written in (
-											<strong>PHP</strong>) using the (
-											<strong>Yii</strong>) framework.
+											Interacted with the backend part of websites written in (
+											<strong>PHP</strong>) using the (<strong>Yii</strong>)
+											framework.
 										</li>
 										<li>
-											Used (<strong>Redmine</strong>) for
-											task tracking and project
-											management.
+											Used (<strong>Redmine</strong>) for task tracking and
+											project management.
 										</li>
 									</ul>
 								</dd>
@@ -3248,7 +2737,7 @@ export default function Experience() {
 						className={clsx(
 							accordionStyles.accordion__button,
 							styles.experience__button,
-							font.className
+							font.className,
 						)}
 					>
 						<span className={styles.experience__when}>
@@ -3276,12 +2765,8 @@ export default function Experience() {
 							</time>
 							)
 						</span>
-						<span className={styles.experience__duration}>
-							9 months
-						</span>
-						<span className={styles.experience__position}>
-							HTML developer
-						</span>
+						<span className={styles.experience__duration}>9 months</span>
+						<span className={styles.experience__position}>HTML developer</span>
 						<span className={styles.experience__where}>
 							<Image
 								className={styles["experience__where-icon"]}
@@ -3310,9 +2795,7 @@ export default function Experience() {
 										alignItems: "center",
 									}}
 								>
-									<span className="print-invisible">
-										alfateam.ru
-									</span>
+									<span className="print-invisible">alfateam.ru</span>
 									<span className="print-inline-visible">
 										https://alfateam.ru/
 									</span>
@@ -3341,9 +2824,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											@+dress
-										</span>
+										<span className="print-invisible">@+dress</span>
 										<span className="print-inline-visible">
 											http://besm.alfateam.ru/
 										</span>{" "}
@@ -3354,10 +2835,9 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store for fashionable clothing,
-									shoes, and accessories (Bitrix). My first
-									serious project and the first online store I
-									developed.
+									- Online store for fashionable clothing, shoes, and
+									accessories (Bitrix). My first serious project and the first
+									online store I developed.
 								</li>
 								<li>
 									<a
@@ -3369,9 +2849,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											proffcom24.ru
-										</span>
+										<span className="print-invisible">proffcom24.ru</span>
 										<span className="print-inline-visible">
 											https://proffcom24.ru/
 										</span>{" "}
@@ -3382,8 +2860,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store of furniture and office
-									accessories (Bitrix).
+									- Online store of furniture and office accessories (Bitrix).
 								</li>
 								<li>
 									<a
@@ -3395,9 +2872,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											m2m-sib.ru
-										</span>
+										<span className="print-invisible">m2m-sib.ru</span>
 										<span className="print-inline-visible">
 											https://web-arhive.ru/page?url=http%3A%2F%2Fm2m-sib.ru%2F&date=20141228&hidden=0
 										</span>{" "}
@@ -3408,10 +2883,9 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- M2M-Telematics Siberia LLC is a
-									multi-platform representative of the GLONASS
-									market leaders and a licensed workshop for
-									the installation and repair of tachographs.
+									- M2M-Telematics Siberia LLC is a multi-platform
+									representative of the GLONASS market leaders and a licensed
+									workshop for the installation and repair of tachographs.
 									(Bitrix).
 								</li>
 								<li>
@@ -3424,9 +2898,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											regtime24.ru
-										</span>
+										<span className="print-invisible">regtime24.ru</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20140911111454/http://www.regtime24.ru/
 										</span>{" "}
@@ -3437,8 +2909,8 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store for fashionable clothing,
-									shoes, and accessories (Bitrix).
+									- Online store for fashionable clothing, shoes, and
+									accessories (Bitrix).
 								</li>
 								<li>
 									<a
@@ -3454,8 +2926,7 @@ export default function Experience() {
 											Mercury - Siberian Fuel Company
 										</span>
 										<span className="print-inline-visible">
-											Mercury - Siberian Fuel Company
-											(Bitrix)
+											Mercury - Siberian Fuel Company (Bitrix)
 										</span>{" "}
 										<FaExternalLinkAlt
 											style={{
@@ -3464,8 +2935,7 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Website for Mercury - Siberian Fuel
-									Company (Bitrix).
+									- Website for Mercury - Siberian Fuel Company (Bitrix).
 								</li>
 								<li>
 									<a
@@ -3477,9 +2947,7 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">
-											wandmart.ru
-										</span>
+										<span className="print-invisible">wandmart.ru</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20151117114253/http://wandmart.ru/
 										</span>{" "}
@@ -3490,8 +2958,8 @@ export default function Experience() {
 											}}
 										/>
 									</a>{" "}
-									- Online store for fashionable clothing,
-									shoes, and accessories (Bitrix).
+									- Online store for fashionable clothing, shoes, and
+									accessories (Bitrix).
 								</li>
 							</ol>
 							<h4>Responsibilities:</h4>
@@ -3531,42 +2999,27 @@ export default function Experience() {
 								>
 									<ul className="cv">
 										<li>
-											Created layouts and maintained
-											websites on the (
-											<strong>Bitrix</strong>) platform,
-											using (<strong>HTML4</strong>,{" "}
-											<strong>CSS2</strong>,{" "}
+											Created layouts and maintained websites on the (
+											<strong>Bitrix</strong>) platform, using (
+											<strong>HTML4</strong>, <strong>CSS2</strong>,{" "}
 											<strong>Photoshop</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v5
-											</code>
+											<code style={{ fontSize: "0.75em" }}>v5</code>
 											).
 										</li>
 										<li>
-											Followed the (
-											<strong>Pixel-Perfect</strong>)
-											methodology to ensure the layout
-											fully matched the provided designs.
+											Followed the (<strong>Pixel-Perfect</strong>) methodology
+											to ensure the layout fully matched the provided designs.
 										</li>
 										<li>
-											Ensured сross-browser compatibility,
-											including (
+											Ensured сross-browser compatibility, including (
 											<strong>Internet Explorer</strong>{" "}
-											<code
-												style={{ fontSize: "0.75em" }}
-											>
-												v8-10
-											</code>
+											<code style={{ fontSize: "0.75em" }}>v8-10</code>
 											).
 										</li>
 										<li>
-											Collaborated closely with the
-											designer, backend developer, and
-											company director to ensure smooth
-											project execution and alignment with
-											business goals.
+											Collaborated closely with the designer, backend developer,
+											and company director to ensure smooth project execution
+											and alignment with business goals.
 										</li>
 									</ul>
 								</dd>

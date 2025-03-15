@@ -189,12 +189,12 @@
 					],
 					"subbota_tv": [
 						"Supported and improve the legacy website based on (<strong>Laravel</strong>).",
-						"Created layouts for new ones and modificated of the existing pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
+						"Layout of new and modification of existing pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
 						"Extended the list of tracked items and user events on the existing pages using (<strong>Google Analytics</strong>).",
 						"Created embedded (<strong>React</strong> <code style=\"font-size: 0.75em;\">v16</code>) applications with (<strong>Create React App</strong>) for individual pages, such as:",
 						[
 							"Registration of participants in a children's competition for the role of a TV presenter.",
-							"Search for teleoperators by city to connect."
+							"Application for searching providers for connecting to the TV channel"
 						],
 						[
 							"Created the NPM package",
@@ -211,12 +211,53 @@
 						"Layout of new and modification of existing pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
 						"Extend the list of tracked items and user events on existing pages using (<strong>Google Analytics</strong>).",
 						"Create embedded (<strong>React</strong> <code style=\"font-size: 0.75em;\">v16</code>) applications with (<strong>Create React App</strong>) for individual pages, such as:",
-						"- <a href=\"https://tnt4.ru/nastroi_tnt4/\" target=\"_blank\" rel=\"noopener noreferrer\">tnt4.ru/nastroi_tnt4</a> - Search for teleoperators by city to connect.",
-						"Setting up data reception using (<strong>REST API</strong>).",
+						[
+							"Application for searching providers for connecting to the TV channel"
+						],
+						"Setting up data exchange using (<strong>REST API</strong>).",
 						"Optimize applications loading by caching data in (<strong>localStorage</strong>, <strong>sessionStorage</strong>).",
 						"Optimize applications response to display data using (<strong>debouncing</strong>).",
 						"Create regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
 						"Communication with team members and a head of web department through instant messengers and offline meetings."
+					]
+				}
+			},
+			{
+				"from": "October 2016",
+				"to": "October 2017",
+				"duration": "1 year",
+				"position": "Frontend developer",
+				"company": "UURRAA & Freshbroccoli",
+				"where": "Moscow, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"urraa": "Wholesale distributor of consumer goods to retail distributors.",
+					"freshbroccoli": "Online store for retail sales of high-quality and exclusive food products and household goods.",
+					"new_freshbroccoli": "Online store for retail sales of high-quality and exclusive food products and household goods (new version)."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"blockquote": "Two projects: <strong style={{ fontWeight: 500 }}>URRAA</strong> and <strong style={{ fontWeight: 500 }}>Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style={{ fontWeight: 500 }}>Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
+					"urraa-and-freshbroccoli": [
+						"Supported and improved the legacy web site based on (<strong>Bitrix</strong>)",
+						"Cross-browser support for evergreen browsers.",
+						"Created new and changed existing pages using (<strong>HTML</strong>, <strong>CSS</strong>).",
+						"Wrote business logic using (<strong>JavaScript</strong> <code style={{ fontSize: \"0.75em\" }}>^ES5.1+</code>).",
+						"Was setting up data reception using (<strong>REST API</strong>).",
+						"Created media features using (modern <strong>CSS</strong>, <strong>Canvas</strong>) such as snowfall in the header for a Christmas.",
+						"Created regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
+						"Communicated with team members, head of the web department, designers and product manager, via instant messengers and offline meetings.",
+						"Supported and mentored junior frontend developer."
+					],
+					"new_freshbroccoli": [
+						"Started the project from a scratch for (<strong>Bitrix</strong>) using (<strong>Vue</strong> <code style={{ fontSize: \"0.75em\" }}>v2</code>).",
+						"Created adaptive, pixel-perfect layout of the pages using (<strong>PUG</strong>, <strong>SASS</strong>).",
+						"Deep integrated and customized of (<strong>Bootstrap</strong> <code style={{ fontSize: \"0.75em\" }}>v4-alpha</code>).",
+						"Setted up data reception using (<strong>REST API</strong>).",
+						"Cross-browser support down to <strong>Internet Explorer</strong> <code style={{ fontSize: \"0.75em\" }}>v10</code>.",
+						"Configurated the assembly using (<strong>Gulp.js</strong> <code style={{ fontSize: \"0.75em\" }}>v4</code>, <strong>Node.js</strong>).",
+						"Writed documentation (<strong>Markdown</strong>).",
+						"Communicated with team members, head of the web department, designers and product manager, via instant messengers and offline meetings."
 					]
 				}
 			}
