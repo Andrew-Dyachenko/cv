@@ -78,11 +78,11 @@
 						}
 
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 0.875rem);
+							right: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 0.875rem);
+							left: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 					}
 				}
@@ -106,11 +106,11 @@
 						}
 
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 0.875rem);
+							right: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 0.875rem);
+							left: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 					}
 				}
@@ -125,12 +125,16 @@
 						height: 100%;
 						bottom: 0;
 
+						@include color-scheme.dark-and-not-print {
+							border-color: #faf3e0;
+						}
+
 						@at-root :root:not([dir="rtl"]) & {
-							right: calc(100% + 0.875rem);
+							right: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 
 						@at-root :root[dir="rtl"] & {
-							left: calc(100% + 0.875rem);
+							left: calc(100% + 1rem / 2 + 0.3125rem);
 						}
 					}
 				}
