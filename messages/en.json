@@ -237,12 +237,12 @@
 				},
 				"responsibilities": {
 					"title": "Responsibilities:",
-					"blockquote": "Two projects: <strong style={{ fontWeight: 500 }}>URRAA</strong> and <strong style={{ fontWeight: 500 }}>Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style={{ fontWeight: 500 }}>Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
+					"blockquote": "Two projects: <strong style=\"font-weight: 500\">URRAA</strong> and <strong style=\"font-weight: 500\">Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style=\"font-weight: 500\">Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
 					"urraa-and-freshbroccoli": [
 						"Supported and improved the legacy web site based on (<strong>Bitrix</strong>)",
 						"Cross-browser support for evergreen browsers.",
 						"Created new and changed existing pages using (<strong>HTML</strong>, <strong>CSS</strong>).",
-						"Wrote business logic using (<strong>JavaScript</strong> <code style={{ fontSize: \"0.75em\" }}>^ES5.1+</code>).",
+						"Wrote business logic using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\" >^ES5.1+</code>).",
 						"Was setting up data reception using (<strong>REST API</strong>).",
 						"Created media features using (modern <strong>CSS</strong>, <strong>Canvas</strong>) such as snowfall in the header for a Christmas.",
 						"Created regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
@@ -250,14 +250,120 @@
 						"Supported and mentored junior frontend developer."
 					],
 					"new_freshbroccoli": [
-						"Started the project from a scratch for (<strong>Bitrix</strong>) using (<strong>Vue</strong> <code style={{ fontSize: \"0.75em\" }}>v2</code>).",
+						"Started the project from a scratch for (<strong>Bitrix</strong>) using (<strong>Vue</strong> <code style=\"font-size: 0.75em\" >v2</code>).",
 						"Created adaptive, pixel-perfect layout of the pages using (<strong>PUG</strong>, <strong>SASS</strong>).",
-						"Deep integrated and customized of (<strong>Bootstrap</strong> <code style={{ fontSize: \"0.75em\" }}>v4-alpha</code>).",
+						"Deep integrated and customized of (<strong>Bootstrap</strong> <code style=\"font-size: 0.75em\" >v4-alpha</code>).",
 						"Setted up data reception using (<strong>REST API</strong>).",
-						"Cross-browser support down to <strong>Internet Explorer</strong> <code style={{ fontSize: \"0.75em\" }}>v10</code>.",
-						"Configurated the assembly using (<strong>Gulp.js</strong> <code style={{ fontSize: \"0.75em\" }}>v4</code>, <strong>Node.js</strong>).",
+						"Cross-browser support down to <strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\" >v10</code>.",
+						"Configurated the assembly using (<strong>Gulp.js</strong> <code style=\"font-size: 0.75em\" >v4</code>, <strong>Node.js</strong>).",
 						"Writed documentation (<strong>Markdown</strong>).",
 						"Communicated with team members, head of the web department, designers and product manager, via instant messengers and offline meetings."
+					]
+				}
+			},
+			{
+				"from": "January 2015",
+				"to": "July 2015",
+				"duration": "7 months",
+				"position": "Frontend developer",
+				"company": "Magora Systems",
+				"where": "Novosibirsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"taxi_app": "Web platform for an elite taxi service in London, targeting Arab clients.",
+					"dating_app": "Web platform for an Indian dating social network similar to Badoo.",
+					"music_app": "Web-based music platform similar to SoundCloud."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"blockquote": "Two projects: <strong style=\"font-weight: 500\">URRAA</strong> and <strong style=\"font-weight: 500\">Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style=\"font-weight: 500\">Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
+					"taxi_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\" >ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong> <code style=\"font-size: 0.75em\" >v3</code>).",
+						"Integrated and customized the (<strong>Highcharts</strong>) library for building financial and other reporting sections, including line and share charts.",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\" >v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"Collaborated with backend developers working on the (<strong>.NET</strong>) framework to ensure seamless integration between frontend and backend."
+					],
+					"dating_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\">ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>FlatUI</strong>).",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\">v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"The project was in the early stages of development and did not yet have a backend. It was running on a frontend build tool, likely (<strong>Gulp.js</strong>) or (<strong>Grunt.js</strong>), with live-reload functionality for automatic page refresh during development."
+					],
+					"music_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\">ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong> <code style=\"font-size: 0.75em\">v3</code>).",
+						"Designed and implemented email newsletters for the platform.",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\">v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"Collaborated with backend developers working on the (<strong>.NET</strong>) framework to ensure seamless integration between frontend and backend."
+					]
+				}
+			},
+			{
+				"from": "July 2014",
+				"to": "December 2014",
+				"duration": "10 months",
+				"position": "HTML developer",
+				"company": "Omega Design",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"ktotam": {
+						"title": "Real estate startup project aimed at simplifying access to property information.",
+						"description": [
+							"The project aimed to simplify access to property information by allowing users to enter a cadastral number or address and receive free basic information or detailed data for a small fee.",
+							"Solved the problem of complex and confusing forms on official government websites by providing a user-friendly interface."
+						]
+					}
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"ktotam": [
+						"Developed the website from a scratch using pixel-perfect methodology.",
+						"Implemented front-end programming using (<strong>JavaScript</strong> <code style= \"font-size: 0.75em\">ES5</code>).",
+						"Added JavaScript logic to handle events using native (<strong>XMLHttpRequest</strong>) for making HTTP requests.",
+						"Created layouts and animations using (<strong>HTML</strong>, <strong>CSS</strong>).",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Worked with tools such as (<strong>Avocode</strong>), (<strong>Sublime Editor</strong>), and (<strong>Git Tortoise</strong>).",
+						"Collaborated with a small team consisting of a full-stack developer, a designer, and a Scrum manager.",
+						"Participated in Scrum meetings with tasks visualized on a whiteboard."
+					]
+				}
+			},
+			{
+				"from": "August 2013",
+				"to": "May 2014",
+				"duration": "6 months",
+				"position": "Frontend developer",
+				"company": "BTI Pro",
+				"where": "Novosibirsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"ktotam": {
+						"title": "Real estate startup project aimed at simplifying access to property information.",
+						"description": [
+							"The project aimed to simplify access to property information by allowing users to enter a cadastral number or address and receive free basic information or detailed data for a small fee.",
+							"Solved the problem of complex and confusing forms on official government websites by providing a user-friendly interface."
+						]
+					}
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"ktotam": [
+						"Developed the website from a scratch using pixel-perfect methodology.",
+						"Implemented front-end programming using (<strong>JavaScript</strong> <code style= \"font-size: 0.75em\">ES5</code>).",
+						"Added JavaScript logic to handle events using native (<strong>XMLHttpRequest</strong>) for making HTTP requests.",
+						"Created layouts and animations using (<strong>HTML</strong>, <strong>CSS</strong>).",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Worked with tools such as (<strong>Avocode</strong>), (<strong>Sublime Editor</strong>), and (<strong>Git Tortoise</strong>).",
+						"Collaborated with a small team consisting of a full-stack developer, a designer, and a Scrum manager.",
+						"Participated in Scrum meetings with tasks visualized on a whiteboard."
 					]
 				}
 			}

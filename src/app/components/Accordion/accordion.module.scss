@@ -40,13 +40,16 @@
 		display: flex;
 		flex-direction: column;
 
-		&:not(:first-of-type) {
+		&:not(:first-of-type) #{$-accordion}__item-padding {
 			padding-block-start: 1rem;
 		}
 
 		&:not(:last-of-type) {
 			position: relative;
-			padding-block-end: 1rem;
+
+			#{$-accordion}__item-padding {
+				padding-block-end: 1rem;
+			}
 
 			&::after {
 				content: "";
@@ -213,11 +216,11 @@
 
 		> * {
 			&:not(script, style) {
-				&:first-child {
+				&:first-child #{$-accordion}__item-padding {
 					margin-block-start: 0;
 				}
 
-				&:last-child {
+				&:last-child #{$-accordion}__item-padding {
 					margin-block-end: 0;
 				}
 			}
