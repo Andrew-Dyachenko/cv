@@ -25,6 +25,10 @@
 			~ #{$-scheme-switcher} {
 				&__status {
 					background-position-x: 0.1875rem;
+
+					@at-root :root[dir="rtl"] & {
+						background-position-x: calc(100% - 0.1875rem);
+					}
 				}
 
 				&__label--light {
@@ -55,6 +59,10 @@
 			~ #{$-scheme-switcher} {
 				&__status {
 					background-position-x: calc(100% - 0.1875rem);
+
+					@at-root :root[dir="rtl"] & {
+						background-position-x: 0.1875rem;
+					}
 				}
 
 				&__label--dark {

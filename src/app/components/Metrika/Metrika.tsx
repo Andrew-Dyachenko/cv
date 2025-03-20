@@ -1,11 +1,11 @@
 // app/components/metrika.js
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, Fragment } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 
-let ym = (arg0: number, arg1: string, href: string):void => {}
+let ym = (arg0: number, arg1: string, href: string): void => {};
 
 export default function Metrika() {
 	const pathName = usePathname();
@@ -16,8 +16,10 @@ export default function Metrika() {
 	}, [pathName, searchParams]);
 
 	return (
-		<Script id="yandex-metrika">
-			{`
+		<Fragment>
+			{/* Yandex.Metrika counter */}
+			<Script id="yandex-metrika">
+				{`
 				(function (m, e, t, r, i, k, a) {
 					m[i] =
 						m[i] ||
@@ -45,6 +47,21 @@ export default function Metrika() {
 					defer: true,
 				});
 			`}
-		</Script>
+			</Script>
+			<noscript>
+				<div>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img
+						src="https://mc.yandex.ru/watch/96691605"
+						style={{
+							position: "absolute",
+							left: "-9999px",
+						}}
+						alt="Yandex Metrika noscript watcher"
+					/>
+				</div>
+			</noscript>
+			{/* /Yandex.Metrika counter */}
+		</Fragment>
 	);
 }

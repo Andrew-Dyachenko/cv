@@ -1,0 +1,396 @@
+{
+	"header": {
+		"print-button": "Print",
+		"text-direction-toggle": "Text direction"
+	},
+	"photo": {
+		"first-name": "Andrey",
+		"last-name": "Dyachenko"
+	},
+	"occupation": {
+		"position": "Frontend developer",
+		"level": "<abbr title=\"A Middle Frontend developer typically has experience and stack covering: 1. Layout (HTML, CSS); 2. JavaScript and frameworks; 3. Working with RESTful API; 4. State management; 5. Adaptive and responsive layout; 6. Testing; 7. Performance optimization; 8. Versioning and assembly; 9. Communication and cooperation; 10. Continuous training;\">(middle / middle+)</abbr>"
+	},
+	"stack": {
+		"title": "Stack",
+		"button-text-on-show": "Show all",
+		"button-text-on-hide": "Hide"
+	},
+	"education": {
+		"title": "Education",
+		"institutions": [
+			{
+				"name": "Krasnoyarsk assembly college",
+				"faculty": "Welding technologies (Bachelor)",
+				"degree": "Technician"
+			},
+			{
+				"name": "Siberian State Aerospace University <small>(Nonprofit Partnership Graduate School of Business)</small>",
+				"faculty": "Programming basics - (Bachelor)",
+				"degree": "Programmer"
+			},
+			{
+				"name": "Krasnoyarsk secondary school №55",
+				"degree": "Certificate"
+			}
+		]
+	},
+	"contacts": {
+		"title": "Contacts",
+		"location": "Moscow, Russia 🇷🇺",
+		"relocation": "Relocation: <span class=\"relocation\">possible</span>"
+	},
+	"summary": {
+		"title": "Summary",
+		"content": [
+			"<p>Experienced in developing modern web applications, including:</p>",
+			[
+				"<span>Single-Page Applications <dfn>(SPA)</dfn></span>",
+				"<span>Multi-Page Applications <dfn>(MPA)</dfn></span>",
+				"<span>Progressive Web Applications <dfn>(PWA)</dfn></span>",
+				"Landing Pages",
+				"<abbr title=\"Node Package Manager\">NPM</abbr> Packages",
+				"Emails (technical & marketing)"
+			],
+			"<p>Frontend developer specializing in building modern web applications, including SPAs, PWAs, and email templates. Proficient in (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), with experience in (<strong>React</strong>, <strong>TypeScript</strong>). Skilled in creating pixel-perfect, cross-browser compatible layouts and developing reusable email templates compatible with major clients like (<strong>Outlook</strong>, <strong>Gmail</strong>, <strong>Yahoo</strong>).</p><p>Experienced in (<strong>Agile</strong>, <strong>Scrum</strong>) workflows, code reviews, and delivering scalable solutions for clients in finance, e-commerce, and media industries.</p>"
+		]
+	},
+	"experience": {
+		"title": "Experience",
+		"duration": "8 years 5 months",
+		"list": [
+			{
+				"from": "April 2024",
+				"to": "September 2024",
+				"duration": "6 months",
+				"position": "HTML developer",
+				"company": "B2Broker",
+				"where": "Tbilisi, Georgia 🇬🇪",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"b2broker": "<abbr title=\"Business to Business\">B2B</abbr> solution designed for brokers, exchanges, and other financial institutions. It provides a comprehensive back-office system, including CRM, reporting, and client management tools, to streamline operations and enhance customer experience.",
+					"b2core": "<abbr title=\"Business to Business\">B2B</abbr> solution for brokers, exchanges, and financial institutions. It acts as a <abbr title=\"When a broker';s internal liquidity is insufficient to cover client orders, B2Prime ensures seamless execution by providing access to external liquidity, helping brokers fulfill orders quickly and at competitive market prices\">liquidity provider</abbr>, offering deep multi-asset liquidity across Forex, crypto, metals, indices, and more."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"b2broker-and-b2core": [
+						"Worked with company's monorepo:",
+						[
+							"Finalized draft layouts with pre-implemented logic, received from the frontend developers, based on the project';s global styles, shared components, from the (<strong>Storybook</strong>) library styling and functionality by using (<strong>HTML</strong>, <strong>SCSS</strong>, <strong>Angular</strong> <code style=\"font-size: 0.75em;\">v16</code>), and (<strong>TypeScript</strong> <code style=\"font-size: 0.75em;\">v5</code>), ensuring full compliance with the provided design layouts.",
+							"Held to the corporate coding and style standards. For example: using fixed pixels (<strong>px</strong>) instead of (<s><strong>rem</strong></s>) or (<s><strong>em</strong></s>).",
+							"Collaborated with designers to ensure all mockups were aligned with the shared component library.",
+							"Worked under the supervision of (<strong>Substream</strong>) and (<strong>Stream</strong>) project leads, took part in the daily meetings, periodic stand-ups."
+						],
+						"Worked with Emails:",
+						[
+							"Developed and maintained from scratch reusable adaptive email templates for notifications and updates using (<strong>HTML</strong>, <strong>SCSS</strong>) in the (<strong>Maizzle</strong> <code style=\"font-size: 0.75em;\">v4</code>) framework.",
+							"Ensured email templates were compatible across all major clients like (<strong>Gmail</strong>) and (<strong>Yahoo</strong>), including (<strong>Outlook</strong> <code style=\"font-size: 0.75em;\">^2007</code>), through testing and debugging.",
+							"Created regular marketing and informational emails manually (without a framework) in collaboration with the email manager, repurposing existing templates for efficiency and ensuring content accuracy.",
+							"Close cooperation with the email content manager for prompt updating and testing of regular custom-made non-email templates."
+						],
+						"Participation in code review, creation and verification of pull requests in (<strong>GitLab</strong>) with mandatory receipt of at least 3 approvals before merging into the dev branch.",
+						"Managing tasks in (<strong>Jira</strong>), tracking time and creating daily reports.",
+						"Help improve current documentation in Confluence.",
+						"Interacting with the team via (<strong>Slack</strong>), (<strong>Google Meet</strong>), (<strong>Zoom</strong>), (<strong>Jira</strong>), (<strong>Confluence</strong>), (<strong>GitLab</strong>). Participating in daily meetings, personal meetings, various events."
+					]
+				}
+			},
+			{
+				"from": "January 2023",
+				"to": "Present",
+				"duration": "1 year 3 months",
+				"position": "Frontend developer",
+				"company": "Individual Entrepreneur",
+				"where": "Batumi, Georgia 🇬🇪",
+				"paragraph": "Providing Frontend development services for web applications, websites, <abbr title=\"Node Package Manager\">NPM</abbr> packages and emails, as an individual entrepreneur (freelancer / contractor). Including signing an <abbr title=\"Non-Disclosure Agreement\">NDA</abbr>.",
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"all": [
+						"Basically worked with the classic stack: (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), using (<strong>WordPress</strong>) and it's WYSIWYGs."
+					]
+				}
+			},
+			{
+				"from": "October 2019",
+				"to": "August 2022",
+				"duration": "2 years 11 months",
+				"position": "Frontend developer",
+				"company": "LLC ITSOLUTIONS (ZFX)",
+				"where": "Moscow, Russia 🇷🇺",
+				"paragraph": "Worked on various projects, including a broker aggregator website and a CRM portal.",
+				"projects": {
+					"zfx_com": "Broker's aggregator website.",
+					"my_zfx_com": "CRM portal for servicing the broker's leads.",
+					"its-nu_vercel_app": "Representative website of the contracting company <dfn>LLC ITSOLUTIONS</dfn>."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"zfx_com": [
+						"Start the project from scratch for (<strong>WordPress</strong>).",
+						"Create adaptive, pixel-perfect layout of the pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>PUG</strong>, <strong>SASS</strong>).",
+						"Deep integration and customization of (<strong>Bootstrap</strong> <code style=\"font-size: 0.75em;\">v4</code>).",
+						"Write business logic using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>, <strong>jQuery</strong>).",
+						"Create (<strong>React</strong> <code style=\"font-size: 0.75em;\">v16-17</code>) page applications.",
+						"Support and implementation of (<strong>Vue</strong> <code style=\"font-size: 0.75em;\">v2</code>) applications on pages.",
+						"Setting up data reception using (<strong>REST API</strong>, <strong>WebSocket</strong>).",
+						"Cross-browser support down to <strong>Internet Explorer</strong> <code style=\"font-size: 0.75em;\">v10</code>.",
+						"Multilingual feature support.",
+						"Support for bidirectional content (<strong>RTL</strong>, <strong>LTR</strong>).",
+						"Configuring the assembly using (<strong>Parcel</strong> <code style=\"font-size: 0.75em;\">v1-2</code>, <strong>Node.js</strong>).",
+						"Writing documentation (<strong>Markdown</strong>, <strong>JSDoc</strong>).",
+						"Searching for solutions to establish the interaction of imperative and declarative technologies on one page, such as (<strong>WYSIWYG</strong>, <strong>React</strong>, <strong>jQuery</strong>, <strong>Vue</strong>).",
+						"Optimizing site application using (<strong>Google Lighthouse <small><i>(Core Web Vitals)</i></small></strong>, <strong>W3C HTML Validator</strong>) and other linters.",
+						"Communication with team members and business customers through instant messengers and online audio-video meetings in two languages (<strong>English</strong>, <strong>Russian</strong>)."
+					],
+					"my_zfx_com": [
+						"Support and improve the legacy app (<strong>Vue</strong> <code style=\"font-size: 0.75em;\">v2-3</code>).",
+						"Adding languages to the multi-language switcher using (<strong>Vue</strong>) i18n library (<strong>Inter</strong>).",
+						"Refactoring pages to support bi-directional content (<strong>LTR</strong>, <strong>RTL</strong>) to include Arabic language.",
+						"Setting up data reception using (<strong>REST API</strong>, <strong>WebSocket</strong>).",
+						"Communication with team members and business customers through instant messengers and online audio-video meetings in two languages (<strong>English</strong>, <strong>Russian</strong>)."
+					],
+					"its-nu_vercel_app": [
+						"Start the project from scratch using (<strong>Next.js</strong> <code style=\"font-size: 0.75em;\">v12</code>).",
+						"Create adaptive, pixel-perfect layout of the app using (<strong>JSX</strong>, <strong>SASS</strong>).",
+						"Cross-browser support down to <strong>2019</strong>.",
+						"Multilingual feature support using (<strong>next-i18</strong>).",
+						"Support for bidirectional content (<strong>RTL</strong>, <strong>LTR</strong>).",
+						"Backend setup: of a feedback form using (<strong>Next.js API</strong>).",
+						"Create layout of an adaptive, themed (<span style=\"font-weight: 800;\">dark</span> <small style=\"font-size: 0.75em; vertical-align: middle;\">|</small> <span style=\"font-weight: 300;\">light</span>), fillable Email for the feedback form using (<strong>ZURB</strong>) framework.",
+						"Optimizing site application using (<strong>Google Lighthouse <small><i>(Core Web Vitals)</i></small></strong>, <strong>W3C HTML Validator</strong>) and other linters.",
+						"Communication with team members and business customers through instant messengers and online/offline meetings."
+					]
+				}
+			},
+			{
+				"from": "September 2018",
+				"to": "May 2019",
+				"duration": "9 months",
+				"position": "Frontend developer",
+				"company": "Gazprom RTV Media",
+				"where": "Moscow, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"dip_tnt4_ru": "Landing page for TV show \"Money or Shame\" (Final season).",
+					"subbota_tv": "Federal entertainment TV channel.",
+					"tnt4_ru": "Federal entertainment TV channel."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"dip_tnt4_ru": [
+						"Start the project from scratch with (<strong>Gulp.js</strong>).",
+						"Create adaptive, pixel-perfect layout using (<strong>PUG</strong>, <strong>SASS</strong>).",
+						"Write business logic using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
+						"Add an ability to play video in full screen mode.",
+						"Connect and set up analytical metrics (<strong>Google Analytics</strong>, <strong>Yandex Metrika</strong>).",
+						"Cross-browser support down from <strong>2018</strong> (last 2 versions).",
+						"Configuring the assembly using (<strong>Gulp.js</strong>, <strong>Node.js</strong>).",
+						"Communication with team members and a head of web department through instant messengers and offline meetings."
+					],
+					"subbota_tv": [
+						"Supported and improve the legacy website based on (<strong>Laravel</strong>).",
+						"Layout of new and modification of existing pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
+						"Extended the list of tracked items and user events on the existing pages using (<strong>Google Analytics</strong>).",
+						"Created embedded (<strong>React</strong> <code style=\"font-size: 0.75em;\">v16</code>) applications with (<strong>Create React App</strong>) for individual pages, such as:",
+						[
+							"Registration of participants in a children's competition for the role of a TV presenter.",
+							"Application for searching providers for connecting to the TV channel"
+						],
+						[
+							"Created the NPM package",
+							"the open source package builded with (<strong>Create React Library</strong>), for the internal project pages reuse."
+						],
+						"Setting up data exchange using (<strong>REST API</strong>).",
+						"Optimized applications loading by caching data in (<strong>localStorage</strong>, <strong>sessionStorage</strong>).",
+						"Optimized applications response to display data using (<strong>debouncing</strong>).",
+						"Created regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
+						"Communicated with team members and a head of web department through instant messengers and offline meetings."
+					],
+					"tnt4_ru": [
+						"Support and improve the legacy website based on (<strong>Laravel</strong>).",
+						"Layout of new and modification of existing pages using (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> <code style=\"font-size: 0.75em;\">^ES6</code>).",
+						"Extend the list of tracked items and user events on existing pages using (<strong>Google Analytics</strong>).",
+						"Create embedded (<strong>React</strong> <code style=\"font-size: 0.75em;\">v16</code>) applications with (<strong>Create React App</strong>) for individual pages, such as:",
+						[
+							"Application for searching providers for connecting to the TV channel"
+						],
+						"Setting up data exchange using (<strong>REST API</strong>).",
+						"Optimize applications loading by caching data in (<strong>localStorage</strong>, <strong>sessionStorage</strong>).",
+						"Optimize applications response to display data using (<strong>debouncing</strong>).",
+						"Create regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
+						"Communication with team members and a head of web department through instant messengers and offline meetings."
+					]
+				}
+			},
+			{
+				"from": "October 2016",
+				"to": "October 2017",
+				"duration": "1 year",
+				"position": "Frontend developer",
+				"company": "UURRAA & Freshbroccoli",
+				"where": "Moscow, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"urraa": "Wholesale distributor of consumer goods to retail distributors.",
+					"freshbroccoli": "Online store for retail sales of high-quality and exclusive food products and household goods.",
+					"new_freshbroccoli": "Online store for retail sales of high-quality and exclusive food products and household goods (new version)."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"blockquote": "Two projects: <strong style=\"font-weight: 500\">URRAA</strong> and <strong style=\"font-weight: 500\">Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style=\"font-weight: 500\">Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
+					"urraa-and-freshbroccoli": [
+						"Supported and improved the legacy web site based on (<strong>Bitrix</strong>)",
+						"Cross-browser support for evergreen browsers.",
+						"Created new and changed existing pages using (<strong>HTML</strong>, <strong>CSS</strong>).",
+						"Wrote business logic using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\" >^ES5.1+</code>).",
+						"Was setting up data reception using (<strong>REST API</strong>).",
+						"Created media features using (modern <strong>CSS</strong>, <strong>Canvas</strong>) such as snowfall in the header for a Christmas.",
+						"Created regular thematic, adaptive Email newsletters, with support for regular email clients using (<strong>ZURB</strong>) framework.",
+						"Communicated with team members, head of the web department, designers and product manager, via instant messengers and offline meetings.",
+						"Supported and mentored junior frontend developer."
+					],
+					"new_freshbroccoli": [
+						"Started the project from a scratch for (<strong>Bitrix</strong>) using (<strong>Vue</strong> <code style=\"font-size: 0.75em\" >v2</code>).",
+						"Created adaptive, pixel-perfect layout of the pages using (<strong>PUG</strong>, <strong>SASS</strong>).",
+						"Deep integrated and customized of (<strong>Bootstrap</strong> <code style=\"font-size: 0.75em\" >v4-alpha</code>).",
+						"Setted up data reception using (<strong>REST API</strong>).",
+						"Cross-browser support down to <strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\" >v10</code>.",
+						"Configurated the assembly using (<strong>Gulp.js</strong> <code style=\"font-size: 0.75em\" >v4</code>, <strong>Node.js</strong>).",
+						"Writed documentation (<strong>Markdown</strong>).",
+						"Communicated with team members, head of the web department, designers and product manager, via instant messengers and offline meetings."
+					]
+				}
+			},
+			{
+				"from": "January 2015",
+				"to": "July 2015",
+				"duration": "7 months",
+				"position": "Frontend developer",
+				"company": "Magora Systems",
+				"where": "Novosibirsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"taxi_app": "Web platform for an elite taxi service in London, targeting Arab clients.",
+					"dating_app": "Web platform for an Indian dating social network similar to Badoo.",
+					"music_app": "Web-based music platform similar to SoundCloud."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"blockquote": "Two projects: <strong style=\"font-weight: 500\">URRAA</strong> and <strong style=\"font-weight: 500\">Freshbroccoli</strong> are actually very similar from a technical point of view: both use <strong style=\"font-weight: 500\">Bitrix</strong> and both use the same strater theme, but they look different and are aimed at different - <abbr title=\"Business to business\">B2B</abbr> and <abbr title=\"Business to client\">B2C</abbr> audiences models",
+					"taxi_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\" >ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong> <code style=\"font-size: 0.75em\" >v3</code>).",
+						"Integrated and customized the (<strong>Highcharts</strong>) library for building financial and other reporting sections, including line and share charts.",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\" >v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"Collaborated with backend developers working on the (<strong>.NET</strong>) framework to ensure seamless integration between frontend and backend."
+					],
+					"dating_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\">ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>FlatUI</strong>).",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\">v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"The project was in the early stages of development and did not yet have a backend. It was running on a frontend build tool, likely (<strong>Gulp.js</strong>) or (<strong>Grunt.js</strong>), with live-reload functionality for automatic page refresh during development."
+					],
+					"music_app": [
+						"Created layouts using (<strong>JavaScript</strong> <code style=\"font-size: 0.75em\">ES5</code>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong> <code style=\"font-size: 0.75em\">v3</code>).",
+						"Designed and implemented email newsletters for the platform.",
+						"Ensured cross-browser compatibility, including support for (<strong>Internet Explorer</strong> <code style=\"font-size: 0.75em\">v10+</code>).",
+						"Delivered pixel-perfect layouts in accordance with design requirements.",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Prepared and submitted reports using (<strong>Redmine</strong>) for task tracking and project management.",
+						"Collaborated with backend developers working on the (<strong>.NET</strong>) framework to ensure seamless integration between frontend and backend."
+					]
+				}
+			},
+			{
+				"from": "July 2014",
+				"to": "December 2014",
+				"duration": "10 months",
+				"position": "HTML developer",
+				"company": "Omega Design",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"ktotam": {
+						"title": "Real estate startup project aimed at simplifying access to property information.",
+						"description": [
+							"The project aimed to simplify access to property information by allowing users to enter a cadastral number or address and receive free basic information or detailed data for a small fee.",
+							"Solved the problem of complex and confusing forms on official government websites by providing a user-friendly interface."
+						]
+					}
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"ktotam": [
+						"Developed the website from a scratch using pixel-perfect methodology.",
+						"Implemented front-end programming using (<strong>JavaScript</strong> <code style= \"font-size: 0.75em\">ES5</code>).",
+						"Added JavaScript logic to handle events using native (<strong>XMLHttpRequest</strong>) for making HTTP requests.",
+						"Created layouts and animations using (<strong>HTML</strong>, <strong>CSS</strong>).",
+						"Used (<strong>Git</strong>) for version control and collaboration.",
+						"Worked with tools such as (<strong>Avocode</strong>), (<strong>Sublime Editor</strong>), and (<strong>Git Tortoise</strong>).",
+						"Collaborated with a small team consisting of a full-stack developer, a designer, and a Scrum manager.",
+						"Participated in Scrum meetings with tasks visualized on a whiteboard."
+					]
+				}
+			},
+			{
+				"from": "August 2013",
+				"to": "May 2014",
+				"duration": "10 months",
+				"position": "HTML developer",
+				"company": "Omega Design",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"nikalux": "Online store for children's products.",
+					"heat_pro": "Executive website of a company engaged in the production of building insulation materials.",
+					"aurum-tours": "Executive for a travel agency.",
+					"eco-design": "Executive website of a company engaged in the production of modern eco-friendly ceilings.",
+					"capitel24": "Executive website of a company engaged in the production of stucco for construction purposes."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"all": [
+						"Developed HTML layouts from the scratch, as well as improve and support projects with legacy code.",
+						"Created and maintained layouts for multi-page applications <abbr title=\"Multi-Page Application\">MPA</abbr> using (<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>jQuery</strong>, <strong>Photoshop</strong> <code style=\"font-size: 0.75em\">v5</code>).",
+						"Worked with CMS platforms such as (<strong>WordPress</strong>), (<strong>Joomla</strong>), and (<strong>Drupal</strong>).",
+						"Interacted with the backend part of websites written in (<strong>PHP</strong>) using the (<strong>Yii</strong>) framework.",
+						"Used (<strong>Redmine</strong>) for task tracking and project management."
+					]
+				}
+			},
+			{
+				"from": "December 2012",
+				"to": "August 2013",
+				"duration": "9 months",
+				"position": "HTML developer",
+				"company": "Alfateam",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"@+dress": "Online store for fashionable clothing, shoes, and accessories (Bitrix). My first serious project and the first online store I developed.",
+					"proffcom24": "Online store of furniture and office accessories (Bitrix).",
+					"m2m-sib": "M2M-Telematics Siberia LLC is a multi-platform representative of the GLONASS market leaders and a licensed workshop for the installation and repair of tachographs (Bitrix).",
+					"regtime24": "Online store for fashionable clothing, shoes, and accessories (Bitrix).",
+					"mercury":{
+						"title": "Mercury",
+						"description": "Website for Mercury - Siberian Fuel Company (Bitrix)."
+					},
+					"wandmart": "Online store for fashionable clothing, shoes, and accessories (Bitrix)."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"all": [
+						"Created layouts and maintained websites on the (<strong>Bitrix</strong>) platform, using (<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>Photoshop</strong> <code  style=\"font-size: 0.75em\">v5</code>).",
+						"Followed the (<strong>Pixel-Perfect</strong>) methodology to ensure the layout fully matched the provided designs.",
+						"Ensured сross-browser compatibility, including (<strong>Internet Explorer</strong> <code  style=\"font-size: 0.75em\">v8-10</code>).",
+						"Collaborated closely with the designer, backend developer, and company director to ensure smooth project execution and alignment with business goals."
+					]
+				}
+			}
+		]
+	}
+}

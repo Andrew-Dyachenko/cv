@@ -21,6 +21,11 @@ import "../styles/global.scss";
 import packageJSON from "../../../package.json";
 import Header from "../components/Header";
 
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+
 const { author } = packageJSON;
 const font = Sofia_Sans({
 	weight: [
@@ -35,7 +40,7 @@ const font = Sofia_Sans({
 		// "900",
 		// "1000",
 	],
-	subsets: ["latin" /*"cyrillic"*/],
+	subsets: ["latin", "cyrillic"],
 });
 
 export const metadata: Metadata = {
@@ -51,34 +56,39 @@ export const viewport: Viewport = {
 	colorScheme: "light dark",
 };
 
-// console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
+export function generateStaticParams() {
+	return routing.locales.map((locale) => ({ locale }));
+}
 
-// <!-- /Yandex.Metrika counter -->
-export default function RootLayout({
+export default async function RootLayout({
 	children,
+	params,
 }: Readonly<{
 	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }>) {
+	// Ensure that the incoming `locale` is valid
+	const { locale } = await params;
+	if (!routing.locales.includes(locale as any)) {
+		notFound();
+	}
+
+	// Providing all messages to the client
+	// side is the easiest way to get started
+	const messages = await getMessages();
+
 	return (
-		<html lang="en" dir="ltr">
+		<html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
 			<body className={font.className}>
-				<noscript>
-					<div>
-						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img
-							src="https://mc.yandex.ru/watch/96691605"
-							style={{ position: "absolute", left: "-9999px" }}
-							alt="Yandex Metrika noscript watcher"
-						/>
-					</div>
-				</noscript>
-				<div className="app">
-					<Header />
-					<div className="app__body">{children}</div>
-				</div>
 				<Suspense>
 					<Metrika />
 				</Suspense>
+				<NextIntlClientProvider messages={messages}>
+					<div className="app">
+						<Header />
+						<div className="app__body">{children}</div>
+					</div>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

@@ -3,7 +3,7 @@ import Education from "../Education";
 import Photo from "../Photo";
 import Occupation from "../Occupation";
 import Stack from "../Stack";
-import Address from "../Address";
+import Contacts from "../Contacts";
 
 export default function Aside() {
 	return (
@@ -12,7 +12,7 @@ export default function Aside() {
 			<Occupation />
 			<Stack classNameModificator={styles.aside__stack} />
 			<Education />
-			<Address />
+			<Contacts />
 		</aside>
 	);
 }

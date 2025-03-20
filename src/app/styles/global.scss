@@ -46,9 +46,16 @@ button,
 [type="submit"] {
 	font-size: 0.875rem;
 	padding: 0.125em 0.5em;
+
 	&:not(:disabled) {
 		cursor: pointer;
 	}
+}
+
+select {
+	font-size: inherit;
+	font-size: 0.875rem;
+	padding-block: 0.125em;
 }
 
 abbr {
@@ -197,6 +204,18 @@ ul {
 			}
 			&:not(:last-of-type) {
 				margin-bottom: 0.5em;
+			}
+		}
+	}
+
+	&.cv\/2 {
+		li,
+		dd {
+			&:not(:first-of-type) {
+				margin-top: 0.25em;
+			}
+			&:not(:last-of-type) {
+				margin-bottom: 0.25em;
 			}
 		}
 	}

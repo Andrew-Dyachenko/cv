@@ -4,6 +4,7 @@
 
 .experience {
 	&__button {
+		appearance: none;
 		line-height: 1.2;
 		display: grid;
 		grid-template-columns: 1fr 0.5rem auto;
