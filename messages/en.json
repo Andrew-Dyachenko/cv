@@ -105,7 +105,7 @@
 				"paragraph": "Providing Frontend development services for web applications, websites, <abbr title=\"Node Package Manager\">NPM</abbr> packages and emails, as an individual entrepreneur (freelancer / contractor). Including signing an <abbr title=\"Non-Disclosure Agreement\">NDA</abbr>.",
 				"responsibilities": {
 					"title": "Responsibilities:",
-					"all-projects": [
+					"all": [
 						"Basically worked with the classic stack: (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), using (<strong>WordPress</strong>) and it's WYSIWYGs."
 					]
 				}
@@ -339,31 +339,55 @@
 			{
 				"from": "August 2013",
 				"to": "May 2014",
-				"duration": "6 months",
-				"position": "Frontend developer",
-				"company": "BTI Pro",
-				"where": "Novosibirsk, Russia 🇷🇺",
+				"duration": "10 months",
+				"position": "HTML developer",
+				"company": "Omega Design",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
 				"paragraph": "Worked on the following projects:",
 				"projects": {
-					"ktotam": {
-						"title": "Real estate startup project aimed at simplifying access to property information.",
-						"description": [
-							"The project aimed to simplify access to property information by allowing users to enter a cadastral number or address and receive free basic information or detailed data for a small fee.",
-							"Solved the problem of complex and confusing forms on official government websites by providing a user-friendly interface."
-						]
-					}
+					"nikalux": "Online store for children's products.",
+					"heat_pro": "Executive website of a company engaged in the production of building insulation materials.",
+					"aurum-tours": "Executive for a travel agency.",
+					"eco-design": "Executive website of a company engaged in the production of modern eco-friendly ceilings.",
+					"capitel24": "Executive website of a company engaged in the production of stucco for construction purposes."
 				},
 				"responsibilities": {
 					"title": "Responsibilities:",
-					"ktotam": [
-						"Developed the website from a scratch using pixel-perfect methodology.",
-						"Implemented front-end programming using (<strong>JavaScript</strong> <code style= \"font-size: 0.75em\">ES5</code>).",
-						"Added JavaScript logic to handle events using native (<strong>XMLHttpRequest</strong>) for making HTTP requests.",
-						"Created layouts and animations using (<strong>HTML</strong>, <strong>CSS</strong>).",
-						"Used (<strong>Git</strong>) for version control and collaboration.",
-						"Worked with tools such as (<strong>Avocode</strong>), (<strong>Sublime Editor</strong>), and (<strong>Git Tortoise</strong>).",
-						"Collaborated with a small team consisting of a full-stack developer, a designer, and a Scrum manager.",
-						"Participated in Scrum meetings with tasks visualized on a whiteboard."
+					"all": [
+						"Developed HTML layouts from the scratch, as well as improve and support projects with legacy code.",
+						"Created and maintained layouts for multi-page applications <abbr title=\"Multi-Page Application\">MPA</abbr> using (<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>jQuery</strong>, <strong>Photoshop</strong> <code style=\"font-size: 0.75em\">v5</code>).",
+						"Worked with CMS platforms such as (<strong>WordPress</strong>), (<strong>Joomla</strong>), and (<strong>Drupal</strong>).",
+						"Interacted with the backend part of websites written in (<strong>PHP</strong>) using the (<strong>Yii</strong>) framework.",
+						"Used (<strong>Redmine</strong>) for task tracking and project management."
+					]
+				}
+			},
+			{
+				"from": "December 2012",
+				"to": "August 2013",
+				"duration": "9 months",
+				"position": "HTML developer",
+				"company": "Alfateam",
+				"where": "Krasnoyarsk, Russia 🇷🇺",
+				"paragraph": "Worked on the following projects:",
+				"projects": {
+					"@+dress": "Online store for fashionable clothing, shoes, and accessories (Bitrix). My first serious project and the first online store I developed.",
+					"proffcom24": "Online store of furniture and office accessories (Bitrix).",
+					"m2m-sib": "M2M-Telematics Siberia LLC is a multi-platform representative of the GLONASS market leaders and a licensed workshop for the installation and repair of tachographs (Bitrix).",
+					"regtime24": "Online store for fashionable clothing, shoes, and accessories (Bitrix).",
+					"mercury":{
+						"title": "Mercury",
+						"description": "Website for Mercury - Siberian Fuel Company (Bitrix)."
+					},
+					"wandmart": "Online store for fashionable clothing, shoes, and accessories (Bitrix)."
+				},
+				"responsibilities": {
+					"title": "Responsibilities:",
+					"all": [
+						"Created layouts and maintained websites on the (<strong>Bitrix</strong>) platform, using (<strong>HTML4</strong>, <strong>CSS2</strong>, <strong>Photoshop</strong> <code  style=\"font-size: 0.75em\">v5</code>).",
+						"Followed the (<strong>Pixel-Perfect</strong>) methodology to ensure the layout fully matched the provided designs.",
+						"Ensured сross-browser compatibility, including (<strong>Internet Explorer</strong> <code  style=\"font-size: 0.75em\">v8-10</code>).",
+						"Collaborated closely with the designer, backend developer, and company director to ensure smooth project execution and alignment with business goals."
 					]
 				}
 			}

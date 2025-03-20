@@ -207,4 +207,16 @@ ul {
 			}
 		}
 	}
+
+	&.cv\/2 {
+		li,
+		dd {
+			&:not(:first-of-type) {
+				margin-top: 0.25em;
+			}
+			&:not(:last-of-type) {
+				margin-bottom: 0.25em;
+			}
+		}
+	}
 }

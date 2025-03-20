@@ -40,7 +40,7 @@ export default function Experience() {
 	const t = useTranslations("experience");
 	return (
 		<Accordion
-			defaultActiveKey={["8"]}
+			defaultActiveKey={["1"]}
 			alwaysOpen
 			className={accordionStyles.accordion}
 		>
@@ -139,7 +139,7 @@ export default function Experience() {
 										listStylePosition: "inside",
 										paddingInline: 0,
 									}}
-									className="cv"
+									className="cv/2"
 								>
 									<li>
 										<a
@@ -413,17 +413,17 @@ export default function Experience() {
 							className={accordionStyles.accordion__collapse}
 						>
 							<div className={accordionStyles.accordion__body}>
-								<p>{parse(t.raw("list")[1].paragraph)}</p>
-								<h4>{t.raw("list")[1].responsibilities.title}</h4>
-								<p>
-									{parse(t.raw("list")[1].responsibilities["all-projects"][0])}
+								<p style={{ marginBlockStart: 0 }}>
+									{parse(t.raw("list")[1].paragraph)}
 								</p>
+								<h4>{t.raw("list")[1].responsibilities.title}</h4>
+								<p style={{ marginBlockEnd: 0 }}>{parse(t.raw("list")[1].responsibilities.all[0])}</p>
 							</div>
 						</Accordion.Collapse>
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* INDIVIDUAL ENTREPRENEUR END */}
+			{/* /INDIVIDUAL ENTREPRENEUR END */}
 
 			{/* LLC ITSOLUTIONS START */}
 			<Accordion.Item
@@ -526,6 +526,7 @@ export default function Experience() {
 								</div>
 								<p>{t.raw("list")[2].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -552,7 +553,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[2].projects["zfc.com"]}
+										- {t.raw("list")[2].projects.zfx_com}
 									</li>
 									<li>
 										<a
@@ -575,7 +576,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[2].projects["my_zfx_com"]}
+										- {t.raw("list")[2].projects.my_zfx_com}
 									</li>
 									<li>
 										<a
@@ -663,32 +664,22 @@ export default function Experience() {
 											</li>
 											<li>{t.raw("list")[2].responsibilities.zfx_com[8]}</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities["zfx_com"][9])}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[9])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["zfx_com"][10],
-												)}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[10])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["zfx_com"][11],
-												)}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[11])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["zfx_com"][12],
-												)}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[12])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["zfx_com"][13],
-												)}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[13])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["zfx_com"][14],
-												)}
+												{parse(t.raw("list")[2].responsibilities.zfx_com[14])}
 											</li>
 										</ul>
 									</dd>
@@ -723,29 +714,19 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["my_zfx_com"][0],
-												)}
+												{parse(t.raw("list")[2].responsibilities.my_zfx_com[0])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["my_zfx_com"][1],
-												)}
+												{parse(t.raw("list")[2].responsibilities.my_zfx_com[1])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["my_zfx_com"][2],
-												)}
+												{parse(t.raw("list")[2].responsibilities.my_zfx_com[2])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["my_zfx_com"][3],
-												)}
+												{parse(t.raw("list")[2].responsibilities.my_zfx_com[3])}
 											</li>
 											<li>
-												{parse(
-													t.raw("list")[2].responsibilities["my_zfx_com"][4],
-												)}
+												{parse(t.raw("list")[2].responsibilities.my_zfx_com[4])}
 											</li>
 										</ul>
 									</dd>
@@ -851,7 +832,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* LLC ITSOLUTIONS END */}
+			{/* /LLC ITSOLUTIONS END */}
 
 			{/* GAZPROM MEDIA START */}
 			<Accordion.Item
@@ -945,6 +926,7 @@ export default function Experience() {
 								</div>
 								<p>{t.raw("list")[3].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -1332,7 +1314,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* GAZPROM MEDIA END */}
+			{/* /GAZPROM MEDIA END */}
 
 			{/* URRAA & FRESHBROCCOLI START */}
 			<Accordion.Item
@@ -1434,6 +1416,7 @@ export default function Experience() {
 								</div>
 								<p>{t.raw("list")[4].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -1727,7 +1710,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* URRAA & FRESHBROCCOLI END */}
+			{/* /URRAA & FRESHBROCCOLI END */}
 
 			{/* MAGORA SYSTEMS START */}
 			<Accordion.Item
@@ -1819,6 +1802,7 @@ export default function Experience() {
 								</div>
 								<p>{t.raw("list")[6].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -1826,7 +1810,9 @@ export default function Experience() {
 								>
 									<li>
 										<a
+											// biome-ignore lint/a11y/useValidAnchor: <explanation>
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -1851,7 +1837,9 @@ export default function Experience() {
 									</li>
 									<li>
 										<a
+											// biome-ignore lint/a11y/useValidAnchor: <explanation>
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -1877,6 +1865,7 @@ export default function Experience() {
 									<li>
 										<a
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -1909,6 +1898,7 @@ export default function Experience() {
 									<dt>
 										<a
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -1958,7 +1948,9 @@ export default function Experience() {
 									{/* Dating Social Network */}
 									<dt>
 										<a
+											// biome-ignore lint/a11y/useValidAnchor: <explanation>
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -2006,6 +1998,7 @@ export default function Experience() {
 									<dt>
 										<a
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -2056,7 +2049,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* MAGORA SYSTEMS END */}
+			{/* /MAGORA SYSTEMS END */}
 
 			{/* BTI PRO START */}
 			<Accordion.Item
@@ -2147,6 +2140,7 @@ export default function Experience() {
 								</div>
 								<p>{t.raw("list")[6].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -2251,7 +2245,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* BTI PRO END */}
+			{/* /BTI PRO END */}
 
 			{/* OMEGA DESIGN START */}
 			<Accordion.Item
@@ -2279,7 +2273,7 @@ export default function Experience() {
 										timezoneOffset: 60 * 7,
 									})}
 								>
-									August 2013
+									{t.raw("list")[7].from}
 								</time>{" "}
 								-{" "}
 								<time
@@ -2290,13 +2284,15 @@ export default function Experience() {
 										timezoneOffset: 60 * 7,
 									})}
 								>
-									May 2014
+									{t.raw("list")[7].to}
 								</time>
 								)
 							</span>
-							<span className={styles.experience__duration}>10 months</span>
+							<span className={styles.experience__duration}>
+								{t.raw("list")[7].duration}
+							</span>
 							<span className={styles.experience__position}>
-								HTML developer
+								{t.raw("list")[7].position}
 							</span>
 							<span className={styles.experience__where}>
 								<Image
@@ -2305,7 +2301,7 @@ export default function Experience() {
 									height={20}
 									alt="Omega Design Pro logo"
 								/>
-								Omega Design - Krasnoyarsk, Russia 🇷🇺
+								{t.raw("list")[7].company} - {t.raw("list")[7].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -2338,8 +2334,9 @@ export default function Experience() {
 										/>
 									</a>
 								</div>
-								<p>Worked on the following projects:</p>
+								<p>{t.raw("list")[7].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -2366,11 +2363,12 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Online store for children&apos;s products.
+										- {t.raw("list")[7].projects.nikalux}
 									</li>
 									<li>
 										<a
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -2391,7 +2389,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Project related to heating systems.
+										- {t.raw("list")[7].projects.heat_pro}
 									</li>
 									<li>
 										<a
@@ -2414,7 +2412,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Website for a travel agency.
+										- {t.raw("list")[7].projects["aurum-tours"]}
 									</li>
 									<li>
 										<a
@@ -2437,7 +2435,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Website for an eco-friendly products company.
+										- {t.raw("list")[7].projects["eco-design"]}
 									</li>
 									<li>
 										<a
@@ -2462,10 +2460,10 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Website for a construction company.
+										- {t.raw("list")[7].projects.capitel24}
 									</li>
 								</ol>
-								<h4>Responsibilities:</h4>
+								<h4>{t.raw("list")[7].responsibilities.title}</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -2501,33 +2499,11 @@ export default function Experience() {
 										}}
 									>
 										<ul className="cv">
-											<li>
-												Developed HTML layouts from the scratch, as well as
-												improve and support projects with legacy code.
-											</li>
-											<li>
-												Created and maintained layouts for multi-page
-												applications{" "}
-												<abbr title="Multi-Page Application">MPA</abbr> using (
-												<strong>HTML4</strong>, <strong>CSS2</strong>,{" "}
-												<strong>jQuery</strong>, <strong>Photoshop</strong>{" "}
-												<code style={{ fontSize: "0.75em" }}>v5</code>
-												).
-											</li>
-											<li>
-												Worked with CMS platforms such as (
-												<strong>WordPress</strong>), (<strong>Joomla</strong>),
-												and (<strong>Drupal</strong>).
-											</li>
-											<li>
-												Interacted with the backend part of websites written in
-												(<strong>PHP</strong>) using the (<strong>Yii</strong>)
-												framework.
-											</li>
-											<li>
-												Used (<strong>Redmine</strong>) for task tracking and
-												project management.
-											</li>
+											<li>{t.raw("list")[7].responsibilities.all[0]}</li>
+											<li>{parse(t.raw("list")[7].responsibilities.all[1])}</li>
+											<li>{parse(t.raw("list")[7].responsibilities.all[2])}</li>
+											<li>{parse(t.raw("list")[7].responsibilities.all[3])}</li>
+											<li>{parse(t.raw("list")[7].responsibilities.all[4])}</li>
 										</ul>
 									</dd>
 								</dl>
@@ -2536,7 +2512,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* OMEGA DESIGN END */}
+			{/* /OMEGA DESIGN END */}
 
 			{/* ALFATEAM START */}
 			<Accordion.Item
@@ -2564,7 +2540,7 @@ export default function Experience() {
 										timezoneOffset: 60 * 7,
 									})}
 								>
-									December 2012
+									{t.raw("list")[8].from}
 								</time>{" "}
 								-{" "}
 								<time
@@ -2575,13 +2551,15 @@ export default function Experience() {
 										timezoneOffset: 60 * 7,
 									})}
 								>
-									August 2013
+									{t.raw("list")[8].to}
 								</time>
 								)
 							</span>
-							<span className={styles.experience__duration}>9 months</span>
+							<span className={styles.experience__duration}>
+								{t.raw("list")[8].duration}
+							</span>
 							<span className={styles.experience__position}>
-								HTML developer
+								{t.raw("list")[8].position}
 							</span>
 							<span className={styles.experience__where}>
 								<Image
@@ -2590,7 +2568,7 @@ export default function Experience() {
 									height={16}
 									alt="Alfateam logo"
 								/>
-								Alfateam - Krasnoyarsk, Russia 🇷🇺
+								{t.raw("list")[8].company} - {t.raw("list")[8].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -2623,8 +2601,9 @@ export default function Experience() {
 										/>
 									</a>
 								</div>
-								<p>Worked on the following projects:</p>
+								<p>{t.raw("list")[8].paragraph}</p>
 								<ol
+									className="cv/2"
 									style={{
 										listStylePosition: "inside",
 										paddingInline: 0,
@@ -2651,9 +2630,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Online store for fashionable clothing, shoes, and
-										accessories (Bitrix). My first serious project and the first
-										online store I developed.
+										- {t.raw("list")[8].projects["@+dress"]}
 									</li>
 									<li>
 										<a
@@ -2676,7 +2653,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Online store of furniture and office accessories (Bitrix).
+										- {t.raw("list")[8].projects.proffcom24}
 									</li>
 									<li>
 										<a
@@ -2699,10 +2676,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- M2M-Telematics Siberia LLC is a multi-platform
-										representative of the GLONASS market leaders and a licensed
-										workshop for the installation and repair of tachographs.
-										(Bitrix).
+										- {t.raw("list")[8].projects["m2m-sib"]}
 									</li>
 									<li>
 										<a
@@ -2725,12 +2699,12 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Online store for fashionable clothing, shoes, and
-										accessories (Bitrix).
+										- {t.raw("list")[8].projects.regtime24}
 									</li>
 									<li>
 										<a
 											href="#"
+											aria-disabled="true"
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{
@@ -2739,10 +2713,10 @@ export default function Experience() {
 											}}
 										>
 											<span className="print-invisible">
-												Mercury - Siberian Fuel Company
+												{t.raw("list")[8].projects.mercury.title}
 											</span>
 											<span className="print-inline-visible">
-												Mercury - Siberian Fuel Company (Bitrix)
+												{t.raw("list")[8].projects.mercury.title}
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
@@ -2751,7 +2725,7 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Website for Mercury - Siberian Fuel Company (Bitrix).
+										- {t.raw("list")[8].projects.mercury.description}
 									</li>
 									<li>
 										<a
@@ -2774,11 +2748,10 @@ export default function Experience() {
 												}}
 											/>
 										</a>{" "}
-										- Online store for fashionable clothing, shoes, and
-										accessories (Bitrix).
+										- {t.raw("list")[8].projects.wandmart}
 									</li>
 								</ol>
-								<h4>Responsibilities:</h4>
+								<h4>{t.raw("list")[8].responsibilities.title}</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -2814,30 +2787,10 @@ export default function Experience() {
 										}}
 									>
 										<ul className="cv">
-											<li>
-												Created layouts and maintained websites on the (
-												<strong>Bitrix</strong>) platform, using (
-												<strong>HTML4</strong>, <strong>CSS2</strong>,{" "}
-												<strong>Photoshop</strong>{" "}
-												<code style={{ fontSize: "0.75em" }}>v5</code>
-												).
-											</li>
-											<li>
-												Followed the (<strong>Pixel-Perfect</strong>)
-												methodology to ensure the layout fully matched the
-												provided designs.
-											</li>
-											<li>
-												Ensured сross-browser compatibility, including (
-												<strong>Internet Explorer</strong>{" "}
-												<code style={{ fontSize: "0.75em" }}>v8-10</code>
-												).
-											</li>
-											<li>
-												Collaborated closely with the designer, backend
-												developer, and company director to ensure smooth project
-												execution and alignment with business goals.
-											</li>
+											<li>{parse(t.raw("list")[8].responsibilities.all[0])}</li>
+											<li>{parse(t.raw("list")[8].responsibilities.all[1])}</li>
+											<li>{parse(t.raw("list")[8].responsibilities.all[2])}</li>
+											<li>{parse(t.raw("list")[8].responsibilities.all[3])}</li>
 										</ul>
 									</dd>
 								</dl>
@@ -2846,7 +2799,7 @@ export default function Experience() {
 					</div>
 				</div>
 			</Accordion.Item>
-			{/* ALFATEAM END */}
+			{/* /ALFATEAM END */}
 		</Accordion>
 	);
 }
