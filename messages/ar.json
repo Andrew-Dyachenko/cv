@@ -47,12 +47,11 @@
 			[
 				"<span>تطبيقات الصفحة الواحدة <dfn>(SPA)</dfn></span>",
 				"<span>تطبيقات متعددة الصفحات <dfn>(MPA)</dfn></span>",
-				"<span>تطبيقات الويب التقدمية <dfn>(PWA)</dfn></span>",
 				"صفحات الهبوط",
 				"<abbr title=\"مدير حزم Node\">حزم NPM</abbr>",
 				"رسائل البريد الإلكتروني (معاملاتية وتسويقية)"
 			],
-			"<p>مطور واجهات أمامية متخصص في بناء تطبيقات الويب الحديثة، بما في ذلك SPA وPWA وقوالب البريد الإلكتروني. ماهر في (<strong>HTML</strong> و<strong>CSS</strong> و<strong>JavaScript</strong>)، ولديه خبرة في (<strong>React</strong> و<strong>TypeScript</strong>). بارع في إنشاء تصاميم دقيقة متوافقة مع جميع المتصفحات وتطوير قوالب بريد إلكتروني قابلة لإعادة الاستخدام ومتوافقة مع العملاء الرئيسيين، مثل (<strong>Outlook</strong> و<strong>Gmail</strong> و<strong>Yahoo</strong>).</p><p>لديه خبرة في (<strong>Agile</strong> و<strong>Scrum</strong>) ومراجعة الأكواد وتقديم حلول قابلة للتوسع لعملاء في مجالات التمويل والتجارة الإلكترونية ووسائل الإعلام.</p>"
+			"<p>مطور واجهات أمامية متخصص في بناء تطبيقات الويب الحديثة، بما في ذلك SPA وقوالب البريد الإلكتروني. ماهر في (<strong>HTML</strong> و<strong>CSS</strong> و<strong>JavaScript</strong>)، ولديه خبرة في (<strong>React</strong> و<strong>TypeScript</strong>). بارع في إنشاء تصاميم دقيقة متوافقة مع جميع المتصفحات وتطوير قوالب بريد إلكتروني قابلة لإعادة الاستخدام ومتوافقة مع العملاء الرئيسيين، مثل (<strong>Outlook</strong> و<strong>Gmail</strong> و<strong>Yahoo</strong>).</p><p>لديه خبرة في (<strong>Agile</strong> و<strong>Scrum</strong>) ومراجعة الأكواد وتقديم حلول قابلة للتوسع لعملاء في مجالات التمويل والتجارة الإلكترونية ووسائل الإعلام.</p>"
 		]
 	},
 	"experience": {

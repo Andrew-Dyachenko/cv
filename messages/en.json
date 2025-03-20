@@ -47,12 +47,11 @@
 			[
 				"<span>Single-Page Applications <dfn>(SPA)</dfn></span>",
 				"<span>Multi-Page Applications <dfn>(MPA)</dfn></span>",
-				"<span>Progressive Web Applications <dfn>(PWA)</dfn></span>",
 				"Landing Pages",
 				"<abbr title=\"Node Package Manager\">NPM</abbr> Packages",
 				"Emails (technical & marketing)"
 			],
-			"<p>Frontend developer specializing in building modern web applications, including SPAs, PWAs, and email templates. Proficient in (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), with experience in (<strong>React</strong>, <strong>TypeScript</strong>). Skilled in creating pixel-perfect, cross-browser compatible layouts and developing reusable email templates compatible with major clients like (<strong>Outlook</strong>, <strong>Gmail</strong>, <strong>Yahoo</strong>).</p><p>Experienced in (<strong>Agile</strong>, <strong>Scrum</strong>) workflows, code reviews, and delivering scalable solutions for clients in finance, e-commerce, and media industries.</p>"
+			"<p>Frontend developer specializing in building modern web applications, including SPAs, and email templates. Proficient in (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), with experience in (<strong>React</strong>, <strong>TypeScript</strong>). Skilled in creating pixel-perfect, cross-browser compatible layouts and developing reusable email templates compatible with major clients like (<strong>Outlook</strong>, <strong>Gmail</strong>, <strong>Yahoo</strong>).</p><p>Experienced in (<strong>Agile</strong>, <strong>Scrum</strong>) workflows, code reviews, and delivering scalable solutions for clients in finance, e-commerce, and media industries.</p>"
 		]
 	},
 	"experience": {

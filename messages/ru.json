@@ -47,12 +47,11 @@
 			[
 				"<span>Одностраничные приложения <dfn>(SPA)</dfn></span>",
 				"<span>Многостраничные приложения <dfn>(MPA)</dfn></span>",
-				"<span>Прогрессивные веб-приложения <dfn>(PWA)</dfn></span>",
 				"Лендинги",
 				"<abbr title=\"Node Package Manager\">NPM</abbr> пакеты",
 				"Электронные письма (технические и маркетинговые)"
 			],
-			"<p>Frontend-разработчик, специализирующийся на создании современных веб-приложений, включая SPA, PWA и email-шаблоны. Владеет (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), имеет опыт работы с (<strong>React</strong>, <strong>TypeScript</strong>). Умеет создавать пиксель-перфект, кросс-браузерную верстку и разрабатывать переиспользуемые email-шаблоны, совместимые с основными клиентами, такими как (<strong>Outlook</strong>, <strong>Gmail</strong>, <strong>Yahoo</strong>).</p><p>Имеет опыт работы с (<strong>Agile</strong>, <strong>Scrum</strong>), код-ревью и разработкой масштабируемых решений для клиентов в финансовой, электронной коммерции и медиа-индустриях.</p>"
+			"<p>Frontend-разработчик, специализирующийся на создании современных веб-приложений, включая SPA, и email-шаблоны. Владеет (<strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>), имеет опыт работы с (<strong>React</strong>, <strong>TypeScript</strong>). Умеет создавать пиксель-перфект, кросс-браузерную верстку и разрабатывать переиспользуемые email-шаблоны, совместимые с основными клиентами, такими как (<strong>Outlook</strong>, <strong>Gmail</strong>, <strong>Yahoo</strong>).</p><p>Имеет опыт работы с (<strong>Agile</strong>, <strong>Scrum</strong>), код-ревью и разработкой масштабируемых решений для клиентов в финансовой, электронной коммерции и медиа-индустриях.</p>"
 		]
 	},
 	"experience": {
