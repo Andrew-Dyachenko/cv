@@ -25,6 +25,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Script from "next/script";
 
 const { author } = packageJSON;
 const font = Sofia_Sans({
@@ -80,8 +81,38 @@ export default async function RootLayout({
 	return (
 		<html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
 			<body className={font.className}>
-				<Suspense>
-					<Metrika />
+				<Script id="metrika-counter" strategy="afterInteractive">
+					{`
+						(function (m, e, t, r, i, k, a) {
+							m[i] =
+								m[i] ||
+								function () {
+									(m[i].a = m[i].a || []).push(arguments);
+								};
+							m[i].l = 1 * new Date();
+							for (var j = 0; j < document.scripts.length; j++) {
+								if (document.scripts[j].src === r) {
+									return;
+								}
+							}
+							(k = e.createElement(t)),
+								(a = e.getElementsByTagName(t)[0]),
+								(k.async = 1),
+								(k.src = r),
+								a.parentNode.insertBefore(k, a);
+						})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+						ym(96691605, "init", {
+							defer: true,
+							clickmap: true,
+							trackLinks: true,
+							accurateTrackBounce: true,
+							webvisor: true,
+						});
+					`}
+				</Script>
+				<Suspense fallback={null}>
+					<Metrika userId={96691605} />
 				</Suspense>
 				<NextIntlClientProvider messages={messages}>
 					<div className="app">
