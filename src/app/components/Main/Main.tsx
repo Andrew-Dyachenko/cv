@@ -21,10 +21,9 @@ export default function Main() {
 					<ul>
 						<li>{parse(tSummary.raw("content")[1][0])}</li>
 						<li>{parse(tSummary.raw("content")[1][1])}</li>
-						{/* <li>{parse(tSummary.raw("content")[1][2])}</li> */}
+						<li>{parse(tSummary.raw("content")[1][2])}</li>
 						<li>{parse(tSummary.raw("content")[1][3])}</li>
 						<li>{parse(tSummary.raw("content")[1][4])}</li>
-						<li>{parse(tSummary.raw("content")[1][5])}</li>
 					</ul>
 					{parse(tSummary.raw("content")[2])}
 				</div>
