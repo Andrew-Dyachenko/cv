@@ -1,6 +1,6 @@
 "use client";
 
-// import { useId } from "react";
+import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
 // import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import accordionStyles from "../Accordion/accordion.module.scss";
@@ -27,6 +27,7 @@ import llcitsolutions from "../../../../public/experience/llcitsolutions-512x512
 
 import { useTranslations } from "next-intl";
 import parse from "html-react-parser";
+import type { AccordionEventKey } from "react-bootstrap/esm/AccordionContext";
 
 // import Link from "next/link";
 // import { DateTime } from "luxon";
@@ -37,11 +38,57 @@ const font = Sofia_Sans({
 });
 
 export default function Experience() {
-	const t = useTranslations("experience");
+	const t = useTranslations("experience"); // Получаем функцию перевода для раздела "experience"
+
+	const LOCAL_STORAGE_KEY = "accordionState"; // Ключ для сохранения состояния аккордеона в localStorage
+	const defaultActiveKeys: string[] = []; // Пустой массив, чтобы все элементы были закрыты
+
+	const [activeKeys, setActiveKeys] = useState<string[]>(defaultActiveKeys); // Состояние для отслеживания активных секций
+	const [isClient, setIsClient] = useState(false); // Флаг для проверки, что приложение рендерится на клиенте
+
+	useEffect(() => {
+		setIsClient(true); // Устанавливаем флаг isClient в true после первого рендера на клиенте
+	}, []);
+
+	const handleToggle = (eventKey: AccordionEventKey) => {
+		if (eventKey === undefined) return; // Если событие не определено, выходим
+
+		setActiveKeys((prevKeys) => {
+			const isActive = prevKeys.includes(eventKey as string); // Проверяем, является ли текущий элемент активным
+			const newKeys = isActive
+				? prevKeys.filter((key) => key !== eventKey) // Если элемент активен, удаляем его из списка
+				: [...prevKeys, eventKey]; // Если элемент не активен, добавляем его в список активных
+
+			// Сохраняем новое состояние в localStorage
+			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newKeys));
+			return newKeys as string[]; // Убедитесь, что возвращаемый тип — это массив строк
+		});
+	};
+
+	useEffect(() => {
+		if (isClient) {
+			// Только на клиенте выполняем загрузку состояния
+			const savedState = localStorage.getItem(LOCAL_STORAGE_KEY); // Получаем сохраненное состояние из localStorage
+			if (savedState) {
+				try {
+					const parsedState = JSON.parse(savedState); // Преобразуем строку из localStorage обратно в массив
+					if (Array.isArray(parsedState)) {
+						setActiveKeys(parsedState); // Если состояние валидное, обновляем activeKeys
+					}
+				} catch (error) {
+					console.error(
+						"Ошибка при парсинге состояния из localStorage:",
+						error,
+					); // Логируем ошибку, если парсинг не удался
+				}
+			}
+		}
+	}, [isClient]);
+
 	return (
 		<Accordion
-			defaultActiveKey={["1"]}
-			alwaysOpen
+			activeKey={activeKeys.length > 0 ? activeKeys : undefined}
+			onSelect={handleToggle}
 			className={accordionStyles.accordion}
 		>
 			{/* B2BROKER START */}
@@ -417,7 +464,9 @@ export default function Experience() {
 									{parse(t.raw("list")[1].paragraph)}
 								</p>
 								<h4>{t.raw("list")[1].responsibilities.title}</h4>
-								<p style={{ marginBlockEnd: 0 }}>{parse(t.raw("list")[1].responsibilities.all[0])}</p>
+								<p style={{ marginBlockEnd: 0 }}>
+									{parse(t.raw("list")[1].responsibilities.all[0])}
+								</p>
 							</div>
 						</Accordion.Collapse>
 					</div>
