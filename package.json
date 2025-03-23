@@ -27,12 +27,12 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/node": "20.17.24",
+		"@types/node": "20.17.25",
 		"@types/react": "18.3.19",
 		"@types/react-dom": "18.3.5",
 		"eslint": "8.57.1",
 		"eslint-config-next": "14.2.25",
-		"npm-check-updates": "17.1.15",
+		"npm-check-updates": "17.1.16",
 		"sass": "1.86.0",
 		"sharp": "0.33.5",
 		"typescript": "5.8.2"
