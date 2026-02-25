@@ -6,41 +6,60 @@ import clsx from "clsx";
 // Тип для возможных значений цветовой схемы
 type ColorScheme = "light" | "dark" | "system";
 
+// Функция для применения цветовой схемы
+const applyColorScheme = (scheme: ColorScheme) => {
+	// Проверяем, что код выполняется в браузере
+	if (typeof window !== "undefined") {
+		// Корневой элемент <html>
+		const root = window.document.documentElement;
+		const isDarkMode = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches; // Проверяем системную тему
+
+		// Удаляем оба класса перед применением новой схемы
+		root.classList.remove("light", "dark");
+
+		// Применяем классы в зависимости от выбранной схемы
+		if (scheme === "light") {
+			// Явно добавляем класс для светлой темы
+			root.classList.add("light");
+		} else if (scheme === "dark") {
+			// Явно добавляем класс для темной темы
+			root.classList.add("dark");
+		} else if (scheme === "system") {
+			// Для системной темы добавляем класс в зависимости от системных настроек
+			if (isDarkMode) {
+				// Добавляем класс для тёмной системной темы
+				root.classList.add("dark");
+			} else {
+				// Добавляем класс для светлой системной темы
+				root.classList.add("light");
+			}
+		}
+	}
+};
+
 const ColorSchemeSwitcher = () => {
 	// Состояние для хранения текущей цветовой схемы
 	const [colorScheme, setColorScheme] = useState<ColorScheme>("system");
 
-	// Функция для применения цветовой схемы
-	const applyColorScheme = (scheme: ColorScheme) => {
+	// Обработчик изменения цветовой схемы
+	const handleColorSchemeChange = (
+		event: React.ChangeEvent<HTMLInputElement>
+	) => {
+		// Получаем выбранную схему из радио-кнопки
+		const selectedScheme = event.target.value as ColorScheme;
+		// Обновляем состояние
+		setColorScheme(selectedScheme);
+
 		// Проверяем, что код выполняется в браузере
 		if (typeof window !== "undefined") {
-			// Корневой элемент <html>
-			const root = window.document.documentElement;
-			const isDarkMode = window.matchMedia(
-				"(prefers-color-scheme: dark)"
-			).matches; // Проверяем системную тему
-
-			// Удаляем оба класса перед применением новой схемы
-			root.classList.remove("light", "dark");
-
-			// Применяем классы в зависимости от выбранной схемы
-			if (scheme === "light") {
-				// Явно добавляем класс для светлой темы
-				root.classList.add("light");
-			} else if (scheme === "dark") {
-				// Явно добавляем класс для темной темы
-				root.classList.add("dark");
-			} else if (scheme === "system") {
-				// Для системной темы добавляем класс в зависимости от системных настроек
-				if (isDarkMode) {
-					// Добавляем класс для тёмной системной темы
-					root.classList.add("dark");
-				} else {
-					// Добавляем класс для светлой системной темы
-					root.classList.add("light");
-				}
-			}
+			// Сохраняем выбор в localStorage
+			localStorage.setItem("colorScheme", selectedScheme);
 		}
+
+		// Применяем схему
+		applyColorScheme(selectedScheme);
 	};
 
 	// При монтировании компонента загружаем цветовую схему из localStorage
@@ -93,34 +112,23 @@ const ColorSchemeSwitcher = () => {
 		}
 	}, [colorScheme]); // Зависимость от colorScheme
 
-	// Обработчик изменения цветовой схемы
-	const handleColorSchemeChange = (
-		event: React.ChangeEvent<HTMLInputElement>
-	) => {
-		// Получаем выбранную схему из радио-кнопки
-		const selectedScheme = event.target.value as ColorScheme;
-		// Обновляем состояние
-		setColorScheme(selectedScheme);
-
-		// Проверяем, что код выполняется в браузере
-		if (typeof window !== "undefined") {
-			// Сохраняем выбор в localStorage
-			localStorage.setItem("colorScheme", selectedScheme);
-		}
-
-		// Применяем схему
-		applyColorScheme(selectedScheme);
-	};
-
 	return (
 		<fieldset className={styles["scheme-switcher"]}>
-			<legend className={clsx("visually-hidden", styles["scheme-switcher__legend"])}>
+			<legend
+				className={clsx(
+					"visually-hidden",
+					styles["scheme-switcher__legend"]
+				)}
+			>
 				Схема переключения цветовой темы
 			</legend>
 			{/* Радио-кнопка для выбора светлой темы */}
 			<input
 				id="light-scheme"
-				className={clsx(styles["scheme-switcher__input"], styles["scheme-switcher__input--light"])}
+				className={clsx(
+					styles["scheme-switcher__input"],
+					styles["scheme-switcher__input--light"]
+				)}
 				type="radio"
 				value="light"
 				checked={colorScheme === "light"}
@@ -130,7 +138,10 @@ const ColorSchemeSwitcher = () => {
 			/>
 			<label
 				htmlFor="light-scheme"
-				className={clsx(styles["scheme-switcher__label"], styles["scheme-switcher__label--light"])}
+				className={clsx(
+					styles["scheme-switcher__label"],
+					styles["scheme-switcher__label--light"]
+				)}
 			>
 				Light
 			</label>
@@ -138,7 +149,10 @@ const ColorSchemeSwitcher = () => {
 			{/* Радио-кнопка для выбора системной темы */}
 			<input
 				id="system-scheme"
-				className={clsx(styles["scheme-switcher__input"], styles["scheme-switcher__input--system"])}
+				className={clsx(
+					styles["scheme-switcher__input"],
+					styles["scheme-switcher__input--system"]
+				)}
 				type="radio"
 				value="system"
 				checked={colorScheme === "system"}
@@ -148,7 +162,10 @@ const ColorSchemeSwitcher = () => {
 			/>
 			<label
 				htmlFor="system-scheme"
-				className={clsx(styles["scheme-switcher__label"], styles["scheme-switcher__label--system"])}
+				className={clsx(
+					styles["scheme-switcher__label"],
+					styles["scheme-switcher__label--system"]
+				)}
 			>
 				System
 			</label>
@@ -156,7 +173,10 @@ const ColorSchemeSwitcher = () => {
 			{/* Радио-кнопка для выбора темной темы */}
 			<input
 				id="dark-scheme"
-				className={clsx(styles["scheme-switcher__input"], styles["scheme-switcher__input--dark"])}
+				className={clsx(
+					styles["scheme-switcher__input"],
+					styles["scheme-switcher__input--dark"]
+				)}
 				type="radio"
 				value="dark"
 				checked={colorScheme === "dark"}
@@ -166,11 +186,14 @@ const ColorSchemeSwitcher = () => {
 			/>
 			<label
 				htmlFor="dark-scheme"
-				className={clsx(styles["scheme-switcher__label"], styles["scheme-switcher__label--dark"])}
+				className={clsx(
+					styles["scheme-switcher__label"],
+					styles["scheme-switcher__label--dark"]
+				)}
 			>
 				Dark
 			</label>
-			<div className={styles["scheme-switcher__status"]}></div>
+			<div className={styles["scheme-switcher__status"]} />
 		</fieldset>
 	);
 };
