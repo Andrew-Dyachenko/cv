@@ -38,30 +38,41 @@ const font = Sofia_Sans({
 });
 
 export default function Experience() {
-	const t = useTranslations("experience"); // Получаем функцию перевода для раздела "experience"
+	// Получаем функцию перевода для раздела "experience"
+	const t = useTranslations("experience");
 
-	const LOCAL_STORAGE_KEY = "accordionState"; // Ключ для сохранения состояния аккордеона в localStorage
-	const defaultActiveKeys: string[] = []; // Пустой массив, чтобы все элементы были закрыты
+	// Ключ для сохранения состояния аккордеона в localStorage
+	const LOCAL_STORAGE_KEY = "accordionState";
+	// Пустой массив, чтобы все элементы были закрыты
+	const defaultActiveKeys: string[] = [];
 
-	const [activeKeys, setActiveKeys] = useState<string[]>(defaultActiveKeys); // Состояние для отслеживания активных секций
-	const [isClient, setIsClient] = useState(false); // Флаг для проверки, что приложение рендерится на клиенте
+	// Состояние для отслеживания активных секций
+	const [activeKeys, setActiveKeys] = useState<string[]>(defaultActiveKeys);
+	// Флаг для проверки, что приложение рендерится на клиенте
+	const [isClient, setIsClient] = useState(false);
 
 	useEffect(() => {
-		setIsClient(true); // Устанавливаем флаг isClient в true после первого рендера на клиенте
+		// Устанавливаем флаг isClient в true после первого рендера на клиенте
+		setIsClient(true);
 	}, []);
 
 	const handleToggle = (eventKey: AccordionEventKey) => {
-		if (eventKey === undefined) return; // Если событие не определено, выходим
+		// Если событие не определено, выходим
+		if (eventKey === undefined) return;
 
 		setActiveKeys((prevKeys) => {
-			const isActive = prevKeys.includes(eventKey as string); // Проверяем, является ли текущий элемент активным
+			// Проверяем, является ли текущий элемент активным
+			const isActive = prevKeys.includes(eventKey as string);
 			const newKeys = isActive
-				? prevKeys.filter((key) => key !== eventKey) // Если элемент активен, удаляем его из списка
-				: [...prevKeys, eventKey]; // Если элемент не активен, добавляем его в список активных
+				? // Если элемент активен, удаляем его из списка
+				  prevKeys.filter((key) => key !== eventKey)
+				: // Если элемент не активен, добавляем его в список активных
+				  [...prevKeys, eventKey];
 
 			// Сохраняем новое состояние в localStorage
 			localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newKeys));
-			return newKeys as string[]; // Убедитесь, что возвращаемый тип — это массив строк
+			// Убедитесь, что возвращаемый тип - это массив строк
+			return newKeys as string[];
 		});
 	};
 
@@ -78,7 +89,7 @@ export default function Experience() {
 				} catch (error) {
 					console.error(
 						"Ошибка при парсинге состояния из localStorage:",
-						error,
+						error
 					); // Логируем ошибку, если парсинг не удался
 				}
 			}
@@ -104,7 +115,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -147,7 +158,8 @@ export default function Experience() {
 									height={20}
 									alt="B2Broker logo"
 								/>
-								{t.raw("list")[0].company} - {t.raw("list")[0].where}
+								{t.raw("list")[0].company} -{" "}
+								{t.raw("list")[0].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -168,7 +180,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">b2broker</span>
+										<span className="print-invisible">
+											b2broker
+										</span>
 										<span className="print-inline-visible">
 											https://b2broker.com/
 										</span>
@@ -198,18 +212,24 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">B2Core</span>
+											<span className="print-invisible">
+												B2Core
+											</span>
 											<span className="print-inline-visible">
 												https://b2core.com/
 											</span>
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {parse(t.raw("list")[0].projects.b2broker)}
+										-{" "}
+										{parse(
+											t.raw("list")[0].projects.b2broker
+										)}
 									</li>
 									<li>
 										<a
@@ -221,21 +241,29 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">B2Prime</span>
+											<span className="print-invisible">
+												B2Prime
+											</span>
 											<span className="print-inline-visible">
 												https://b2prime.com/
 											</span>
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {parse(t.raw("list")[0].projects.b2core)}
+										-{" "}
+										{parse(
+											t.raw("list")[0].projects.b2core
+										)}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[0].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[0].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -257,7 +285,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -277,7 +306,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -292,72 +322,82 @@ export default function Experience() {
 										<ul className="cv">
 											<li>
 												{
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
 													][0]
 												}
 												<ul>
 													<li>
 														{parse(
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
-															][1][0],
+															][1][0]
 														)}
 													</li>
 													<li>
 														{parse(
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
-															][1][1],
+															][1][1]
 														)}
 													</li>
 													<li>
 														{
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
 															][1][2]
 														}
 													</li>
 													<li>
 														{parse(
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
-															][1][3],
+															][1][3]
 														)}
 													</li>
 												</ul>
 											</li>
 											<li>
 												{
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
 													][2]
 												}
 												<ul>
 													<li>
 														{parse(
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
-															][3][0],
+															][3][0]
 														)}
 													</li>
 													<li>
 														{parse(
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
-															][3][1],
+															][3][1]
 														)}
 													</li>
 													<li>
 														{
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
 															][3][2]
 														}
 													</li>
 													<li>
 														{
-															t.raw("list")[0].responsibilities[
+															t.raw("list")[0]
+																.responsibilities[
 																"b2broker-and-b2core"
 															][3][3]
 														}
@@ -366,30 +406,34 @@ export default function Experience() {
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
-													][4],
+													][4]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
-													][5],
+													][5]
 												)}
 											</li>
 											<li>
 												{
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
 													][6]
 												}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[0].responsibilities[
+													t.raw("list")[0]
+														.responsibilities[
 														"b2broker-and-b2core"
-													][7],
+													][7]
 												)}
 											</li>
 										</ul>
@@ -415,7 +459,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -448,8 +492,11 @@ export default function Experience() {
 								{t.raw("list")[1].position}
 							</span>
 							<span className={styles.experience__where}>
-								<FaGlobeAfrica className={styles["experience__where-icon"]} />
-								{t.raw("list")[1].company} - {t.raw("list")[1].where}
+								<FaGlobeAfrica
+									className={styles["experience__where-icon"]}
+								/>
+								{t.raw("list")[1].company} -{" "}
+								{t.raw("list")[1].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -463,9 +510,13 @@ export default function Experience() {
 								<p style={{ marginBlockStart: 0 }}>
 									{parse(t.raw("list")[1].paragraph)}
 								</p>
-								<h4>{t.raw("list")[1].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[1].responsibilities.title}
+								</h4>
 								<p style={{ marginBlockEnd: 0 }}>
-									{parse(t.raw("list")[1].responsibilities.all[0])}
+									{parse(
+										t.raw("list")[1].responsibilities.all[0]
+									)}
 								</p>
 							</div>
 						</Accordion.Collapse>
@@ -487,7 +538,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -525,7 +576,9 @@ export default function Experience() {
 								<Image
 									className={clsx(
 										styles["experience__where-icon"],
-										styles["experience__where-icon--llcitsolutions"],
+										styles[
+											"experience__where-icon--llcitsolutions"
+										]
 									)}
 									src={llcitsolutions}
 									width={20}
@@ -534,13 +587,14 @@ export default function Experience() {
 								<Image
 									className={clsx(
 										styles["experience__where-icon"],
-										styles["experience__where-icon--zfx"],
+										styles["experience__where-icon--zfx"]
 									)}
 									src={zfx}
 									width={20}
 									alt="ZFX logo"
 								/>
-								{t.raw("list")[2].company} - {t.raw("list")[2].where}
+								{t.raw("list")[2].company} -{" "}
+								{t.raw("list")[2].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -561,7 +615,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">its-nu.vercel.app</span>
+										<span className="print-invisible">
+											its-nu.vercel.app
+										</span>
 										<span className="print-inline-visible">
 											https://its-nu.vercel.app/
 										</span>
@@ -591,14 +647,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">zfx.com</span>
+											<span className="print-invisible">
+												zfx.com
+											</span>
 											<span className="print-inline-visible">
 												https://www.zfx.com
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -614,14 +673,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">my.zfx.com</span>
+											<span className="print-invisible">
+												my.zfx.com
+											</span>
 											<span className="print-inline-visible">
 												https://my.zfx.com
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -637,21 +699,31 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">its-nu.vercel.app</span>
+											<span className="print-invisible">
+												its-nu.vercel.app
+											</span>
 											<span className="print-inline-visible">
 												https://its-nu.vercel.app
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {parse(t.raw("list")[2].projects["its-nu_vercel_app"])}
+										-{" "}
+										{parse(
+											t.raw("list")[2].projects[
+												"its-nu_vercel_app"
+											]
+										)}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[2].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[2].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -674,7 +746,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -688,47 +761,109 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[0])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[1])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[2])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[3])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[3]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[4])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[4]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[5])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[5]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[6])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[6]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[7])}
-											</li>
-											<li>{t.raw("list")[2].responsibilities.zfx_com[8]}</li>
-											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[9])}
-											</li>
-											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[10])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[7]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[11])}
+												{
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[8]
+												}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[12])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[9]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[13])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[10]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.zfx_com[14])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[11]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[12]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[13]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.zfx_com[14]
+												)}
 											</li>
 										</ul>
 									</dd>
@@ -749,7 +884,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -763,19 +899,39 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[2].responsibilities.my_zfx_com[0])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.my_zfx_com[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.my_zfx_com[1])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.my_zfx_com[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.my_zfx_com[2])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.my_zfx_com[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.my_zfx_com[3])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.my_zfx_com[3]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[2].responsibilities.my_zfx_com[4])}
+												{parse(
+													t.raw("list")[2]
+														.responsibilities
+														.my_zfx_com[4]
+												)}
 											</li>
 										</ul>
 									</dd>
@@ -796,7 +952,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -811,63 +968,72 @@ export default function Experience() {
 										<ul className="cv">
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][0],
+													][0]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][1],
+													][1]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][2],
+													][2]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][3],
+													][3]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][4],
+													][4]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][5],
+													][5]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][6],
+													][6]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
-													][7],
+													][7]
 												)}
 											</li>
 											<li>
 												{
-													t.raw("list")[2].responsibilities[
+													t.raw("list")[2]
+														.responsibilities[
 														"its-nu_vercel_app"
 													][8]
 												}
@@ -896,7 +1062,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -934,7 +1100,9 @@ export default function Experience() {
 								<Image
 									className={clsx(
 										styles["experience__where-icon"],
-										styles["experience__where-icon--gazprommedia"],
+										styles[
+											"experience__where-icon--gazprommedia"
+										]
 									)}
 									src={gazprommedia}
 									height={20}
@@ -961,7 +1129,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">gazprom-media.com</span>
+										<span className="print-invisible">
+											gazprom-media.com
+										</span>
 										<span className="print-inline-visible">
 											https://www.gazprom-media.com/
 										</span>
@@ -993,19 +1163,23 @@ export default function Experience() {
 													alignItems: "center",
 												}}
 											>
-												<span className="print-invisible">dip.tnt4.ru</span>
+												<span className="print-invisible">
+													dip.tnt4.ru
+												</span>
 												<span className="print-inline-visible">
 													https://dip.tnt4.ru
 												</span>{" "}
 												<FaExternalLinkAlt
 													style={{
 														fontSize: "0.75em",
-														marginInlineStart: "0.3333em",
+														marginInlineStart:
+															"0.3333em",
 													}}
 												/>
 											</a>
 										</dfn>{" "}
-										- {t.raw("list")[3].projects.dip_tnt4_ru}
+										-{" "}
+										{t.raw("list")[3].projects.dip_tnt4_ru}
 									</li>
 									{/* /DIP.TNT4.RU */}
 									{/* SUBBOTA.TV */}
@@ -1020,14 +1194,17 @@ export default function Experience() {
 													alignItems: "center",
 												}}
 											>
-												<span className="print-invisible">subbota.tv</span>
+												<span className="print-invisible">
+													subbota.tv
+												</span>
 												<span className="print-inline-visible">
 													https://subbota.tv
 												</span>{" "}
 												<FaExternalLinkAlt
 													style={{
 														fontSize: "0.75em",
-														marginInlineStart: "0.3333em",
+														marginInlineStart:
+															"0.3333em",
 													}}
 												/>
 											</a>
@@ -1046,14 +1223,17 @@ export default function Experience() {
 													alignItems: "center",
 												}}
 											>
-												<span className="print-invisible">tnt4.ru</span>
+												<span className="print-invisible">
+													tnt4.ru
+												</span>
 												<span className="print-inline-visible">
 													https://tnt4.ru
 												</span>{" "}
 												<FaExternalLinkAlt
 													style={{
 														fontSize: "0.75em",
-														marginInlineStart: "0.3333em",
+														marginInlineStart:
+															"0.3333em",
 													}}
 												/>
 											</a>
@@ -1061,7 +1241,9 @@ export default function Experience() {
 										- {t.raw("list")[3].projects.tnt4_ru}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[3].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[3].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -1084,7 +1266,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1099,39 +1282,59 @@ export default function Experience() {
 										<ul className="cv">
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[0],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[0]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[1],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[1]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[2],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[2]
 												)}
 											</li>
 											<li>
-												{t.raw("list")[3].responsibilities.dip_tnt4_ru[3]}
+												{
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[3]
+												}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[4],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[4]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[5],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[5]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.dip_tnt4_ru[6],
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[6]
 												)}
 											</li>
 											<li>
-												{t.raw("list")[3].responsibilities.dip_tnt4_ru[7]}
+												{
+													t.raw("list")[3]
+														.responsibilities
+														.dip_tnt4_ru[7]
+												}
 											</li>
 										</ul>
 									</dd>
@@ -1151,7 +1354,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1165,16 +1369,32 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[0])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[1])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[2])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[3])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[3]
+												)}
 												<ul>
 													<li>
 														<a
@@ -1190,15 +1410,18 @@ export default function Experience() {
 															</span>{" "}
 															<FaExternalLinkAlt
 																style={{
-																	fontSize: "0.75em",
-																	marginInlineStart: "0.3333em",
+																	fontSize:
+																		"0.75em",
+																	marginInlineStart:
+																		"0.3333em",
 																}}
 															/>
 														</a>{" "}
 														-{" "}
 														{parse(
-															t.raw("list")[3].responsibilities
-																.subbota_tv[4][0],
+															t.raw("list")[3]
+																.responsibilities
+																.subbota_tv[4][0]
 														)}
 													</li>
 													<li>
@@ -1215,22 +1438,27 @@ export default function Experience() {
 															</span>{" "}
 															<FaExternalLinkAlt
 																style={{
-																	fontSize: "0.75em",
-																	marginInlineStart: "0.3333em",
+																	fontSize:
+																		"0.75em",
+																	marginInlineStart:
+																		"0.3333em",
 																}}
 															/>
 														</a>{" "}
 														-{" "}
 														{parse(
-															t.raw("list")[3].responsibilities
-																.subbota_tv[4][1],
+															t.raw("list")[3]
+																.responsibilities
+																.subbota_tv[4][1]
 														)}
 													</li>
 												</ul>
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[3].responsibilities.subbota_tv[5][0],
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[5][0]
 												)}{" "}
 												<dfn>
 													<a
@@ -1238,8 +1466,10 @@ export default function Experience() {
 														target="_blank"
 														rel="noopener noreferrer"
 														style={{
-															display: "inline-flex",
-															alignItems: "center",
+															display:
+																"inline-flex",
+															alignItems:
+																"center",
 														}}
 													>
 														<span className="print-invisible">
@@ -1250,30 +1480,54 @@ export default function Experience() {
 														</span>{" "}
 														<FaExternalLinkAlt
 															style={{
-																fontSize: "0.75em",
-																marginInlineStart: "0.3333em",
+																fontSize:
+																	"0.75em",
+																marginInlineStart:
+																	"0.3333em",
 															}}
 														/>
 													</a>
 												</dfn>{" "}
 												{parse(
-													t.raw("list")[3].responsibilities.subbota_tv[5][1],
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[5][1]
 												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[6])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[6]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[7])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[7]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[8])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[8]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.subbota_tv[9])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[9]
+												)}
 											</li>
 											<li>
-												{t.raw("list")[3].responsibilities.subbota_tv[10]}
+												{
+													t.raw("list")[3]
+														.responsibilities
+														.subbota_tv[10]
+												}
 											</li>
 										</ul>
 									</dd>
@@ -1293,7 +1547,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1307,16 +1562,32 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[0])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[1])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[2])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[3])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[3]
+												)}
 												<ul>
 													<li>
 														<a
@@ -1332,29 +1603,57 @@ export default function Experience() {
 															</span>{" "}
 															<FaExternalLinkAlt
 																style={{
-																	fontSize: "0.75em",
-																	marginInlineStart: "0.3333em",
+																	fontSize:
+																		"0.75em",
+																	marginInlineStart:
+																		"0.3333em",
 																}}
 															/>
 														</a>{" "}
 														{/* - Search for teleoperators by city to connect. */}
-														{t.raw("list")[3].responsibilities.tnt4_ru[4][0]}
+														{
+															t.raw("list")[3]
+																.responsibilities
+																.tnt4_ru[4][0]
+														}
 													</li>
 												</ul>
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[5])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[5]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[6])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[6]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[7])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[7]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[3].responsibilities.tnt4_ru[8])}
+												{parse(
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[8]
+												)}
 											</li>
-											<li>{t.raw("list")[3].responsibilities.tnt4_ru[9]}</li>
+											<li>
+												{
+													t.raw("list")[3]
+														.responsibilities
+														.tnt4_ru[9]
+												}
+											</li>
 										</ul>
 									</dd>
 								</dl>
@@ -1378,7 +1677,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -1430,7 +1729,8 @@ export default function Experience() {
 									alt="Freshbroccoli logo"
 								/>
 								{/* UURRAA & Freshbroccoli - Moscow, Russia 🇷🇺 */}
-								{t.raw("list")[4].company} - {t.raw("list")[4].where}
+								{t.raw("list")[4].company} -{" "}
+								{t.raw("list")[4].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -1451,7 +1751,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">urraa.ru</span>
+										<span className="print-invisible">
+											urraa.ru
+										</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20170709032816/https://urraa.ru/
 										</span>
@@ -1481,14 +1783,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">urraa.ru</span>
+											<span className="print-invisible">
+												urraa.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20170709032816/https://urraa.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -1504,18 +1809,25 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">freshbroccoli.ru</span>
+											<span className="print-invisible">
+												freshbroccoli.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20170603211147/https://freshbroccoli.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[4].projects.freshbroccoli}
+										-{" "}
+										{
+											t.raw("list")[4].projects
+												.freshbroccoli
+										}
 									</li>
 									<li>
 										<a
@@ -1536,23 +1848,34 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[4].projects.new_freshbroccoli}
+										-{" "}
+										{
+											t.raw("list")[4].projects
+												.new_freshbroccoli
+										}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[4].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[4].responsibilities.title}
+								</h4>
 								<blockquote
 									style={{
 										fontWeight: 300,
 										marginInline: 0,
 										paddingInlineStart: "1rem",
-										borderInlineStart: "0.125rem solid #c0c0c0",
+										borderInlineStart:
+											"0.125rem solid #c0c0c0",
 									}}
 								>
-									{parse(t.raw("list")[4].responsibilities.blockquote)}
+									{parse(
+										t.raw("list")[4].responsibilities
+											.blockquote
+									)}
 								</blockquote>
 								<dl
 									style={{
@@ -1576,7 +1899,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1596,7 +1920,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1611,65 +1936,74 @@ export default function Experience() {
 										<ul className="cv">
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][0],
+													][0]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][1],
+													][1]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][2],
+													][2]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][3],
+													][3]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][4],
+													][4]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][5],
+													][5]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][6],
+													][6]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][7],
+													][7]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities[
+													t.raw("list")[4]
+														.responsibilities[
 														"urraa-and-freshbroccoli"
-													][8],
+													][8]
 												)}
 											</li>
 										</ul>
@@ -1692,7 +2026,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1707,48 +2042,59 @@ export default function Experience() {
 										<ul className="cv">
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[0],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[0]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[1],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[1]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[2],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[2]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[3],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[3]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[4],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[4]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[5],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[5]
 												)}
 											</li>
 											<li>
 												{parse(
-													t.raw("list")[4].responsibilities
-														.new_freshbroccoli[6],
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[6]
 												)}
 											</li>
 											<li>
-												{t.raw("list")[4].responsibilities.new_freshbroccoli[7]}
+												{
+													t.raw("list")[4]
+														.responsibilities
+														.new_freshbroccoli[7]
+												}
 											</li>
 										</ul>
 									</dd>
@@ -1774,7 +2120,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -1802,7 +2148,9 @@ export default function Experience() {
 								</time>
 								)
 							</span>
-							<span className={styles.experience__duration}>7 months</span>
+							<span className={styles.experience__duration}>
+								7 months
+							</span>
 							<span className={styles.experience__position}>
 								{t.raw("list")[5].position}
 							</span>
@@ -1810,13 +2158,16 @@ export default function Experience() {
 								<Image
 									className={clsx(
 										styles["experience__where-icon"],
-										styles["experience__where-icon--magorasystems"],
+										styles[
+											"experience__where-icon--magorasystems"
+										]
 									)}
 									src={magorasystems}
 									height={20}
 									alt="Magora-Systems logo"
 								/>
-								{t.raw("list")[5].company} - {t.raw("list")[5].where}
+								{t.raw("list")[5].company} -{" "}
+								{t.raw("list")[5].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -1837,7 +2188,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">magora-systems.com</span>
+										<span className="print-invisible">
+											magora-systems.com
+										</span>
 										<span className="print-inline-visible">
 											https://magora-systems.com/
 										</span>
@@ -1878,7 +2231,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -1905,7 +2259,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -1922,21 +2277,26 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">Music Platform</span>
+											<span className="print-invisible">
+												Music Platform
+											</span>
 											<span className="print-inline-visible">
 												Music Platform (SoundCloud-like)
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
 										- {t.raw("list")[5].projects.music_app}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[5].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[5].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -1960,7 +2320,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -1974,23 +2335,53 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[0])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[1])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[2])}
-											</li>
-											<li>{t.raw("list")[5].responsibilities.taxi_app[3]}</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[4])}
-											</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[5])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.taxi_app[6])}
+												{
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[3]
+												}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[4]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[5]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.taxi_app[6]
+												)}
 											</li>
 										</ul>
 									</dd>
@@ -2012,7 +2403,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -2026,20 +2418,46 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[5].responsibilities.dating_app[0])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.dating_app[1])}
-											</li>
-											<li>{t.raw("list")[5].responsibilities.dating_app[2]}</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.dating_app[3])}
-											</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.dating_app[4])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.dating_app[5])}
+												{
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[2]
+												}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[3]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[4]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.dating_app[5]
+												)}
 											</li>
 										</ul>
 									</dd>
@@ -2060,7 +2478,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -2074,21 +2493,54 @@ export default function Experience() {
 									>
 										<ul className="cv">
 											<li>
-												{parse(t.raw("list")[5].responsibilities.music_app[0])}
-											</li>
-											<li>{t.raw("list")[5].responsibilities.music_app[1]}</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.music_app[2])}.
-											</li>
-											<li>{t.raw("list")[5].responsibilities.music_app[3]}</li>
-											<li>
-												{parse(t.raw("list")[5].responsibilities.music_app[4])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[0]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.music_app[5])}
+												{
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[1]
+												}
 											</li>
 											<li>
-												{parse(t.raw("list")[5].responsibilities.music_app[6])}
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[2]
+												)}
+												.
+											</li>
+											<li>
+												{
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[3]
+												}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[4]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[5]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[5]
+														.responsibilities
+														.music_app[6]
+												)}
 											</li>
 										</ul>
 									</dd>
@@ -2113,7 +2565,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -2154,7 +2606,8 @@ export default function Experience() {
 									height={20}
 									alt="BTI Pro logo"
 								/>
-								{t.raw("list")[6].company} - {t.raw("list")[6].where}
+								{t.raw("list")[6].company} -{" "}
+								{t.raw("list")[6].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -2175,7 +2628,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">btipro.ru</span>
+										<span className="print-invisible">
+											btipro.ru
+										</span>
 										<span className="print-inline-visible">
 											https://web.archive.org/web/20140510091338/http://btipro.ru/
 										</span>
@@ -2205,34 +2660,51 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">ktotam.pro</span>
+											<span className="print-invisible">
+												ktotam.pro
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20141023134413/http://ktotam.pro/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[6].projects.ktotam.title}
+										-{" "}
+										{t.raw("list")[6].projects.ktotam.title}
 										<dl>
 											<ul
 												className="cv"
-												style={{ listStylePosition: "outside" }}
+												style={{
+													listStylePosition:
+														"outside",
+												}}
 											>
 												<li>
-													{t.raw("list")[6].projects.ktotam.description[0]}
+													{
+														t.raw("list")[6]
+															.projects.ktotam
+															.description[0]
+													}
 												</li>
 												<li>
-													{t.raw("list")[6].projects.ktotam.description[1]}
+													{
+														t.raw("list")[6]
+															.projects.ktotam
+															.description[1]
+													}
 												</li>
 											</ul>
 										</dl>
 									</li>
 								</ol>
-								<h4>{t.raw("list")[6].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[6].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -2255,7 +2727,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -2268,24 +2741,62 @@ export default function Experience() {
 										}}
 									>
 										<ul className="cv">
-											<li>{t.raw("list")[6].responsibilities.ktotam[0]}</li>
 											<li>
-												{parse(t.raw("list")[6].responsibilities.ktotam[1])}
+												{
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[0]
+												}
 											</li>
 											<li>
-												{parse(t.raw("list")[6].responsibilities.ktotam[2])}
+												{parse(
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[1]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[6].responsibilities.ktotam[3])}
+												{parse(
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[2]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[6].responsibilities.ktotam[4])}
+												{parse(
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[3]
+												)}
 											</li>
 											<li>
-												{parse(t.raw("list")[6].responsibilities.ktotam[5])}
+												{parse(
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[4]
+												)}
 											</li>
-											<li>{t.raw("list")[6].responsibilities.ktotam[6]}</li>
-											<li>{t.raw("list")[6].responsibilities.ktotam[7]}</li>
+											<li>
+												{parse(
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[5]
+												)}
+											</li>
+											<li>
+												{
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[6]
+												}
+											</li>
+											<li>
+												{
+													t.raw("list")[6]
+														.responsibilities
+														.ktotam[7]
+												}
+											</li>
 										</ul>
 									</dd>
 								</dl>
@@ -2309,7 +2820,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -2350,7 +2861,8 @@ export default function Experience() {
 									height={20}
 									alt="Omega Design Pro logo"
 								/>
-								{t.raw("list")[7].company} - {t.raw("list")[7].where}
+								{t.raw("list")[7].company} -{" "}
+								{t.raw("list")[7].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -2371,7 +2883,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">omegadesign.pro</span>
+										<span className="print-invisible">
+											omegadesign.pro
+										</span>
 										<span className="print-inline-visible">
 											https://www.omegadesign.pro/
 										</span>
@@ -2401,14 +2915,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">никалюкс.рф</span>
+											<span className="print-invisible">
+												никалюкс.рф
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20180409060127/http://%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8E%D0%BA%D1%81.%D1%80%D1%84/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2434,7 +2951,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2450,18 +2968,26 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">aurum-tours.ru</span>
+											<span className="print-invisible">
+												aurum-tours.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20140707080406/http://aurum-tours.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[7].projects["aurum-tours"]}
+										-{" "}
+										{
+											t.raw("list")[7].projects[
+												"aurum-tours"
+											]
+										}
 									</li>
 									<li>
 										<a
@@ -2473,18 +2999,26 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">http://eco-d.ru/</span>
+											<span className="print-invisible">
+												http://eco-d.ru/
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20150407021801/http://www.eco-d.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[7].projects["eco-design"]}
+										-{" "}
+										{
+											t.raw("list")[7].projects[
+												"eco-design"
+											]
+										}
 									</li>
 									<li>
 										<a
@@ -2505,14 +3039,17 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
 										- {t.raw("list")[7].projects.capitel24}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[7].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[7].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -2535,7 +3072,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -2548,11 +3086,36 @@ export default function Experience() {
 										}}
 									>
 										<ul className="cv">
-											<li>{t.raw("list")[7].responsibilities.all[0]}</li>
-											<li>{parse(t.raw("list")[7].responsibilities.all[1])}</li>
-											<li>{parse(t.raw("list")[7].responsibilities.all[2])}</li>
-											<li>{parse(t.raw("list")[7].responsibilities.all[3])}</li>
-											<li>{parse(t.raw("list")[7].responsibilities.all[4])}</li>
+											<li>
+												{
+													t.raw("list")[7]
+														.responsibilities.all[0]
+												}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[7]
+														.responsibilities.all[1]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[7]
+														.responsibilities.all[2]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[7]
+														.responsibilities.all[3]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[7]
+														.responsibilities.all[4]
+												)}
+											</li>
 										</ul>
 									</dd>
 								</dl>
@@ -2576,7 +3139,7 @@ export default function Experience() {
 							className={clsx(
 								accordionStyles.accordion__button,
 								styles.experience__button,
-								font.className,
+								font.className
 							)}
 						>
 							<span className={styles.experience__when}>
@@ -2617,7 +3180,8 @@ export default function Experience() {
 									height={16}
 									alt="Alfateam logo"
 								/>
-								{t.raw("list")[8].company} - {t.raw("list")[8].where}
+								{t.raw("list")[8].company} -{" "}
+								{t.raw("list")[8].where}
 							</span>
 						</Accordion.Button>
 					</h3>
@@ -2638,7 +3202,9 @@ export default function Experience() {
 											alignItems: "center",
 										}}
 									>
-										<span className="print-invisible">alfateam.ru</span>
+										<span className="print-invisible">
+											alfateam.ru
+										</span>
 										<span className="print-inline-visible">
 											https://alfateam.ru/
 										</span>
@@ -2668,14 +3234,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">@+dress</span>
+											<span className="print-invisible">
+												@+dress
+											</span>
 											<span className="print-inline-visible">
 												http://besm.alfateam.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2691,14 +3260,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">proffcom24.ru</span>
+											<span className="print-invisible">
+												proffcom24.ru
+											</span>
 											<span className="print-inline-visible">
 												https://proffcom24.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2714,14 +3286,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">m2m-sib.ru</span>
+											<span className="print-invisible">
+												m2m-sib.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web-arhive.ru/page?url=http%3A%2F%2Fm2m-sib.ru%2F&date=20141228&hidden=0
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2737,14 +3312,17 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">regtime24.ru</span>
+											<span className="print-invisible">
+												regtime24.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20140911111454/http://www.regtime24.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
@@ -2762,19 +3340,30 @@ export default function Experience() {
 											}}
 										>
 											<span className="print-invisible">
-												{t.raw("list")[8].projects.mercury.title}
+												{
+													t.raw("list")[8].projects
+														.mercury.title
+												}
 											</span>
 											<span className="print-inline-visible">
-												{t.raw("list")[8].projects.mercury.title}
+												{
+													t.raw("list")[8].projects
+														.mercury.title
+												}
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
-										- {t.raw("list")[8].projects.mercury.description}
+										-{" "}
+										{
+											t.raw("list")[8].projects.mercury
+												.description
+										}
 									</li>
 									<li>
 										<a
@@ -2786,21 +3375,26 @@ export default function Experience() {
 												alignItems: "center",
 											}}
 										>
-											<span className="print-invisible">wandmart.ru</span>
+											<span className="print-invisible">
+												wandmart.ru
+											</span>
 											<span className="print-inline-visible">
 												https://web.archive.org/web/20151117114253/http://wandmart.ru/
 											</span>{" "}
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>{" "}
 										- {t.raw("list")[8].projects.wandmart}
 									</li>
 								</ol>
-								<h4>{t.raw("list")[8].responsibilities.title}</h4>
+								<h4>
+									{t.raw("list")[8].responsibilities.title}
+								</h4>
 								<dl
 									style={{
 										paddingInlineStart: 0,
@@ -2823,7 +3417,8 @@ export default function Experience() {
 											<FaExternalLinkAlt
 												style={{
 													fontSize: "0.75em",
-													marginInlineStart: "0.3333em",
+													marginInlineStart:
+														"0.3333em",
 												}}
 											/>
 										</a>
@@ -2836,10 +3431,30 @@ export default function Experience() {
 										}}
 									>
 										<ul className="cv">
-											<li>{parse(t.raw("list")[8].responsibilities.all[0])}</li>
-											<li>{parse(t.raw("list")[8].responsibilities.all[1])}</li>
-											<li>{parse(t.raw("list")[8].responsibilities.all[2])}</li>
-											<li>{parse(t.raw("list")[8].responsibilities.all[3])}</li>
+											<li>
+												{parse(
+													t.raw("list")[8]
+														.responsibilities.all[0]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[8]
+														.responsibilities.all[1]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[8]
+														.responsibilities.all[2]
+												)}
+											</li>
+											<li>
+												{parse(
+													t.raw("list")[8]
+														.responsibilities.all[3]
+												)}
+											</li>
 										</ul>
 									</dd>
 								</dl>
